@@ -1,0 +1,292 @@
+2024-07-10 02:50:05,221 INFO    StreamThr :66187 [internal.py:wandb_internal():85] W&B internal server running at pid: 66187, started at: 2024-07-10 02:50:05.221128
+2024-07-10 02:50:05,222 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: status
+2024-07-10 02:50:05,225 INFO    WriterThread:66187 [datastore.py:open_for_write():87] open: /media/kingston_shared/thesis/sss/wandb/run-20240710_025005-yofm2ph9/run-yofm2ph9.wandb
+2024-07-10 02:50:05,226 DEBUG   SenderThread:66187 [sender.py:send():379] send: header
+2024-07-10 02:50:05,241 DEBUG   SenderThread:66187 [sender.py:send():379] send: run
+2024-07-10 02:50:05,908 INFO    SenderThread:66187 [dir_watcher.py:__init__():211] watching files in: /media/kingston_shared/thesis/sss/wandb/run-20240710_025005-yofm2ph9/files
+2024-07-10 02:50:05,908 INFO    SenderThread:66187 [sender.py:_start_run_threads():1188] run started: yofm2ph9 with start time 1720551005.22134
+2024-07-10 02:50:05,916 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: check_version
+2024-07-10 02:50:05,916 DEBUG   SenderThread:66187 [sender.py:send_request():406] send_request: check_version
+2024-07-10 02:50:06,032 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: run_start
+2024-07-10 02:50:06,063 DEBUG   HandlerThread:66187 [system_info.py:__init__():26] System info init
+2024-07-10 02:50:06,063 DEBUG   HandlerThread:66187 [system_info.py:__init__():41] System info init done
+2024-07-10 02:50:06,063 INFO    HandlerThread:66187 [system_monitor.py:start():194] Starting system monitor
+2024-07-10 02:50:06,064 INFO    SystemMonitor:66187 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-07-10 02:50:06,064 INFO    HandlerThread:66187 [system_monitor.py:probe():214] Collecting system info
+2024-07-10 02:50:06,065 INFO    SystemMonitor:66187 [interfaces.py:start():188] Started cpu monitoring
+2024-07-10 02:50:06,066 INFO    SystemMonitor:66187 [interfaces.py:start():188] Started disk monitoring
+2024-07-10 02:50:06,066 INFO    SystemMonitor:66187 [interfaces.py:start():188] Started gpu monitoring
+2024-07-10 02:50:06,067 INFO    SystemMonitor:66187 [interfaces.py:start():188] Started memory monitoring
+2024-07-10 02:50:06,067 INFO    SystemMonitor:66187 [interfaces.py:start():188] Started network monitoring
+2024-07-10 02:50:06,109 DEBUG   HandlerThread:66187 [system_info.py:probe():152] Probing system
+2024-07-10 02:50:06,114 DEBUG   HandlerThread:66187 [system_info.py:_probe_git():137] Probing git
+2024-07-10 02:50:06,124 DEBUG   HandlerThread:66187 [system_info.py:_probe_git():145] Probing git done
+2024-07-10 02:50:06,124 DEBUG   HandlerThread:66187 [system_info.py:probe():200] Probing system done
+2024-07-10 02:50:06,125 DEBUG   HandlerThread:66187 [system_monitor.py:probe():223] {'os': 'Linux-5.15.0-100-generic-x86_64-with-glibc2.35', 'python': '3.9.19', 'heartbeatAt': '2024-07-09T18:50:06.109825', 'startedAt': '2024-07-09T18:50:05.214635', 'docker': None, 'cuda': None, 'args': ('config/train_shakespeare_char.py', '--device=cuda', '--compile=False'), 'state': 'running', 'program': '/media/kingston_shared/thesis/sss/train.py', 'codePathLocal': 'train.py', 'codePath': 'train.py', 'git': {'remote': 'https://github.com/ronaldjohnatanoso/sss.git', 'commit': 'a3db77cd94c2a59b8a95a182f32fbd0533690a51'}, 'email': 'ronaldjohnatanoso@gmail.com', 'root': '/media/kingston_shared/thesis/sss', 'host': 'ronald', 'username': 'ronald', 'executable': '/home/ronald/miniconda3/envs/torchenv/bin/python3', 'cpu_count': 12, 'cpu_count_logical': 16, 'cpu_freq': {'current': 3302.8995625, 'min': 400.0, 'max': 3900.0}, 'cpu_freq_per_core': [{'current': 3100.0, 'min': 400.0, 'max': 4500.0}, {'current': 3100.0, 'min': 400.0, 'max': 4500.0}, {'current': 4430.567, 'min': 400.0, 'max': 4500.0}, {'current': 3100.0, 'min': 400.0, 'max': 4500.0}, {'current': 3100.0, 'min': 400.0, 'max': 4500.0}, {'current': 3100.0, 'min': 400.0, 'max': 4500.0}, {'current': 3782.882, 'min': 400.0, 'max': 4500.0}, {'current': 3100.0, 'min': 400.0, 'max': 4500.0}, {'current': 3100.0, 'min': 400.0, 'max': 3300.0}, {'current': 3100.0, 'min': 400.0, 'max': 3300.0}, {'current': 3100.0, 'min': 400.0, 'max': 3300.0}, {'current': 3100.0, 'min': 400.0, 'max': 3300.0}, {'current': 3100.0, 'min': 400.0, 'max': 3300.0}, {'current': 3100.0, 'min': 400.0, 'max': 3300.0}, {'current': 3100.0, 'min': 400.0, 'max': 3300.0}, {'current': 3100.0, 'min': 400.0, 'max': 3300.0}], 'disk': {'/': {'total': 459.33729553222656, 'used': 393.2754783630371}}, 'gpu': 'NVIDIA GeForce RTX 3050 Laptop GPU', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3050 Laptop GPU', 'memory_total': 4294967296}], 'memory': {'total': 23.175750732421875}}
+2024-07-10 02:50:06,125 INFO    HandlerThread:66187 [system_monitor.py:probe():224] Finished collecting system info
+2024-07-10 02:50:06,125 INFO    HandlerThread:66187 [system_monitor.py:probe():227] Publishing system info
+2024-07-10 02:50:06,125 DEBUG   HandlerThread:66187 [system_info.py:_save_conda():209] Saving list of conda packages installed into the current environment
+2024-07-10 02:50:06,893 DEBUG   HandlerThread:66187 [system_info.py:_save_conda():224] Saving conda packages done
+2024-07-10 02:50:06,895 INFO    HandlerThread:66187 [system_monitor.py:probe():229] Finished publishing system info
+2024-07-10 02:50:06,897 DEBUG   SenderThread:66187 [sender.py:send():379] send: files
+2024-07-10 02:50:06,897 INFO    SenderThread:66187 [sender.py:_save_file():1454] saving file wandb-metadata.json with policy now
+2024-07-10 02:50:06,909 INFO    Thread-12 :66187 [dir_watcher.py:_on_file_created():271] file/dir created: /media/kingston_shared/thesis/sss/wandb/run-20240710_025005-yofm2ph9/files/wandb-metadata.json
+2024-07-10 02:50:06,910 INFO    Thread-12 :66187 [dir_watcher.py:_on_file_created():271] file/dir created: /media/kingston_shared/thesis/sss/wandb/run-20240710_025005-yofm2ph9/files/conda-environment.yaml
+2024-07-10 02:50:06,926 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: python_packages
+2024-07-10 02:50:06,927 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-10 02:50:06,927 DEBUG   SenderThread:66187 [sender.py:send_request():406] send_request: python_packages
+2024-07-10 02:50:06,927 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-10 02:50:06,928 DEBUG   SenderThread:66187 [sender.py:send_request():406] send_request: stop_status
+2024-07-10 02:50:07,336 DEBUG   SenderThread:66187 [sender.py:send():379] send: telemetry
+2024-07-10 02:50:07,909 INFO    Thread-12 :66187 [dir_watcher.py:_on_file_created():271] file/dir created: /media/kingston_shared/thesis/sss/wandb/run-20240710_025005-yofm2ph9/files/requirements.txt
+2024-07-10 02:50:07,927 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-10 02:50:07,950 INFO    wandb-upload_0:66187 [upload_job.py:push():130] Uploaded file /tmp/tmpim2g0sdwwandb/8za14241-wandb-metadata.json
+2024-07-10 02:50:08,927 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-10 02:50:09,927 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-10 02:50:10,337 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: status_report
+2024-07-10 02:50:10,928 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-10 02:50:11,928 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-10 02:50:12,928 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-10 02:50:13,928 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-10 02:50:14,929 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-10 02:50:15,928 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-10 02:50:15,929 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: status_report
+2024-07-10 02:50:16,928 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-10 02:50:17,929 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-10 02:50:18,929 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-10 02:50:19,929 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-10 02:50:20,929 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-10 02:50:21,927 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-10 02:50:21,928 DEBUG   SenderThread:66187 [sender.py:send_request():406] send_request: stop_status
+2024-07-10 02:50:21,968 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-10 02:50:22,253 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: status_report
+2024-07-10 02:50:22,930 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-10 02:50:23,930 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-10 02:50:24,930 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-10 02:50:25,930 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-10 02:50:26,930 INFO    Thread-12 :66187 [dir_watcher.py:_on_file_created():271] file/dir created: /media/kingston_shared/thesis/sss/wandb/run-20240710_025005-yofm2ph9/files/output.log
+2024-07-10 02:50:27,073 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-10 02:50:27,238 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-10 02:50:27,239 DEBUG   SenderThread:66187 [sender.py:send():379] send: history
+2024-07-10 02:50:27,240 DEBUG   SenderThread:66187 [sender.py:send_request():406] send_request: summary_record
+2024-07-10 02:50:27,241 INFO    SenderThread:66187 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-10 02:50:27,281 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: status_report
+2024-07-10 02:50:27,931 INFO    Thread-12 :66187 [dir_watcher.py:_on_file_created():271] file/dir created: /media/kingston_shared/thesis/sss/wandb/run-20240710_025005-yofm2ph9/files/wandb-summary.json
+2024-07-10 02:50:28,073 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-10 02:50:28,932 INFO    Thread-12 :66187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/kingston_shared/thesis/sss/wandb/run-20240710_025005-yofm2ph9/files/output.log
+2024-07-10 02:50:29,074 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-10 02:50:30,073 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-10 02:50:30,934 INFO    Thread-12 :66187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/kingston_shared/thesis/sss/wandb/run-20240710_025005-yofm2ph9/files/output.log
+2024-07-10 02:50:31,073 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-10 02:50:32,074 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-10 02:50:32,936 INFO    Thread-12 :66187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/kingston_shared/thesis/sss/wandb/run-20240710_025005-yofm2ph9/files/output.log
+2024-07-10 02:50:33,074 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-10 02:50:33,229 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: status_report
+2024-07-10 02:50:34,074 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-10 02:50:34,938 INFO    Thread-12 :66187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/kingston_shared/thesis/sss/wandb/run-20240710_025005-yofm2ph9/files/output.log
+2024-07-10 02:50:35,074 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-10 02:50:36,074 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-10 02:50:36,927 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-10 02:50:36,928 DEBUG   SenderThread:66187 [sender.py:send_request():406] send_request: stop_status
+2024-07-10 02:50:36,940 INFO    Thread-12 :66187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/kingston_shared/thesis/sss/wandb/run-20240710_025005-yofm2ph9/files/output.log
+2024-07-10 02:50:37,074 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-10 02:50:38,075 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-10 02:50:38,313 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: status_report
+2024-07-10 02:50:38,942 INFO    Thread-12 :66187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/kingston_shared/thesis/sss/wandb/run-20240710_025005-yofm2ph9/files/output.log
+2024-07-10 02:50:38,943 INFO    Thread-12 :66187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/kingston_shared/thesis/sss/wandb/run-20240710_025005-yofm2ph9/files/config.yaml
+2024-07-10 02:50:39,075 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-10 02:50:40,075 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-10 02:50:40,945 INFO    Thread-12 :66187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/kingston_shared/thesis/sss/wandb/run-20240710_025005-yofm2ph9/files/output.log
+2024-07-10 02:50:41,075 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-10 02:50:42,075 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-10 02:50:42,946 INFO    Thread-12 :66187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/kingston_shared/thesis/sss/wandb/run-20240710_025005-yofm2ph9/files/output.log
+2024-07-10 02:50:43,076 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-10 02:50:44,076 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-10 02:50:44,201 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: status_report
+2024-07-10 02:50:44,949 INFO    Thread-12 :66187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/kingston_shared/thesis/sss/wandb/run-20240710_025005-yofm2ph9/files/output.log
+2024-07-10 02:50:45,076 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-10 02:50:46,076 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-10 02:50:46,952 INFO    Thread-12 :66187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/kingston_shared/thesis/sss/wandb/run-20240710_025005-yofm2ph9/files/output.log
+2024-07-10 02:50:47,076 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-10 02:50:48,076 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-10 02:50:48,954 INFO    Thread-12 :66187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/kingston_shared/thesis/sss/wandb/run-20240710_025005-yofm2ph9/files/output.log
+2024-07-10 02:50:49,076 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-10 02:50:49,221 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: status_report
+2024-07-10 02:50:50,077 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-10 02:50:50,955 INFO    Thread-12 :66187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/kingston_shared/thesis/sss/wandb/run-20240710_025005-yofm2ph9/files/output.log
+2024-07-10 02:50:51,077 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-10 02:50:51,927 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-10 02:50:51,928 DEBUG   SenderThread:66187 [sender.py:send_request():406] send_request: stop_status
+2024-07-10 02:50:52,077 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-10 02:50:52,958 INFO    Thread-12 :66187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/kingston_shared/thesis/sss/wandb/run-20240710_025005-yofm2ph9/files/output.log
+2024-07-10 02:50:53,077 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-10 02:50:54,077 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-10 02:50:54,960 INFO    Thread-12 :66187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/kingston_shared/thesis/sss/wandb/run-20240710_025005-yofm2ph9/files/output.log
+2024-07-10 02:50:54,982 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: status_report
+2024-07-10 02:50:55,078 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-10 02:50:56,078 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-10 02:50:56,962 INFO    Thread-12 :66187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/kingston_shared/thesis/sss/wandb/run-20240710_025005-yofm2ph9/files/output.log
+2024-07-10 02:50:57,078 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-10 02:50:58,078 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-10 02:50:58,964 INFO    Thread-12 :66187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/kingston_shared/thesis/sss/wandb/run-20240710_025005-yofm2ph9/files/output.log
+2024-07-10 02:50:59,078 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-10 02:51:00,008 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: status_report
+2024-07-10 02:51:00,078 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-10 02:51:00,966 INFO    Thread-12 :66187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/kingston_shared/thesis/sss/wandb/run-20240710_025005-yofm2ph9/files/output.log
+2024-07-10 02:51:01,079 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-10 02:51:02,079 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-10 02:51:02,968 INFO    Thread-12 :66187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/kingston_shared/thesis/sss/wandb/run-20240710_025005-yofm2ph9/files/output.log
+2024-07-10 02:51:03,079 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-10 02:51:04,079 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-10 02:51:04,970 INFO    Thread-12 :66187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/kingston_shared/thesis/sss/wandb/run-20240710_025005-yofm2ph9/files/output.log
+2024-07-10 02:51:05,079 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-10 02:51:05,284 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: status_report
+2024-07-10 02:51:05,329 DEBUG   SenderThread:66187 [sender.py:send():379] send: exit
+2024-07-10 02:51:05,329 INFO    SenderThread:66187 [sender.py:send_exit():586] handling exit code: 255
+2024-07-10 02:51:05,329 INFO    SenderThread:66187 [sender.py:send_exit():588] handling runtime: 59
+2024-07-10 02:51:05,330 INFO    SenderThread:66187 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-10 02:51:05,330 INFO    SenderThread:66187 [sender.py:send_exit():594] send defer
+2024-07-10 02:51:05,330 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: defer
+2024-07-10 02:51:05,330 INFO    HandlerThread:66187 [handler.py:handle_request_defer():184] handle defer: 0
+2024-07-10 02:51:05,330 DEBUG   SenderThread:66187 [sender.py:send_request():406] send_request: defer
+2024-07-10 02:51:05,330 INFO    SenderThread:66187 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-07-10 02:51:05,330 INFO    SenderThread:66187 [sender.py:transition_state():614] send defer: 1
+2024-07-10 02:51:05,331 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: defer
+2024-07-10 02:51:05,331 INFO    HandlerThread:66187 [handler.py:handle_request_defer():184] handle defer: 1
+2024-07-10 02:51:05,331 DEBUG   SenderThread:66187 [sender.py:send_request():406] send_request: defer
+2024-07-10 02:51:05,331 INFO    SenderThread:66187 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-07-10 02:51:05,331 INFO    SenderThread:66187 [sender.py:transition_state():614] send defer: 2
+2024-07-10 02:51:05,331 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: defer
+2024-07-10 02:51:05,331 INFO    HandlerThread:66187 [handler.py:handle_request_defer():184] handle defer: 2
+2024-07-10 02:51:05,331 INFO    HandlerThread:66187 [system_monitor.py:finish():203] Stopping system monitor
+2024-07-10 02:51:05,331 DEBUG   SystemMonitor:66187 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-07-10 02:51:05,331 DEBUG   SystemMonitor:66187 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-07-10 02:51:05,332 INFO    HandlerThread:66187 [interfaces.py:finish():200] Joined cpu monitor
+2024-07-10 02:51:05,332 DEBUG   SystemMonitor:66187 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-07-10 02:51:05,332 INFO    HandlerThread:66187 [interfaces.py:finish():200] Joined disk monitor
+2024-07-10 02:51:05,362 INFO    HandlerThread:66187 [interfaces.py:finish():200] Joined gpu monitor
+2024-07-10 02:51:05,363 INFO    HandlerThread:66187 [interfaces.py:finish():200] Joined memory monitor
+2024-07-10 02:51:05,363 INFO    HandlerThread:66187 [interfaces.py:finish():200] Joined network monitor
+2024-07-10 02:51:05,363 DEBUG   SenderThread:66187 [sender.py:send_request():406] send_request: defer
+2024-07-10 02:51:05,363 INFO    SenderThread:66187 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-07-10 02:51:05,363 INFO    SenderThread:66187 [sender.py:transition_state():614] send defer: 3
+2024-07-10 02:51:05,364 DEBUG   SenderThread:66187 [sender.py:send():379] send: stats
+2024-07-10 02:51:05,364 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: defer
+2024-07-10 02:51:05,364 INFO    HandlerThread:66187 [handler.py:handle_request_defer():184] handle defer: 3
+2024-07-10 02:51:05,364 DEBUG   SenderThread:66187 [sender.py:send_request():406] send_request: defer
+2024-07-10 02:51:05,364 INFO    SenderThread:66187 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-07-10 02:51:05,364 INFO    SenderThread:66187 [sender.py:transition_state():614] send defer: 4
+2024-07-10 02:51:05,364 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: defer
+2024-07-10 02:51:05,365 INFO    HandlerThread:66187 [handler.py:handle_request_defer():184] handle defer: 4
+2024-07-10 02:51:05,365 DEBUG   SenderThread:66187 [sender.py:send_request():406] send_request: defer
+2024-07-10 02:51:05,365 INFO    SenderThread:66187 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-07-10 02:51:05,365 INFO    SenderThread:66187 [sender.py:transition_state():614] send defer: 5
+2024-07-10 02:51:05,365 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: defer
+2024-07-10 02:51:05,365 INFO    HandlerThread:66187 [handler.py:handle_request_defer():184] handle defer: 5
+2024-07-10 02:51:05,365 DEBUG   SenderThread:66187 [sender.py:send():379] send: summary
+2024-07-10 02:51:05,365 INFO    SenderThread:66187 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-10 02:51:05,366 DEBUG   SenderThread:66187 [sender.py:send_request():406] send_request: defer
+2024-07-10 02:51:05,366 INFO    SenderThread:66187 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-07-10 02:51:05,366 INFO    SenderThread:66187 [sender.py:transition_state():614] send defer: 6
+2024-07-10 02:51:05,366 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: defer
+2024-07-10 02:51:05,366 INFO    HandlerThread:66187 [handler.py:handle_request_defer():184] handle defer: 6
+2024-07-10 02:51:05,366 DEBUG   SenderThread:66187 [sender.py:send_request():406] send_request: defer
+2024-07-10 02:51:05,366 INFO    SenderThread:66187 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-07-10 02:51:05,366 INFO    SenderThread:66187 [sender.py:transition_state():614] send defer: 7
+2024-07-10 02:51:05,366 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: status_report
+2024-07-10 02:51:05,366 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: defer
+2024-07-10 02:51:05,366 INFO    HandlerThread:66187 [handler.py:handle_request_defer():184] handle defer: 7
+2024-07-10 02:51:05,366 DEBUG   SenderThread:66187 [sender.py:send_request():406] send_request: defer
+2024-07-10 02:51:05,366 INFO    SenderThread:66187 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-07-10 02:51:05,971 INFO    Thread-12 :66187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/kingston_shared/thesis/sss/wandb/run-20240710_025005-yofm2ph9/files/wandb-summary.json
+2024-07-10 02:51:06,329 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-10 02:51:06,972 INFO    Thread-12 :66187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/kingston_shared/thesis/sss/wandb/run-20240710_025005-yofm2ph9/files/output.log
+2024-07-10 02:51:07,288 INFO    SenderThread:66187 [sender.py:transition_state():614] send defer: 8
+2024-07-10 02:51:07,289 DEBUG   SenderThread:66187 [sender.py:send_request():406] send_request: poll_exit
+2024-07-10 02:51:07,289 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: defer
+2024-07-10 02:51:07,289 INFO    HandlerThread:66187 [handler.py:handle_request_defer():184] handle defer: 8
+2024-07-10 02:51:07,289 DEBUG   SenderThread:66187 [sender.py:send_request():406] send_request: defer
+2024-07-10 02:51:07,289 INFO    SenderThread:66187 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-07-10 02:51:07,290 INFO    SenderThread:66187 [job_builder.py:build():440] Attempting to build job artifact
+2024-07-10 02:51:07,290 INFO    SenderThread:66187 [job_builder.py:_get_source_type():569] is repo sourced job
+2024-07-10 02:51:07,308 INFO    SenderThread:66187 [job_builder.py:build():545] adding wandb-job metadata file
+2024-07-10 02:51:07,312 INFO    SenderThread:66187 [sender.py:transition_state():614] send defer: 9
+2024-07-10 02:51:07,312 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: defer
+2024-07-10 02:51:07,312 DEBUG   SenderThread:66187 [sender.py:send():379] send: artifact
+2024-07-10 02:51:07,312 INFO    HandlerThread:66187 [handler.py:handle_request_defer():184] handle defer: 9
+2024-07-10 02:51:07,329 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-10 02:51:07,973 INFO    Thread-12 :66187 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/kingston_shared/thesis/sss/wandb/run-20240710_025005-yofm2ph9/files/output.log
+2024-07-10 02:51:09,980 INFO    wandb-upload_0:66187 [upload_job.py:push():88] Uploaded file /tmp/tmphsispaog/wandb-job.json
+2024-07-10 02:51:10,075 INFO    wandb-upload_1:66187 [upload_job.py:push():88] Uploaded file /home/ronald/.local/share/wandb/artifacts/staging/tmp3m_49oo_
+2024-07-10 02:51:11,719 INFO    SenderThread:66187 [sender.py:send_artifact():1530] sent artifact job-https___github.com_ronaldjohnatanoso_sss.git_train.py - {'id': 'QXJ0aWZhY3Q6OTUwOTM1Mzgz', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjI0NzE5NjIxMQ==', 'latestArtifact': None}}
+2024-07-10 02:51:11,720 DEBUG   SenderThread:66187 [sender.py:send_request():406] send_request: defer
+2024-07-10 02:51:11,720 INFO    SenderThread:66187 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-07-10 02:51:11,720 INFO    SenderThread:66187 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-07-10 02:51:11,720 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: status_report
+2024-07-10 02:51:11,975 INFO    SenderThread:66187 [dir_watcher.py:finish():388] scan: /media/kingston_shared/thesis/sss/wandb/run-20240710_025005-yofm2ph9/files
+2024-07-10 02:51:11,975 INFO    SenderThread:66187 [dir_watcher.py:finish():402] scan save: /media/kingston_shared/thesis/sss/wandb/run-20240710_025005-yofm2ph9/files/conda-environment.yaml conda-environment.yaml
+2024-07-10 02:51:11,976 INFO    SenderThread:66187 [dir_watcher.py:finish():402] scan save: /media/kingston_shared/thesis/sss/wandb/run-20240710_025005-yofm2ph9/files/config.yaml config.yaml
+2024-07-10 02:51:11,976 INFO    SenderThread:66187 [dir_watcher.py:finish():402] scan save: /media/kingston_shared/thesis/sss/wandb/run-20240710_025005-yofm2ph9/files/output.log output.log
+2024-07-10 02:51:11,976 INFO    SenderThread:66187 [dir_watcher.py:finish():402] scan save: /media/kingston_shared/thesis/sss/wandb/run-20240710_025005-yofm2ph9/files/requirements.txt requirements.txt
+2024-07-10 02:51:11,978 INFO    SenderThread:66187 [dir_watcher.py:finish():402] scan save: /media/kingston_shared/thesis/sss/wandb/run-20240710_025005-yofm2ph9/files/wandb-metadata.json wandb-metadata.json
+2024-07-10 02:51:11,980 INFO    SenderThread:66187 [dir_watcher.py:finish():402] scan save: /media/kingston_shared/thesis/sss/wandb/run-20240710_025005-yofm2ph9/files/wandb-summary.json wandb-summary.json
+2024-07-10 02:51:11,983 INFO    SenderThread:66187 [sender.py:transition_state():614] send defer: 10
+2024-07-10 02:51:11,983 DEBUG   SenderThread:66187 [sender.py:send_request():406] send_request: poll_exit
+2024-07-10 02:51:11,983 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: defer
+2024-07-10 02:51:11,983 INFO    HandlerThread:66187 [handler.py:handle_request_defer():184] handle defer: 10
+2024-07-10 02:51:11,984 DEBUG   SenderThread:66187 [sender.py:send_request():406] send_request: defer
+2024-07-10 02:51:11,985 INFO    SenderThread:66187 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-07-10 02:51:11,985 INFO    SenderThread:66187 [file_pusher.py:finish():169] shutting down file pusher
+2024-07-10 02:51:12,332 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-10 02:51:12,332 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-10 02:51:12,333 DEBUG   SenderThread:66187 [sender.py:send_request():406] send_request: poll_exit
+2024-07-10 02:51:12,641 INFO    wandb-upload_0:66187 [upload_job.py:push():130] Uploaded file /media/kingston_shared/thesis/sss/wandb/run-20240710_025005-yofm2ph9/files/config.yaml
+2024-07-10 02:51:12,641 INFO    wandb-upload_2:66187 [upload_job.py:push():130] Uploaded file /media/kingston_shared/thesis/sss/wandb/run-20240710_025005-yofm2ph9/files/conda-environment.yaml
+2024-07-10 02:51:12,846 INFO    wandb-upload_3:66187 [upload_job.py:push():130] Uploaded file /media/kingston_shared/thesis/sss/wandb/run-20240710_025005-yofm2ph9/files/requirements.txt
+2024-07-10 02:51:12,846 INFO    wandb-upload_4:66187 [upload_job.py:push():130] Uploaded file /media/kingston_shared/thesis/sss/wandb/run-20240710_025005-yofm2ph9/files/wandb-summary.json
+2024-07-10 02:51:12,846 INFO    wandb-upload_1:66187 [upload_job.py:push():130] Uploaded file /media/kingston_shared/thesis/sss/wandb/run-20240710_025005-yofm2ph9/files/output.log
+2024-07-10 02:51:13,047 INFO    Thread-11 :66187 [sender.py:transition_state():614] send defer: 11
+2024-07-10 02:51:13,047 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: defer
+2024-07-10 02:51:13,048 INFO    HandlerThread:66187 [handler.py:handle_request_defer():184] handle defer: 11
+2024-07-10 02:51:13,048 DEBUG   SenderThread:66187 [sender.py:send_request():406] send_request: defer
+2024-07-10 02:51:13,049 INFO    SenderThread:66187 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-07-10 02:51:13,049 INFO    SenderThread:66187 [file_pusher.py:join():175] waiting for file pusher
+2024-07-10 02:51:13,049 INFO    SenderThread:66187 [sender.py:transition_state():614] send defer: 12
+2024-07-10 02:51:13,049 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: defer
+2024-07-10 02:51:13,049 INFO    HandlerThread:66187 [handler.py:handle_request_defer():184] handle defer: 12
+2024-07-10 02:51:13,050 DEBUG   SenderThread:66187 [sender.py:send_request():406] send_request: defer
+2024-07-10 02:51:13,050 INFO    SenderThread:66187 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-07-10 02:51:13,050 INFO    SenderThread:66187 [file_stream.py:finish():601] file stream finish called
+2024-07-10 02:51:13,332 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-10 02:51:13,971 INFO    SenderThread:66187 [file_stream.py:finish():605] file stream finish is done
+2024-07-10 02:51:13,972 INFO    SenderThread:66187 [sender.py:transition_state():614] send defer: 13
+2024-07-10 02:51:13,972 DEBUG   SenderThread:66187 [sender.py:send_request():406] send_request: poll_exit
+2024-07-10 02:51:13,972 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: defer
+2024-07-10 02:51:13,973 INFO    HandlerThread:66187 [handler.py:handle_request_defer():184] handle defer: 13
+2024-07-10 02:51:13,973 DEBUG   SenderThread:66187 [sender.py:send_request():406] send_request: defer
+2024-07-10 02:51:13,973 INFO    SenderThread:66187 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-07-10 02:51:13,974 INFO    SenderThread:66187 [sender.py:transition_state():614] send defer: 14
+2024-07-10 02:51:13,974 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: defer
+2024-07-10 02:51:13,974 INFO    HandlerThread:66187 [handler.py:handle_request_defer():184] handle defer: 14
+2024-07-10 02:51:13,974 DEBUG   SenderThread:66187 [sender.py:send():379] send: final
+2024-07-10 02:51:13,974 DEBUG   SenderThread:66187 [sender.py:send():379] send: footer
+2024-07-10 02:51:13,974 DEBUG   SenderThread:66187 [sender.py:send_request():406] send_request: defer
+2024-07-10 02:51:13,974 INFO    SenderThread:66187 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-07-10 02:51:13,975 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-10 02:51:13,975 DEBUG   SenderThread:66187 [sender.py:send_request():406] send_request: poll_exit
+2024-07-10 02:51:13,975 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: server_info
+2024-07-10 02:51:13,975 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-10 02:51:13,975 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: get_summary
+2024-07-10 02:51:13,976 DEBUG   SenderThread:66187 [sender.py:send_request():406] send_request: server_info
+2024-07-10 02:51:13,978 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: sampled_history
+2024-07-10 02:51:13,978 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-10 02:51:14,278 DEBUG   SenderThread:66187 [sender.py:send_request():406] send_request: poll_exit
+2024-07-10 02:51:14,279 INFO    MainThread:66187 [wandb_run.py:_footer_history_summary_info():3991] rendering history
+2024-07-10 02:51:14,279 INFO    MainThread:66187 [wandb_run.py:_footer_history_summary_info():4023] rendering summary
+2024-07-10 02:51:14,280 INFO    MainThread:66187 [wandb_run.py:_footer_sync_info():3950] logging synced files
+2024-07-10 02:51:14,280 DEBUG   HandlerThread:66187 [handler.py:handle_request():158] handle_request: shutdown
+2024-07-10 02:51:14,281 INFO    HandlerThread:66187 [handler.py:finish():882] shutting down handler
+2024-07-10 02:51:14,976 INFO    WriterThread:66187 [datastore.py:close():296] close: /media/kingston_shared/thesis/sss/wandb/run-20240710_025005-yofm2ph9/run-yofm2ph9.wandb
+2024-07-10 02:51:15,279 INFO    SenderThread:66187 [sender.py:finish():1608] shutting down sender
+2024-07-10 02:51:15,280 INFO    SenderThread:66187 [file_pusher.py:finish():169] shutting down file pusher
+2024-07-10 02:51:15,280 INFO    SenderThread:66187 [file_pusher.py:join():175] waiting for file pusher

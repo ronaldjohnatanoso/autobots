@@ -1,0 +1,103 @@
+step 11800: train loss 3.8827, val loss 3.9238
+GPU Memory before iteration 11800:
+  Total: 4.08 GB
+  Reserved: 2.39 GB
+  Allocated: 1.99 GB
+  Free: 1.69 GB
+  Estimated memory for this iteration: 6.77 GB
+iter 11800: loss 3.7877, time 38505.42ms, mfu -100.00%
+Time stamp: 2024-07-20 00:26:32, Time since last checkpoint: 0:00:38
+Traceback (most recent call last):
+  File "/media/kingston_shared/thesis/hey/train_fixed.py", line 358, in <module>
+    logits, loss = model(X, Y)
+  File "/home/ronald/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ronald/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ronald/.local/lib/python3.10/site-packages/torch/_dynamo/eval_frame.py", line 328, in _fn
+    return fn(*args, **kwargs)
+  File "/home/ronald/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ronald/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/media/kingston_shared/thesis/hey/model_fixed2.py", line 528, in forward
+    def forward(self, idx, targets=None):
+  File "/home/ronald/.local/lib/python3.10/site-packages/torch/_dynamo/eval_frame.py", line 328, in _fn
+    return fn(*args, **kwargs)
+  File "/home/ronald/.local/lib/python3.10/site-packages/torch/_dynamo/external_utils.py", line 17, in inner
+    return fn(*args, **kwargs)
+  File "/home/ronald/.local/lib/python3.10/site-packages/torch/_functorch/aot_autograd.py", line 3905, in forward
+    return compiled_fn(full_args)
+  File "/home/ronald/.local/lib/python3.10/site-packages/torch/_functorch/aot_autograd.py", line 1482, in g
+    return f(*args)
+  File "/home/ronald/.local/lib/python3.10/site-packages/torch/_functorch/aot_autograd.py", line 2527, in runtime_wrapper
+    all_outs = call_func_with_args(
+  File "/home/ronald/.local/lib/python3.10/site-packages/torch/_functorch/aot_autograd.py", line 1506, in call_func_with_args
+    out = normalize_as_list(f(args))
+  File "/home/ronald/.local/lib/python3.10/site-packages/torch/_functorch/aot_autograd.py", line 1482, in g
+    return f(*args)
+  File "/home/ronald/.local/lib/python3.10/site-packages/torch/autograd/function.py", line 539, in apply
+    return super().apply(*args, **kwargs)  # type: ignore[misc]
+  File "/home/ronald/.local/lib/python3.10/site-packages/torch/_functorch/aot_autograd.py", line 3010, in forward
+    fw_outs = call_func_with_args(
+  File "/home/ronald/.local/lib/python3.10/site-packages/torch/_functorch/aot_autograd.py", line 1506, in call_func_with_args
+    out = normalize_as_list(f(args))
+  File "/home/ronald/.local/lib/python3.10/site-packages/torch/_inductor/codecache.py", line 374, in __call__
+    return self.get_current_callable()(inputs)
+  File "/home/ronald/.local/lib/python3.10/site-packages/torch/_inductor/compile_fx.py", line 628, in run
+    return model(new_inputs)
+  File "/home/ronald/.local/lib/python3.10/site-packages/torch/_inductor/codecache.py", line 401, in _run_from_cache
+    return compiled_graph.compiled_artifact(inputs)
+  File "/tmp/torchinductor_ronald/l6/cl6n3ddgl3aucxtt4gukyykjb3gdpwopice76r5sxdrh6aapfxmn.py", line 973, in call
+    triton_poi_fused__to_copy_t_5.run(primals_35, buf56, 2359296, grid=grid(2359296), stream=stream0)
+  File "/home/ronald/.local/lib/python3.10/site-packages/torch/_inductor/triton_heuristics.py", line 433, in run
+    return launcher(
+  File "<string>", line 13, in launcher
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/media/kingston_shared/thesis/hey/train_fixed.py", line 358, in <module>
+    logits, loss = model(X, Y)
+  File "/home/ronald/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ronald/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ronald/.local/lib/python3.10/site-packages/torch/_dynamo/eval_frame.py", line 328, in _fn
+    return fn(*args, **kwargs)
+  File "/home/ronald/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ronald/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/media/kingston_shared/thesis/hey/model_fixed2.py", line 528, in forward
+    def forward(self, idx, targets=None):
+  File "/home/ronald/.local/lib/python3.10/site-packages/torch/_dynamo/eval_frame.py", line 328, in _fn
+    return fn(*args, **kwargs)
+  File "/home/ronald/.local/lib/python3.10/site-packages/torch/_dynamo/external_utils.py", line 17, in inner
+    return fn(*args, **kwargs)
+  File "/home/ronald/.local/lib/python3.10/site-packages/torch/_functorch/aot_autograd.py", line 3905, in forward
+    return compiled_fn(full_args)
+  File "/home/ronald/.local/lib/python3.10/site-packages/torch/_functorch/aot_autograd.py", line 1482, in g
+    return f(*args)
+  File "/home/ronald/.local/lib/python3.10/site-packages/torch/_functorch/aot_autograd.py", line 2527, in runtime_wrapper
+    all_outs = call_func_with_args(
+  File "/home/ronald/.local/lib/python3.10/site-packages/torch/_functorch/aot_autograd.py", line 1506, in call_func_with_args
+    out = normalize_as_list(f(args))
+  File "/home/ronald/.local/lib/python3.10/site-packages/torch/_functorch/aot_autograd.py", line 1482, in g
+    return f(*args)
+  File "/home/ronald/.local/lib/python3.10/site-packages/torch/autograd/function.py", line 539, in apply
+    return super().apply(*args, **kwargs)  # type: ignore[misc]
+  File "/home/ronald/.local/lib/python3.10/site-packages/torch/_functorch/aot_autograd.py", line 3010, in forward
+    fw_outs = call_func_with_args(
+  File "/home/ronald/.local/lib/python3.10/site-packages/torch/_functorch/aot_autograd.py", line 1506, in call_func_with_args
+    out = normalize_as_list(f(args))
+  File "/home/ronald/.local/lib/python3.10/site-packages/torch/_inductor/codecache.py", line 374, in __call__
+    return self.get_current_callable()(inputs)
+  File "/home/ronald/.local/lib/python3.10/site-packages/torch/_inductor/compile_fx.py", line 628, in run
+    return model(new_inputs)
+  File "/home/ronald/.local/lib/python3.10/site-packages/torch/_inductor/codecache.py", line 401, in _run_from_cache
+    return compiled_graph.compiled_artifact(inputs)
+  File "/tmp/torchinductor_ronald/l6/cl6n3ddgl3aucxtt4gukyykjb3gdpwopice76r5sxdrh6aapfxmn.py", line 973, in call
+    triton_poi_fused__to_copy_t_5.run(primals_35, buf56, 2359296, grid=grid(2359296), stream=stream0)
+  File "/home/ronald/.local/lib/python3.10/site-packages/torch/_inductor/triton_heuristics.py", line 433, in run
+    return launcher(
+  File "<string>", line 13, in launcher
+KeyboardInterrupt

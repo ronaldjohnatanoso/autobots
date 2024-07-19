@@ -1,0 +1,286 @@
+step 11800: train loss 3.8826, val loss 3.9238
+GPU Memory before iteration 11800:
+  Total: 4.08 GB
+  Reserved: 2.16 GB
+  Allocated: 1.99 GB
+  Free: 1.93 GB
+  Estimated memory for this iteration: 6.77 GB
+iter 11800: loss 3.7881, time 37615.35ms, mfu -100.00%
+Time stamp: 2024-07-19 22:08:10, Time since last checkpoint: 0:00:37
+GPU Memory before iteration 11810:
+  Total: 4.08 GB
+  Reserved: 2.31 GB
+  Allocated: 2.08 GB
+  Free: 1.77 GB
+  Estimated memory for this iteration: 6.77 GB
+iter 11810: loss 3.6256, time 3868.15ms, mfu 1.96%
+Time stamp: 2024-07-19 22:08:49, Time since last checkpoint: 0:00:38
+GPU Memory before iteration 11820:
+  Total: 4.08 GB
+  Reserved: 2.31 GB
+  Allocated: 2.08 GB
+  Free: 1.77 GB
+  Estimated memory for this iteration: 6.77 GB
+iter 11820: loss 3.8265, time 3852.17ms, mfu 1.96%
+Time stamp: 2024-07-19 22:09:28, Time since last checkpoint: 0:00:38
+GPU Memory before iteration 11830:
+  Total: 4.08 GB
+  Reserved: 2.31 GB
+  Allocated: 2.08 GB
+  Free: 1.77 GB
+  Estimated memory for this iteration: 6.77 GB
+iter 11830: loss 4.1470, time 3889.75ms, mfu 1.96%
+Time stamp: 2024-07-19 22:10:06, Time since last checkpoint: 0:00:38
+GPU Memory before iteration 11840:
+  Total: 4.08 GB
+  Reserved: 2.31 GB
+  Allocated: 2.08 GB
+  Free: 1.77 GB
+  Estimated memory for this iteration: 6.77 GB
+iter 11840: loss 3.5115, time 3989.49ms, mfu 1.95%
+Time stamp: 2024-07-19 22:10:46, Time since last checkpoint: 0:00:39
+GPU Memory before iteration 11850:
+  Total: 4.08 GB
+  Reserved: 2.31 GB
+  Allocated: 2.08 GB
+  Free: 1.77 GB
+  Estimated memory for this iteration: 6.77 GB
+iter 11850: loss 3.4092, time 3908.24ms, mfu 1.95%
+Time stamp: 2024-07-19 22:11:25, Time since last checkpoint: 0:00:39
+GPU Memory before iteration 11860:
+  Total: 4.08 GB
+  Reserved: 2.31 GB
+  Allocated: 2.08 GB
+  Free: 1.77 GB
+  Estimated memory for this iteration: 6.77 GB
+iter 11860: loss 3.3037, time 3913.04ms, mfu 1.95%
+Time stamp: 2024-07-19 22:12:04, Time since last checkpoint: 0:00:39
+GPU Memory before iteration 11870:
+  Total: 4.08 GB
+  Reserved: 2.31 GB
+  Allocated: 2.08 GB
+  Free: 1.77 GB
+  Estimated memory for this iteration: 6.77 GB
+iter 11870: loss 3.8462, time 3950.65ms, mfu 1.95%
+Time stamp: 2024-07-19 22:12:44, Time since last checkpoint: 0:00:39
+GPU Memory before iteration 11880:
+  Total: 4.08 GB
+  Reserved: 2.31 GB
+  Allocated: 2.08 GB
+  Free: 1.77 GB
+  Estimated memory for this iteration: 6.77 GB
+iter 11880: loss 3.7964, time 3950.94ms, mfu 1.94%
+Time stamp: 2024-07-19 22:13:23, Time since last checkpoint: 0:00:39
+GPU Memory before iteration 11890:
+  Total: 4.08 GB
+  Reserved: 2.31 GB
+  Allocated: 2.08 GB
+  Free: 1.77 GB
+  Estimated memory for this iteration: 6.77 GB
+iter 11890: loss 3.7492, time 3917.94ms, mfu 1.94%
+Time stamp: 2024-07-19 22:14:03, Time since last checkpoint: 0:00:39
+GPU Memory before iteration 11900:
+  Total: 4.08 GB
+  Reserved: 2.31 GB
+  Allocated: 2.08 GB
+  Free: 1.77 GB
+  Estimated memory for this iteration: 6.77 GB
+iter 11900: loss 3.5434, time 3968.56ms, mfu 1.94%
+Time stamp: 2024-07-19 22:14:42, Time since last checkpoint: 0:00:39
+GPU Memory before iteration 11910:
+  Total: 4.08 GB
+  Reserved: 2.31 GB
+  Allocated: 2.08 GB
+  Free: 1.77 GB
+  Estimated memory for this iteration: 6.77 GB
+iter 11910: loss 3.5229, time 3923.80ms, mfu 1.94%
+Time stamp: 2024-07-19 22:15:21, Time since last checkpoint: 0:00:39
+GPU Memory before iteration 11920:
+  Total: 4.08 GB
+  Reserved: 2.31 GB
+  Allocated: 2.08 GB
+  Free: 1.77 GB
+  Estimated memory for this iteration: 6.77 GB
+iter 11920: loss 3.8725, time 3955.94ms, mfu 1.94%
+Time stamp: 2024-07-19 22:16:01, Time since last checkpoint: 0:00:40
+GPU Memory before iteration 11930:
+  Total: 4.08 GB
+  Reserved: 2.31 GB
+  Allocated: 2.08 GB
+  Free: 1.77 GB
+  Estimated memory for this iteration: 6.77 GB
+iter 11930: loss 3.2228, time 4055.57ms, mfu 1.93%
+Time stamp: 2024-07-19 22:16:42, Time since last checkpoint: 0:00:40
+GPU Memory before iteration 11940:
+  Total: 4.08 GB
+  Reserved: 2.31 GB
+  Allocated: 2.08 GB
+  Free: 1.77 GB
+  Estimated memory for this iteration: 6.77 GB
+iter 11940: loss 3.2797, time 4025.45ms, mfu 1.93%
+Time stamp: 2024-07-19 22:17:22, Time since last checkpoint: 0:00:40
+GPU Memory before iteration 11950:
+  Total: 4.08 GB
+  Reserved: 2.31 GB
+  Allocated: 2.08 GB
+  Free: 1.77 GB
+  Estimated memory for this iteration: 6.77 GB
+iter 11950: loss 3.8979, time 3975.58ms, mfu 1.92%
+Time stamp: 2024-07-19 22:18:02, Time since last checkpoint: 0:00:40
+GPU Memory before iteration 11960:
+  Total: 4.08 GB
+  Reserved: 2.31 GB
+  Allocated: 2.08 GB
+  Free: 1.77 GB
+  Estimated memory for this iteration: 6.77 GB
+iter 11960: loss 3.7801, time 3954.29ms, mfu 1.92%
+Time stamp: 2024-07-19 22:18:42, Time since last checkpoint: 0:00:39
+GPU Memory before iteration 11970:
+  Total: 4.08 GB
+  Reserved: 2.31 GB
+  Allocated: 2.08 GB
+  Free: 1.77 GB
+  Estimated memory for this iteration: 6.77 GB
+iter 11970: loss 3.5003, time 3994.27ms, mfu 1.92%
+Time stamp: 2024-07-19 22:19:22, Time since last checkpoint: 0:00:39
+GPU Memory before iteration 11980:
+  Total: 4.08 GB
+  Reserved: 2.31 GB
+  Allocated: 2.08 GB
+  Free: 1.77 GB
+  Estimated memory for this iteration: 6.77 GB
+iter 11980: loss 3.7605, time 4043.37ms, mfu 1.92%
+Time stamp: 2024-07-19 22:20:02, Time since last checkpoint: 0:00:40
+GPU Memory before iteration 11990:
+  Total: 4.08 GB
+  Reserved: 2.31 GB
+  Allocated: 2.08 GB
+  Free: 1.77 GB
+  Estimated memory for this iteration: 6.77 GB
+iter 11990: loss 3.8108, time 4034.56ms, mfu 1.91%
+Time stamp: 2024-07-19 22:20:41, Time since last checkpoint: 0:00:39
+step 12000: train loss 3.9157, val loss 3.9380
+GPU Memory before iteration 12000:
+  Total: 4.08 GB
+  Reserved: 2.31 GB
+  Allocated: 2.08 GB
+  Free: 1.77 GB
+  Estimated memory for this iteration: 6.77 GB
+iter 12000: loss 3.6284, time 14481.67ms, mfu 1.77%
+Time stamp: 2024-07-19 22:21:32, Time since last checkpoint: 0:00:50
+GPU Memory before iteration 12010:
+  Total: 4.08 GB
+  Reserved: 2.31 GB
+  Allocated: 2.08 GB
+  Free: 1.77 GB
+  Estimated memory for this iteration: 6.77 GB
+iter 12010: loss 3.6521, time 4009.64ms, mfu 1.78%
+Time stamp: 2024-07-19 22:22:12, Time since last checkpoint: 0:00:39
+GPU Memory before iteration 12020:
+  Total: 4.08 GB
+  Reserved: 2.31 GB
+  Allocated: 2.08 GB
+  Free: 1.77 GB
+  Estimated memory for this iteration: 6.77 GB
+iter 12020: loss 3.7003, time 4011.56ms, mfu 1.80%
+Time stamp: 2024-07-19 22:22:52, Time since last checkpoint: 0:00:39
+GPU Memory before iteration 12030:
+  Total: 4.08 GB
+  Reserved: 2.31 GB
+  Allocated: 2.08 GB
+  Free: 1.77 GB
+  Estimated memory for this iteration: 6.77 GB
+iter 12030: loss 4.1925, time 3927.45ms, mfu 1.81%
+Time stamp: 2024-07-19 22:23:32, Time since last checkpoint: 0:00:39
+GPU Memory before iteration 12040:
+  Total: 4.08 GB
+  Reserved: 2.31 GB
+  Allocated: 2.08 GB
+  Free: 1.77 GB
+  Estimated memory for this iteration: 6.77 GB
+iter 12040: loss 3.4376, time 3996.36ms, mfu 1.82%
+Time stamp: 2024-07-19 22:24:11, Time since last checkpoint: 0:00:39
+GPU Memory before iteration 12050:
+  Total: 4.08 GB
+  Reserved: 2.31 GB
+  Allocated: 2.08 GB
+  Free: 1.77 GB
+  Estimated memory for this iteration: 6.77 GB
+iter 12050: loss 3.5798, time 4045.96ms, mfu 1.82%
+Time stamp: 2024-07-19 22:24:52, Time since last checkpoint: 0:00:40
+GPU Memory before iteration 12060:
+  Total: 4.08 GB
+  Reserved: 2.31 GB
+  Allocated: 2.08 GB
+  Free: 1.77 GB
+  Estimated memory for this iteration: 6.77 GB
+iter 12060: loss 3.6980, time 4065.89ms, mfu 1.83%
+Time stamp: 2024-07-19 22:25:32, Time since last checkpoint: 0:00:40
+GPU Memory before iteration 12070:
+  Total: 4.08 GB
+  Reserved: 2.31 GB
+  Allocated: 2.08 GB
+  Free: 1.77 GB
+  Estimated memory for this iteration: 6.77 GB
+iter 12070: loss 4.0790, time 4027.79ms, mfu 1.83%
+Time stamp: 2024-07-19 22:26:13, Time since last checkpoint: 0:00:40
+GPU Memory before iteration 12080:
+  Total: 4.08 GB
+  Reserved: 2.31 GB
+  Allocated: 2.08 GB
+  Free: 1.77 GB
+  Estimated memory for this iteration: 6.77 GB
+iter 12080: loss 3.7192, time 4039.52ms, mfu 1.84%
+Time stamp: 2024-07-19 22:26:54, Time since last checkpoint: 0:00:40
+GPU Memory before iteration 12090:
+  Total: 4.08 GB
+  Reserved: 2.31 GB
+  Allocated: 2.08 GB
+  Free: 1.77 GB
+  Estimated memory for this iteration: 6.77 GB
+iter 12090: loss 3.5494, time 4050.81ms, mfu 1.84%
+Time stamp: 2024-07-19 22:27:34, Time since last checkpoint: 0:00:40
+GPU Memory before iteration 12100:
+  Total: 4.08 GB
+  Reserved: 2.31 GB
+  Allocated: 2.08 GB
+  Free: 1.77 GB
+  Estimated memory for this iteration: 6.77 GB
+iter 12100: loss 3.0936, time 4085.05ms, mfu 1.84%
+Time stamp: 2024-07-19 22:28:14, Time since last checkpoint: 0:00:40
+GPU Memory before iteration 12110:
+  Total: 4.08 GB
+  Reserved: 2.31 GB
+  Allocated: 2.08 GB
+  Free: 1.77 GB
+  Estimated memory for this iteration: 6.77 GB
+iter 12110: loss 3.3980, time 3958.45ms, mfu 1.85%
+Time stamp: 2024-07-19 22:28:54, Time since last checkpoint: 0:00:39
+GPU Memory before iteration 12120:
+  Total: 4.08 GB
+  Reserved: 2.31 GB
+  Allocated: 2.08 GB
+  Free: 1.77 GB
+  Estimated memory for this iteration: 6.77 GB
+iter 12120: loss 3.6241, time 4051.09ms, mfu 1.85%
+Time stamp: 2024-07-19 22:29:34, Time since last checkpoint: 0:00:40
+GPU Memory before iteration 12130:
+  Total: 4.08 GB
+  Reserved: 2.31 GB
+  Allocated: 2.08 GB
+  Free: 1.77 GB
+  Estimated memory for this iteration: 6.77 GB
+iter 12130: loss 3.6699, time 4050.51ms, mfu 1.85%
+Time stamp: 2024-07-19 22:30:15, Time since last checkpoint: 0:00:40
+GPU Memory before iteration 12140:
+  Total: 4.08 GB
+  Reserved: 2.31 GB
+  Allocated: 2.08 GB
+  Free: 1.77 GB
+  Estimated memory for this iteration: 6.77 GB
+Traceback (most recent call last):
+  File "/media/kingston_shared/thesis/sss/train_fixed.py", line 355, in <module>
+    torch.cuda.empty_cache()
+  File "/home/ronald/miniconda3/envs/torchenv/lib/python3.9/site-packages/torch/cuda/memory.py", line 162, in empty_cache
+    torch._C._cuda_emptyCache()
+KeyboardInterrupt

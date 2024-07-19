@@ -1,0 +1,46 @@
+D:\thesis\nanoGPT\model.py:64: UserWarning: 1Torch was not compiled with flash attention. (Triggered internally at C:\cb\pytorch_1000000000000\work\aten\src\ATen\native\transformers\cuda\sdp_utils.cpp:455.)
+  y = torch.nn.functional.scaled_dot_product_attention(q, k, v, attn_mask=None, dropout_p=self.dropout if self.training else 0, is_causal=True)
+step 250: train loss 1.9667, val loss 2.0748
+iter 250: loss 2.0270, time 19913.59ms, mfu -100.00%
+iter 260: loss 1.9957, time 154.22ms, mfu 2.42%
+iter 270: loss 1.9470, time 153.35ms, mfu 2.42%
+iter 280: loss 1.9680, time 156.41ms, mfu 2.41%
+iter 290: loss 1.9401, time 156.10ms, mfu 2.41%
+iter 300: loss 1.9012, time 155.74ms, mfu 2.41%
+iter 310: loss 1.8732, time 151.29ms, mfu 2.41%
+iter 320: loss 1.8462, time 170.20ms, mfu 2.39%
+iter 330: loss 1.8471, time 155.05ms, mfu 2.39%
+iter 340: loss 1.8160, time 139.05ms, mfu 2.42%
+iter 350: loss 1.7933, time 155.67ms, mfu 2.42%
+iter 360: loss 1.7913, time 152.75ms, mfu 2.42%
+iter 370: loss 1.7570, time 153.98ms, mfu 2.42%
+Traceback (most recent call last):
+  File "D:\thesis\nanoGPT\train.py", line 300, in <module>
+    logits, loss = model(X, Y)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "D:\thesis\nanoGPT\model.py", line 181, in forward
+    x = block(x)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "D:\thesis\nanoGPT\model.py", line 104, in forward
+    x = x + self.attn(self.ln_1(x))
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "D:\thesis\nanoGPT\model.py", line 75, in forward
+    y = self.resid_dropout(self.c_proj(y))
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\nn\modules\dropout.py", line 59, in forward
+    return F.dropout(input, self.p, self.training, self.inplace)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\nn\functional.py", line 1295, in dropout
+    return _VF.dropout_(input, p, training) if inplace else _VF.dropout(input, p, training)
+KeyboardInterrupt

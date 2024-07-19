@@ -1,0 +1,122 @@
+D:\thesis\sss\model.py:64: UserWarning: 1Torch was not compiled with flash attention. (Triggered internally at C:\cb\pytorch_1000000000000\work\aten\src\ATen\native\transformers\cuda\sdp_utils.cpp:455.)
+  y = torch.nn.functional.scaled_dot_product_attention(q, k, v, attn_mask=None, dropout_p=self.dropout if self.training else 0, is_causal=True)
+step 500: train loss 5.8026, val loss 5.7997
+saving checkpoint to out-gpt-test
+GPU Memory before iteration 500:
+  Total: 4.29 GB
+  Reserved: 4.33 GB
+  Allocated: 2.00 GB
+  Free: -0.04 GB
+  Estimated memory for this iteration: 15.56 GB
+iter 500: loss 6.0566, time 164626.20ms, mfu -100.00%
+Time stamp: 2024-07-09 04:23:07, Time since last checkpoint: 0:02:44
+GPU Memory before iteration 510:
+  Total: 4.29 GB
+  Reserved: 6.19 GB
+  Allocated: 2.32 GB
+  Free: -1.90 GB
+  Estimated memory for this iteration: 15.56 GB
+iter 510: loss 6.0610, time 96764.49ms, mfu 0.19%
+Time stamp: 2024-07-09 04:38:18, Time since last checkpoint: 0:15:10
+GPU Memory before iteration 520:
+  Total: 4.29 GB
+  Reserved: 6.19 GB
+  Allocated: 2.32 GB
+  Free: -1.90 GB
+  Estimated memory for this iteration: 15.56 GB
+iter 520: loss 5.7525, time 81648.17ms, mfu 0.20%
+Time stamp: 2024-07-09 04:52:07, Time since last checkpoint: 0:13:49
+GPU Memory before iteration 530:
+  Total: 4.29 GB
+  Reserved: 6.19 GB
+  Allocated: 2.32 GB
+  Free: -1.90 GB
+  Estimated memory for this iteration: 15.56 GB
+iter 530: loss 5.6513, time 103798.97ms, mfu 0.20%
+Time stamp: 2024-07-09 05:11:26, Time since last checkpoint: 0:19:19
+GPU Memory before iteration 540:
+  Total: 4.29 GB
+  Reserved: 6.19 GB
+  Allocated: 2.32 GB
+  Free: -1.90 GB
+  Estimated memory for this iteration: 15.56 GB
+iter 540: loss 5.5004, time 97175.31ms, mfu 0.20%
+Time stamp: 2024-07-09 05:32:29, Time since last checkpoint: 0:21:02
+GPU Memory before iteration 550:
+  Total: 4.29 GB
+  Reserved: 6.19 GB
+  Allocated: 2.32 GB
+  Free: -1.90 GB
+  Estimated memory for this iteration: 15.56 GB
+iter 550: loss 5.3730, time 93833.51ms, mfu 0.20%
+Time stamp: 2024-07-09 05:48:07, Time since last checkpoint: 0:15:38
+GPU Memory before iteration 560:
+  Total: 4.29 GB
+  Reserved: 6.19 GB
+  Allocated: 2.32 GB
+  Free: -1.90 GB
+  Estimated memory for this iteration: 15.56 GB
+iter 560: loss 5.3477, time 100852.06ms, mfu 0.20%
+Time stamp: 2024-07-09 06:04:25, Time since last checkpoint: 0:16:17
+GPU Memory before iteration 570:
+  Total: 4.29 GB
+  Reserved: 6.19 GB
+  Allocated: 2.32 GB
+  Free: -1.90 GB
+  Estimated memory for this iteration: 15.56 GB
+iter 570: loss 5.8227, time 93970.07ms, mfu 0.20%
+Time stamp: 2024-07-09 06:18:44, Time since last checkpoint: 0:14:18
+GPU Memory before iteration 580:
+  Total: 4.29 GB
+  Reserved: 6.19 GB
+  Allocated: 2.32 GB
+  Free: -1.90 GB
+  Estimated memory for this iteration: 15.56 GB
+iter 580: loss 5.4724, time 79438.87ms, mfu 0.20%
+Time stamp: 2024-07-09 06:33:53, Time since last checkpoint: 0:15:09
+GPU Memory before iteration 590:
+  Total: 4.29 GB
+  Reserved: 6.19 GB
+  Allocated: 2.32 GB
+  Free: -1.90 GB
+  Estimated memory for this iteration: 15.56 GB
+iter 590: loss 5.6749, time 77141.54ms, mfu 0.20%
+Time stamp: 2024-07-09 06:46:35, Time since last checkpoint: 0:12:42
+step 600: train loss 5.5800, val loss 5.5788
+saving checkpoint to out-gpt-test
+GPU Memory before iteration 600:
+  Total: 4.29 GB
+  Reserved: 6.19 GB
+  Allocated: 2.32 GB
+  Free: -1.90 GB
+  Estimated memory for this iteration: 15.56 GB
+iter 600: loss 5.1836, time 182863.43ms, mfu 0.19%
+Time stamp: 2024-07-09 07:00:03, Time since last checkpoint: 0:13:27
+GPU Memory before iteration 610:
+  Total: 4.29 GB
+  Reserved: 6.19 GB
+  Allocated: 2.32 GB
+  Free: -1.90 GB
+  Estimated memory for this iteration: 15.56 GB
+iter 610: loss 5.8406, time 63408.62ms, mfu 0.21%
+Time stamp: 2024-07-09 07:11:14, Time since last checkpoint: 0:11:11
+GPU Memory before iteration 620:
+  Total: 4.29 GB
+  Reserved: 6.19 GB
+  Allocated: 2.32 GB
+  Free: -1.90 GB
+  Estimated memory for this iteration: 15.56 GB
+iter 620: loss 5.6666, time 70708.10ms, mfu 0.21%
+Time stamp: 2024-07-09 07:22:24, Time since last checkpoint: 0:11:10
+GPU Memory before iteration 630:
+  Total: 4.29 GB
+  Reserved: 6.19 GB
+  Allocated: 2.32 GB
+  Free: -1.90 GB
+  Estimated memory for this iteration: 15.56 GB
+Traceback (most recent call last):
+  File "D:\thesis\sss\train.py", line 338, in <module>
+    X, Y = get_batch('train')
+  File "D:\thesis\sss\train.py", line 129, in get_batch
+    x, y = x.pin_memory().to(device, non_blocking=True), y.pin_memory().to(device, non_blocking=True)
+KeyboardInterrupt

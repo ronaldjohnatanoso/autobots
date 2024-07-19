@@ -1,0 +1,189 @@
+2024-07-03 15:16:39,497 INFO    StreamThr :6711 [internal.py:wandb_internal():86] W&B internal server running at pid: 6711, started at: 2024-07-03 15:16:39.496684
+2024-07-03 15:16:39,497 DEBUG   HandlerThread:6711 [handler.py:handle_request():146] handle_request: status
+2024-07-03 15:16:39,500 INFO    WriterThread:6711 [datastore.py:open_for_write():87] open: /media/kingston_shared/thesis/nanoGPT/wandb/run-20240703_151639-5i0gx429/run-5i0gx429.wandb
+2024-07-03 15:16:39,500 DEBUG   SenderThread:6711 [sender.py:send():382] send: header
+2024-07-03 15:16:39,504 DEBUG   SenderThread:6711 [sender.py:send():382] send: run
+2024-07-03 15:16:40,318 INFO    SenderThread:6711 [dir_watcher.py:__init__():211] watching files in: /media/kingston_shared/thesis/nanoGPT/wandb/run-20240703_151639-5i0gx429/files
+2024-07-03 15:16:40,318 INFO    SenderThread:6711 [sender.py:_start_run_threads():1136] run started: 5i0gx429 with start time 1719990999.497138
+2024-07-03 15:16:40,322 DEBUG   HandlerThread:6711 [handler.py:handle_request():146] handle_request: check_version
+2024-07-03 15:16:40,323 DEBUG   SenderThread:6711 [sender.py:send_request():409] send_request: check_version
+2024-07-03 15:16:45,323 DEBUG   HandlerThread:6711 [handler.py:handle_request():146] handle_request: keepalive
+2024-07-03 15:16:45,324 DEBUG   HandlerThread:6711 [handler.py:handle_request():146] handle_request: status_report
+2024-07-03 15:16:45,372 DEBUG   HandlerThread:6711 [handler.py:handle_request():146] handle_request: run_start
+2024-07-03 15:16:45,398 DEBUG   HandlerThread:6711 [system_info.py:__init__():27] System info init
+2024-07-03 15:16:45,398 DEBUG   HandlerThread:6711 [system_info.py:__init__():42] System info init done
+2024-07-03 15:16:45,398 INFO    HandlerThread:6711 [system_monitor.py:start():194] Starting system monitor
+2024-07-03 15:16:45,399 INFO    SystemMonitor:6711 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-07-03 15:16:45,399 INFO    HandlerThread:6711 [system_monitor.py:probe():214] Collecting system info
+2024-07-03 15:16:45,400 INFO    SystemMonitor:6711 [interfaces.py:start():190] Started cpu monitoring
+2024-07-03 15:16:45,400 INFO    SystemMonitor:6711 [interfaces.py:start():190] Started disk monitoring
+2024-07-03 15:16:45,401 INFO    SystemMonitor:6711 [interfaces.py:start():190] Started gpu monitoring
+2024-07-03 15:16:45,401 INFO    SystemMonitor:6711 [interfaces.py:start():190] Started memory monitoring
+2024-07-03 15:16:45,402 INFO    SystemMonitor:6711 [interfaces.py:start():190] Started network monitoring
+2024-07-03 15:16:45,425 DEBUG   HandlerThread:6711 [system_info.py:probe():151] Probing system
+2024-07-03 15:16:45,427 DEBUG   HandlerThread:6711 [system_info.py:_probe_git():136] Probing git
+2024-07-03 15:16:45,432 DEBUG   HandlerThread:6711 [system_info.py:_probe_git():144] Probing git done
+2024-07-03 15:16:45,432 DEBUG   HandlerThread:6711 [system_info.py:probe():199] Probing system done
+2024-07-03 15:16:45,432 DEBUG   HandlerThread:6711 [system_monitor.py:probe():223] {'os': 'Linux-5.15.0-100-generic-x86_64-with-glibc2.35', 'python': '3.10.12', 'heartbeatAt': '2024-07-03T07:16:45.425672', 'startedAt': '2024-07-03T07:16:39.492350', 'docker': None, 'cuda': None, 'args': ('config/train_gpt2.py', '--compile=False', '--device=cuda'), 'state': 'running', 'program': '/media/kingston_shared/thesis/nanoGPT/train.py', 'codePathLocal': 'train.py', 'codePath': 'train.py', 'git': {'remote': 'https://github.com/karpathy/nanoGPT.git', 'commit': '9755682b981a45507f6eb9b11eadef8cb83cebd5'}, 'email': 'ronaldjohnatanoso@gmail.com', 'root': '/media/kingston_shared/thesis/nanoGPT', 'host': 'ronald', 'username': 'ronald', 'executable': '/usr/bin/python3', 'cpu_count': 12, 'cpu_count_logical': 16, 'cpu_freq': {'current': 3.0075000000000007, 'min': 400.0, 'max': 3900.0}, 'cpu_freq_per_core': [{'current': 3.1, 'min': 400.0, 'max': 4500.0}, {'current': 3.1, 'min': 400.0, 'max': 4500.0}, {'current': 3.1, 'min': 400.0, 'max': 4500.0}, {'current': 3.1, 'min': 400.0, 'max': 4500.0}, {'current': 1.62, 'min': 400.0, 'max': 4500.0}, {'current': 3.1, 'min': 400.0, 'max': 4500.0}, {'current': 3.1, 'min': 400.0, 'max': 4500.0}, {'current': 3.1, 'min': 400.0, 'max': 4500.0}, {'current': 3.1, 'min': 400.0, 'max': 3300.0}, {'current': 3.1, 'min': 400.0, 'max': 3300.0}, {'current': 3.1, 'min': 400.0, 'max': 3300.0}, {'current': 3.1, 'min': 400.0, 'max': 3300.0}, {'current': 3.1, 'min': 400.0, 'max': 3300.0}, {'current': 3.1, 'min': 400.0, 'max': 3300.0}, {'current': 3.1, 'min': 400.0, 'max': 3300.0}, {'current': 3.1, 'min': 400.0, 'max': 3300.0}], 'disk': {'/': {'total': 459.33729553222656, 'used': 237.6799659729004}}, 'gpu': 'NVIDIA GeForce RTX 3050 Laptop GPU', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3050 Laptop GPU', 'memory_total': 4294967296}], 'memory': {'total': 23.175758361816406}}
+2024-07-03 15:16:45,432 INFO    HandlerThread:6711 [system_monitor.py:probe():224] Finished collecting system info
+2024-07-03 15:16:45,432 INFO    HandlerThread:6711 [system_monitor.py:probe():227] Publishing system info
+2024-07-03 15:16:45,433 INFO    HandlerThread:6711 [system_monitor.py:probe():229] Finished publishing system info
+2024-07-03 15:16:45,437 DEBUG   SenderThread:6711 [sender.py:send():382] send: files
+2024-07-03 15:16:45,438 INFO    SenderThread:6711 [sender.py:_save_file():1403] saving file wandb-metadata.json with policy now
+2024-07-03 15:16:45,441 DEBUG   HandlerThread:6711 [handler.py:handle_request():146] handle_request: python_packages
+2024-07-03 15:16:45,441 DEBUG   HandlerThread:6711 [handler.py:handle_request():146] handle_request: stop_status
+2024-07-03 15:16:45,441 DEBUG   HandlerThread:6711 [handler.py:handle_request():146] handle_request: internal_messages
+2024-07-03 15:16:45,441 DEBUG   SenderThread:6711 [sender.py:send_request():409] send_request: python_packages
+2024-07-03 15:16:45,442 DEBUG   SenderThread:6711 [sender.py:send_request():409] send_request: stop_status
+2024-07-03 15:16:45,942 DEBUG   SenderThread:6711 [sender.py:send():382] send: telemetry
+2024-07-03 15:16:46,220 DEBUG   SenderThread:6711 [sender.py:send():382] send: exit
+2024-07-03 15:16:46,220 INFO    SenderThread:6711 [sender.py:send_exit():589] handling exit code: 1
+2024-07-03 15:16:46,220 INFO    SenderThread:6711 [sender.py:send_exit():591] handling runtime: 0
+2024-07-03 15:16:46,221 INFO    SenderThread:6711 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-07-03 15:16:46,221 INFO    SenderThread:6711 [sender.py:send_exit():597] send defer
+2024-07-03 15:16:46,221 DEBUG   HandlerThread:6711 [handler.py:handle_request():146] handle_request: defer
+2024-07-03 15:16:46,221 INFO    HandlerThread:6711 [handler.py:handle_request_defer():172] handle defer: 0
+2024-07-03 15:16:46,222 DEBUG   SenderThread:6711 [sender.py:send_request():409] send_request: defer
+2024-07-03 15:16:46,222 INFO    SenderThread:6711 [sender.py:send_request_defer():613] handle sender defer: 0
+2024-07-03 15:16:46,222 INFO    SenderThread:6711 [sender.py:transition_state():617] send defer: 1
+2024-07-03 15:16:46,222 DEBUG   HandlerThread:6711 [handler.py:handle_request():146] handle_request: defer
+2024-07-03 15:16:46,222 INFO    HandlerThread:6711 [handler.py:handle_request_defer():172] handle defer: 1
+2024-07-03 15:16:46,222 DEBUG   SenderThread:6711 [sender.py:send_request():409] send_request: defer
+2024-07-03 15:16:46,222 INFO    SenderThread:6711 [sender.py:send_request_defer():613] handle sender defer: 1
+2024-07-03 15:16:46,223 INFO    SenderThread:6711 [sender.py:transition_state():617] send defer: 2
+2024-07-03 15:16:46,223 DEBUG   HandlerThread:6711 [handler.py:handle_request():146] handle_request: defer
+2024-07-03 15:16:46,223 INFO    HandlerThread:6711 [handler.py:handle_request_defer():172] handle defer: 2
+2024-07-03 15:16:46,223 INFO    HandlerThread:6711 [system_monitor.py:finish():203] Stopping system monitor
+2024-07-03 15:16:46,223 DEBUG   SystemMonitor:6711 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-07-03 15:16:46,223 INFO    HandlerThread:6711 [interfaces.py:finish():202] Joined cpu monitor
+2024-07-03 15:16:46,223 DEBUG   SystemMonitor:6711 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-07-03 15:16:46,224 INFO    HandlerThread:6711 [interfaces.py:finish():202] Joined disk monitor
+2024-07-03 15:16:46,224 DEBUG   SystemMonitor:6711 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-07-03 15:16:46,247 INFO    HandlerThread:6711 [interfaces.py:finish():202] Joined gpu monitor
+2024-07-03 15:16:46,248 INFO    HandlerThread:6711 [interfaces.py:finish():202] Joined memory monitor
+2024-07-03 15:16:46,248 INFO    HandlerThread:6711 [interfaces.py:finish():202] Joined network monitor
+2024-07-03 15:16:46,248 DEBUG   SenderThread:6711 [sender.py:send_request():409] send_request: defer
+2024-07-03 15:16:46,249 INFO    SenderThread:6711 [sender.py:send_request_defer():613] handle sender defer: 2
+2024-07-03 15:16:46,249 INFO    SenderThread:6711 [sender.py:transition_state():617] send defer: 3
+2024-07-03 15:16:46,249 DEBUG   SenderThread:6711 [sender.py:send():382] send: stats
+2024-07-03 15:16:46,249 DEBUG   HandlerThread:6711 [handler.py:handle_request():146] handle_request: defer
+2024-07-03 15:16:46,249 INFO    HandlerThread:6711 [handler.py:handle_request_defer():172] handle defer: 3
+2024-07-03 15:16:46,250 DEBUG   SenderThread:6711 [sender.py:send_request():409] send_request: defer
+2024-07-03 15:16:46,250 INFO    SenderThread:6711 [sender.py:send_request_defer():613] handle sender defer: 3
+2024-07-03 15:16:46,250 INFO    SenderThread:6711 [sender.py:transition_state():617] send defer: 4
+2024-07-03 15:16:46,250 DEBUG   HandlerThread:6711 [handler.py:handle_request():146] handle_request: defer
+2024-07-03 15:16:46,250 INFO    HandlerThread:6711 [handler.py:handle_request_defer():172] handle defer: 4
+2024-07-03 15:16:46,250 DEBUG   SenderThread:6711 [sender.py:send_request():409] send_request: defer
+2024-07-03 15:16:46,250 INFO    SenderThread:6711 [sender.py:send_request_defer():613] handle sender defer: 4
+2024-07-03 15:16:46,250 INFO    SenderThread:6711 [sender.py:transition_state():617] send defer: 5
+2024-07-03 15:16:46,250 DEBUG   HandlerThread:6711 [handler.py:handle_request():146] handle_request: defer
+2024-07-03 15:16:46,250 INFO    HandlerThread:6711 [handler.py:handle_request_defer():172] handle defer: 5
+2024-07-03 15:16:46,251 DEBUG   SenderThread:6711 [sender.py:send():382] send: summary
+2024-07-03 15:16:46,251 INFO    SenderThread:6711 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-07-03 15:16:46,251 DEBUG   SenderThread:6711 [sender.py:send_request():409] send_request: defer
+2024-07-03 15:16:46,251 INFO    SenderThread:6711 [sender.py:send_request_defer():613] handle sender defer: 5
+2024-07-03 15:16:46,251 INFO    SenderThread:6711 [sender.py:transition_state():617] send defer: 6
+2024-07-03 15:16:46,251 DEBUG   HandlerThread:6711 [handler.py:handle_request():146] handle_request: defer
+2024-07-03 15:16:46,251 INFO    HandlerThread:6711 [handler.py:handle_request_defer():172] handle defer: 6
+2024-07-03 15:16:46,252 DEBUG   SenderThread:6711 [sender.py:send_request():409] send_request: defer
+2024-07-03 15:16:46,252 INFO    SenderThread:6711 [sender.py:send_request_defer():613] handle sender defer: 6
+2024-07-03 15:16:46,254 DEBUG   HandlerThread:6711 [handler.py:handle_request():146] handle_request: status_report
+2024-07-03 15:16:46,324 INFO    Thread-12 :6711 [dir_watcher.py:_on_file_created():271] file/dir created: /media/kingston_shared/thesis/nanoGPT/wandb/run-20240703_151639-5i0gx429/files/wandb-summary.json
+2024-07-03 15:16:46,325 INFO    Thread-12 :6711 [dir_watcher.py:_on_file_created():271] file/dir created: /media/kingston_shared/thesis/nanoGPT/wandb/run-20240703_151639-5i0gx429/files/requirements.txt
+2024-07-03 15:16:46,325 INFO    Thread-12 :6711 [dir_watcher.py:_on_file_created():271] file/dir created: /media/kingston_shared/thesis/nanoGPT/wandb/run-20240703_151639-5i0gx429/files/output.log
+2024-07-03 15:16:46,325 INFO    Thread-12 :6711 [dir_watcher.py:_on_file_created():271] file/dir created: /media/kingston_shared/thesis/nanoGPT/wandb/run-20240703_151639-5i0gx429/files/wandb-metadata.json
+2024-07-03 15:16:46,557 INFO    wandb-upload_0:6711 [upload_job.py:push():131] Uploaded file /tmp/tmpwml7zj4twandb/krj4w4b5-wandb-metadata.json
+2024-07-03 15:16:46,561 INFO    SenderThread:6711 [sender.py:transition_state():617] send defer: 7
+2024-07-03 15:16:46,561 DEBUG   HandlerThread:6711 [handler.py:handle_request():146] handle_request: defer
+2024-07-03 15:16:46,561 INFO    HandlerThread:6711 [handler.py:handle_request_defer():172] handle defer: 7
+2024-07-03 15:16:46,561 DEBUG   SenderThread:6711 [sender.py:send_request():409] send_request: defer
+2024-07-03 15:16:46,561 INFO    SenderThread:6711 [sender.py:send_request_defer():613] handle sender defer: 7
+2024-07-03 15:16:47,219 DEBUG   HandlerThread:6711 [handler.py:handle_request():146] handle_request: poll_exit
+2024-07-03 15:16:47,325 INFO    Thread-12 :6711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/kingston_shared/thesis/nanoGPT/wandb/run-20240703_151639-5i0gx429/files/config.yaml
+2024-07-03 15:16:48,163 INFO    SenderThread:6711 [sender.py:transition_state():617] send defer: 8
+2024-07-03 15:16:48,164 DEBUG   SenderThread:6711 [sender.py:send_request():409] send_request: poll_exit
+2024-07-03 15:16:48,164 DEBUG   HandlerThread:6711 [handler.py:handle_request():146] handle_request: defer
+2024-07-03 15:16:48,164 INFO    HandlerThread:6711 [handler.py:handle_request_defer():172] handle defer: 8
+2024-07-03 15:16:48,165 DEBUG   SenderThread:6711 [sender.py:send_request():409] send_request: defer
+2024-07-03 15:16:48,165 INFO    SenderThread:6711 [sender.py:send_request_defer():613] handle sender defer: 8
+2024-07-03 15:16:48,165 INFO    SenderThread:6711 [job_builder.py:build():296] Attempting to build job artifact
+2024-07-03 15:16:48,165 INFO    SenderThread:6711 [job_builder.py:_get_source_type():426] is repo sourced job
+2024-07-03 15:16:48,176 INFO    SenderThread:6711 [job_builder.py:build():402] adding wandb-job metadata file
+2024-07-03 15:16:48,181 INFO    SenderThread:6711 [sender.py:transition_state():617] send defer: 9
+2024-07-03 15:16:48,181 DEBUG   HandlerThread:6711 [handler.py:handle_request():146] handle_request: defer
+2024-07-03 15:16:48,181 INFO    HandlerThread:6711 [handler.py:handle_request_defer():172] handle defer: 9
+2024-07-03 15:16:48,181 DEBUG   SenderThread:6711 [sender.py:send():382] send: artifact
+2024-07-03 15:16:48,220 DEBUG   HandlerThread:6711 [handler.py:handle_request():146] handle_request: poll_exit
+2024-07-03 15:16:48,327 INFO    Thread-12 :6711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/kingston_shared/thesis/nanoGPT/wandb/run-20240703_151639-5i0gx429/files/output.log
+2024-07-03 15:16:50,447 INFO    wandb-upload_1:6711 [upload_job.py:push():89] Uploaded file /home/ronald/.local/share/wandb/artifacts/staging/tmpobpjgn0b
+2024-07-03 15:16:50,447 INFO    wandb-upload_0:6711 [upload_job.py:push():89] Uploaded file /home/ronald/.local/share/wandb/artifacts/staging/tmp7onkk0ts
+2024-07-03 15:16:52,086 INFO    SenderThread:6711 [sender.py:send_artifact():1494] sent artifact job-https___github.com_karpathy_nanoGPT.git_train.py - {'id': 'QXJ0aWZhY3Q6OTM4NDI5NTkz', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjIzOTU1MjI3NA==', 'latestArtifact': None}}
+2024-07-03 15:16:52,086 DEBUG   SenderThread:6711 [sender.py:send_request():409] send_request: defer
+2024-07-03 15:16:52,087 INFO    SenderThread:6711 [sender.py:send_request_defer():613] handle sender defer: 9
+2024-07-03 15:16:52,087 INFO    SenderThread:6711 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-07-03 15:16:52,086 DEBUG   HandlerThread:6711 [handler.py:handle_request():146] handle_request: status_report
+2024-07-03 15:16:52,329 INFO    SenderThread:6711 [dir_watcher.py:finish():388] scan: /media/kingston_shared/thesis/nanoGPT/wandb/run-20240703_151639-5i0gx429/files
+2024-07-03 15:16:52,329 INFO    SenderThread:6711 [dir_watcher.py:finish():402] scan save: /media/kingston_shared/thesis/nanoGPT/wandb/run-20240703_151639-5i0gx429/files/config.yaml config.yaml
+2024-07-03 15:16:52,329 INFO    SenderThread:6711 [dir_watcher.py:finish():402] scan save: /media/kingston_shared/thesis/nanoGPT/wandb/run-20240703_151639-5i0gx429/files/output.log output.log
+2024-07-03 15:16:52,329 INFO    SenderThread:6711 [dir_watcher.py:finish():402] scan save: /media/kingston_shared/thesis/nanoGPT/wandb/run-20240703_151639-5i0gx429/files/requirements.txt requirements.txt
+2024-07-03 15:16:52,332 INFO    SenderThread:6711 [dir_watcher.py:finish():402] scan save: /media/kingston_shared/thesis/nanoGPT/wandb/run-20240703_151639-5i0gx429/files/wandb-metadata.json wandb-metadata.json
+2024-07-03 15:16:52,332 INFO    SenderThread:6711 [dir_watcher.py:finish():402] scan save: /media/kingston_shared/thesis/nanoGPT/wandb/run-20240703_151639-5i0gx429/files/wandb-summary.json wandb-summary.json
+2024-07-03 15:16:52,333 INFO    SenderThread:6711 [sender.py:transition_state():617] send defer: 10
+2024-07-03 15:16:52,333 DEBUG   SenderThread:6711 [sender.py:send_request():409] send_request: poll_exit
+2024-07-03 15:16:52,333 DEBUG   HandlerThread:6711 [handler.py:handle_request():146] handle_request: defer
+2024-07-03 15:16:52,333 INFO    HandlerThread:6711 [handler.py:handle_request_defer():172] handle defer: 10
+2024-07-03 15:16:52,334 DEBUG   SenderThread:6711 [sender.py:send_request():409] send_request: defer
+2024-07-03 15:16:52,335 INFO    SenderThread:6711 [sender.py:send_request_defer():613] handle sender defer: 10
+2024-07-03 15:16:52,335 INFO    SenderThread:6711 [file_pusher.py:finish():172] shutting down file pusher
+2024-07-03 15:16:52,933 INFO    wandb-upload_1:6711 [upload_job.py:push():131] Uploaded file /media/kingston_shared/thesis/nanoGPT/wandb/run-20240703_151639-5i0gx429/files/config.yaml
+2024-07-03 15:16:53,212 INFO    wandb-upload_0:6711 [upload_job.py:push():131] Uploaded file /media/kingston_shared/thesis/nanoGPT/wandb/run-20240703_151639-5i0gx429/files/output.log
+2024-07-03 15:16:53,213 INFO    wandb-upload_3:6711 [upload_job.py:push():131] Uploaded file /media/kingston_shared/thesis/nanoGPT/wandb/run-20240703_151639-5i0gx429/files/wandb-summary.json
+2024-07-03 15:16:53,222 DEBUG   HandlerThread:6711 [handler.py:handle_request():146] handle_request: keepalive
+2024-07-03 15:16:53,222 DEBUG   HandlerThread:6711 [handler.py:handle_request():146] handle_request: poll_exit
+2024-07-03 15:16:53,223 DEBUG   SenderThread:6711 [sender.py:send_request():409] send_request: poll_exit
+2024-07-03 15:16:53,320 INFO    wandb-upload_2:6711 [upload_job.py:push():131] Uploaded file /media/kingston_shared/thesis/nanoGPT/wandb/run-20240703_151639-5i0gx429/files/requirements.txt
+2024-07-03 15:16:53,520 INFO    Thread-11 (_thread_body):6711 [sender.py:transition_state():617] send defer: 11
+2024-07-03 15:16:53,521 DEBUG   HandlerThread:6711 [handler.py:handle_request():146] handle_request: defer
+2024-07-03 15:16:53,521 INFO    HandlerThread:6711 [handler.py:handle_request_defer():172] handle defer: 11
+2024-07-03 15:16:53,521 DEBUG   SenderThread:6711 [sender.py:send_request():409] send_request: defer
+2024-07-03 15:16:53,521 INFO    SenderThread:6711 [sender.py:send_request_defer():613] handle sender defer: 11
+2024-07-03 15:16:53,521 INFO    SenderThread:6711 [file_pusher.py:join():178] waiting for file pusher
+2024-07-03 15:16:53,521 INFO    SenderThread:6711 [sender.py:transition_state():617] send defer: 12
+2024-07-03 15:16:53,521 DEBUG   HandlerThread:6711 [handler.py:handle_request():146] handle_request: defer
+2024-07-03 15:16:53,522 INFO    HandlerThread:6711 [handler.py:handle_request_defer():172] handle defer: 12
+2024-07-03 15:16:53,522 DEBUG   SenderThread:6711 [sender.py:send_request():409] send_request: defer
+2024-07-03 15:16:53,522 INFO    SenderThread:6711 [sender.py:send_request_defer():613] handle sender defer: 12
+2024-07-03 15:16:53,522 INFO    SenderThread:6711 [file_stream.py:finish():595] file stream finish called
+2024-07-03 15:16:53,929 INFO    SenderThread:6711 [file_stream.py:finish():599] file stream finish is done
+2024-07-03 15:16:53,929 INFO    SenderThread:6711 [sender.py:transition_state():617] send defer: 13
+2024-07-03 15:16:53,930 DEBUG   HandlerThread:6711 [handler.py:handle_request():146] handle_request: defer
+2024-07-03 15:16:53,930 INFO    HandlerThread:6711 [handler.py:handle_request_defer():172] handle defer: 13
+2024-07-03 15:16:53,931 DEBUG   SenderThread:6711 [sender.py:send_request():409] send_request: defer
+2024-07-03 15:16:53,931 INFO    SenderThread:6711 [sender.py:send_request_defer():613] handle sender defer: 13
+2024-07-03 15:16:53,931 INFO    SenderThread:6711 [sender.py:transition_state():617] send defer: 14
+2024-07-03 15:16:53,931 DEBUG   HandlerThread:6711 [handler.py:handle_request():146] handle_request: defer
+2024-07-03 15:16:53,932 DEBUG   SenderThread:6711 [sender.py:send():382] send: final
+2024-07-03 15:16:53,932 INFO    HandlerThread:6711 [handler.py:handle_request_defer():172] handle defer: 14
+2024-07-03 15:16:53,932 DEBUG   SenderThread:6711 [sender.py:send():382] send: footer
+2024-07-03 15:16:53,932 DEBUG   SenderThread:6711 [sender.py:send_request():409] send_request: defer
+2024-07-03 15:16:53,932 INFO    SenderThread:6711 [sender.py:send_request_defer():613] handle sender defer: 14
+2024-07-03 15:16:53,933 DEBUG   HandlerThread:6711 [handler.py:handle_request():146] handle_request: poll_exit
+2024-07-03 15:16:53,933 DEBUG   HandlerThread:6711 [handler.py:handle_request():146] handle_request: poll_exit
+2024-07-03 15:16:53,933 DEBUG   HandlerThread:6711 [handler.py:handle_request():146] handle_request: server_info
+2024-07-03 15:16:53,933 DEBUG   SenderThread:6711 [sender.py:send_request():409] send_request: poll_exit
+2024-07-03 15:16:53,933 DEBUG   HandlerThread:6711 [handler.py:handle_request():146] handle_request: get_summary
+2024-07-03 15:16:53,933 DEBUG   SenderThread:6711 [sender.py:send_request():409] send_request: poll_exit
+2024-07-03 15:16:53,934 DEBUG   HandlerThread:6711 [handler.py:handle_request():146] handle_request: sampled_history
+2024-07-03 15:16:53,934 DEBUG   SenderThread:6711 [sender.py:send_request():409] send_request: server_info
+2024-07-03 15:16:53,934 DEBUG   HandlerThread:6711 [handler.py:handle_request():146] handle_request: internal_messages
+2024-07-03 15:16:53,935 DEBUG   HandlerThread:6711 [handler.py:handle_request():146] handle_request: job_info
+2024-07-03 15:16:54,160 DEBUG   SenderThread:6711 [sender.py:send_request():409] send_request: job_info
+2024-07-03 15:16:54,161 INFO    MainThread:6711 [wandb_run.py:_footer_history_summary_info():3866] rendering history
+2024-07-03 15:16:54,161 INFO    MainThread:6711 [wandb_run.py:_footer_history_summary_info():3898] rendering summary
+2024-07-03 15:16:54,161 INFO    MainThread:6711 [wandb_run.py:_footer_sync_info():3825] logging synced files
+2024-07-03 15:16:54,162 DEBUG   HandlerThread:6711 [handler.py:handle_request():146] handle_request: shutdown
+2024-07-03 15:16:54,162 INFO    HandlerThread:6711 [handler.py:finish():869] shutting down handler
+2024-07-03 15:16:54,936 INFO    WriterThread:6711 [datastore.py:close():296] close: /media/kingston_shared/thesis/nanoGPT/wandb/run-20240703_151639-5i0gx429/run-5i0gx429.wandb
+2024-07-03 15:16:55,161 INFO    SenderThread:6711 [sender.py:finish():1572] shutting down sender
+2024-07-03 15:16:55,161 INFO    SenderThread:6711 [file_pusher.py:finish():172] shutting down file pusher
+2024-07-03 15:16:55,161 INFO    SenderThread:6711 [file_pusher.py:join():178] waiting for file pusher

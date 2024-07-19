@@ -1,0 +1,41 @@
+D:\thesis\nanoGPT\model.py:64: UserWarning: 1Torch was not compiled with flash attention. (Triggered internally at C:\cb\pytorch_1000000000000\work\aten\src\ATen\native\transformers\cuda\sdp_utils.cpp:455.)
+  y = torch.nn.functional.scaled_dot_product_attention(q, k, v, attn_mask=None, dropout_p=self.dropout if self.training else 0, is_causal=True)
+step 0: train loss 10.9817, val loss 10.9793
+GPU Memory before iteration 0:
+  Total: 4.29 GB
+  Reserved: 2.74 GB
+  Allocated: 0.51 GB
+  Free: 1.56 GB
+  Estimated memory for this iteration: 20.58 GB
+iter 0: loss 10.9592, time 47523.79ms (47.52s, 0.79min), mfu -100.00%
+GPU Memory before iteration 10:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 1.82 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 20.58 GB
+iter 10: loss 9.9760, time 57152.74ms (57.15s, 0.95min), mfu 0.44%
+GPU Memory before iteration 20:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 1.82 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 20.58 GB
+iter 20: loss 9.1656, time 56863.78ms (56.86s, 0.95min), mfu 0.44%
+GPU Memory before iteration 30:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 1.82 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 20.58 GB
+iter 30: loss 8.7364, time 51791.60ms (51.79s, 0.86min), mfu 0.44%
+Traceback (most recent call last):
+  File "D:\thesis\nanoGPT\train.py", line 336, in <module>
+    scaler.scale(loss).backward()
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\_tensor.py", line 525, in backward
+    torch.autograd.backward(
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\autograd\__init__.py", line 267, in backward
+    _engine_run_backward(
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\autograd\graph.py", line 744, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

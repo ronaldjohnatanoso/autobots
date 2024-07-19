@@ -1,0 +1,17 @@
+step 0: train loss 10.9997, val loss 10.9993
+GPU Memory before iteration 0:
+  Total: 4.09 GB
+  Reserved: 2.74 GB
+  Allocated: 0.51 GB
+  Free: 1.35 GB
+  Estimated memory for this iteration: 15.56 GB
+Traceback (most recent call last):
+  File "/media/kingston_shared/thesis/sss/train.py", line 340, in <module>
+    scaler.scale(loss).backward()
+  File "/home/ronald/miniconda3/envs/torchenv/lib/python3.9/site-packages/torch/_tensor.py", line 525, in backward
+    torch.autograd.backward(
+  File "/home/ronald/miniconda3/envs/torchenv/lib/python3.9/site-packages/torch/autograd/__init__.py", line 267, in backward
+    _engine_run_backward(
+  File "/home/ronald/miniconda3/envs/torchenv/lib/python3.9/site-packages/torch/autograd/graph.py", line 744, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 590.00 MiB. GPU

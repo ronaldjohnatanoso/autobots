@@ -1,0 +1,10 @@
+D:\thesis\sss\model.py:64: UserWarning: 1Torch was not compiled with flash attention. (Triggered internally at C:\cb\pytorch_1000000000000\work\aten\src\ATen\native\transformers\cuda\sdp_utils.cpp:455.)
+  y = torch.nn.functional.scaled_dot_product_attention(q, k, v, attn_mask=None, dropout_p=self.dropout if self.training else 0, is_causal=True)
+Traceback (most recent call last):
+  File "D:\thesis\sss\train.py", line 267, in <module>
+    losses = estimate_loss()
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\utils\_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "D:\thesis\sss\train.py", line 226, in estimate_loss
+    losses[k] = loss.item()
+KeyboardInterrupt

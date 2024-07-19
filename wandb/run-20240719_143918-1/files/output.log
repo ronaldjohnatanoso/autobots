@@ -1,0 +1,103 @@
+D:\thesis\sss\model_fixed2.py:419: UserWarning: 1Torch was not compiled with flash attention. (Triggered internally at C:\cb\pytorch_1000000000000\work\aten\src\ATen\native\transformers\cuda\sdp_utils.cpp:455.)
+  y = torch.nn.functional.scaled_dot_product_attention(q, k, v, attn_mask=None, dropout_p=self.dropout if self.training else 0, is_causal=True)
+step 10600: train loss 3.8923, val loss 3.9358
+GPU Memory before iteration 10600:
+  Total: 4.29 GB
+  Reserved: 2.89 GB
+  Allocated: 1.99 GB
+  Free: 1.40 GB
+  Estimated memory for this iteration: 6.77 GB
+iter 10600: loss 3.9733, time 19273.92ms, mfu -100.00%
+Time stamp: 2024-07-19 14:39:39, Time since last checkpoint: 0:00:19
+GPU Memory before iteration 10610:
+  Total: 4.29 GB
+  Reserved: 3.75 GB
+  Allocated: 2.08 GB
+  Free: 0.55 GB
+  Estimated memory for this iteration: 6.77 GB
+iter 10610: loss 3.7610, time 4075.43ms, mfu 1.86%
+Time stamp: 2024-07-19 14:40:21, Time since last checkpoint: 0:00:42
+GPU Memory before iteration 10620:
+  Total: 4.29 GB
+  Reserved: 3.75 GB
+  Allocated: 2.08 GB
+  Free: 0.55 GB
+  Estimated memory for this iteration: 6.77 GB
+iter 10620: loss 4.0620, time 4222.70ms, mfu 1.85%
+Time stamp: 2024-07-19 14:41:03, Time since last checkpoint: 0:00:41
+GPU Memory before iteration 10630:
+  Total: 4.29 GB
+  Reserved: 3.75 GB
+  Allocated: 2.08 GB
+  Free: 0.55 GB
+  Estimated memory for this iteration: 6.77 GB
+iter 10630: loss 4.3488, time 4293.17ms, mfu 1.84%
+Time stamp: 2024-07-19 14:41:45, Time since last checkpoint: 0:00:42
+GPU Memory before iteration 10640:
+  Total: 4.29 GB
+  Reserved: 3.75 GB
+  Allocated: 2.08 GB
+  Free: 0.55 GB
+  Estimated memory for this iteration: 6.77 GB
+iter 10640: loss 3.6572, time 4353.38ms, mfu 1.83%
+Time stamp: 2024-07-19 14:42:28, Time since last checkpoint: 0:00:42
+GPU Memory before iteration 10650:
+  Total: 4.29 GB
+  Reserved: 3.75 GB
+  Allocated: 2.08 GB
+  Free: 0.55 GB
+  Estimated memory for this iteration: 6.77 GB
+iter 10650: loss 3.6180, time 4353.92ms, mfu 1.82%
+Time stamp: 2024-07-19 14:43:12, Time since last checkpoint: 0:00:43
+GPU Memory before iteration 10660:
+  Total: 4.29 GB
+  Reserved: 3.75 GB
+  Allocated: 2.08 GB
+  Free: 0.55 GB
+  Estimated memory for this iteration: 6.77 GB
+iter 10660: loss 3.4939, time 4295.57ms, mfu 1.82%
+Time stamp: 2024-07-19 14:43:55, Time since last checkpoint: 0:00:43
+GPU Memory before iteration 10670:
+  Total: 4.29 GB
+  Reserved: 3.75 GB
+  Allocated: 2.08 GB
+  Free: 0.55 GB
+  Estimated memory for this iteration: 6.77 GB
+iter 10670: loss 4.0137, time 4497.72ms, mfu 1.81%
+Time stamp: 2024-07-19 14:44:41, Time since last checkpoint: 0:00:45
+GPU Memory before iteration 10680:
+  Total: 4.29 GB
+  Reserved: 3.75 GB
+  Allocated: 2.08 GB
+  Free: 0.55 GB
+  Estimated memory for this iteration: 6.77 GB
+iter 10680: loss 4.0393, time 4718.07ms, mfu 1.79%
+Time stamp: 2024-07-19 14:45:25, Time since last checkpoint: 0:00:44
+Traceback (most recent call last):
+  File "D:\thesis\sss\train_fixed.py", line 335, in <module>
+    # looking at the source of that context manager, it just toggles this variable
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "D:\thesis\sss\model_fixed2.py", line 538, in forward
+    for block in self.transformer.h:
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "D:\thesis\sss\model_fixed2.py", line 459, in forward
+    x = x + self.attn(self.ln_1(x))
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "D:\thesis\sss\model_fixed2.py", line 430, in forward
+    y = self.resid_dropout(self.c_proj(y))
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\nn\modules\linear.py", line 116, in forward
+    return F.linear(input, self.weight, self.bias)
+KeyboardInterrupt

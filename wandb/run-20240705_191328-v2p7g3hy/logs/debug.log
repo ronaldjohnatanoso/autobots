@@ -1,0 +1,28 @@
+2024-07-05 19:13:28,051 INFO    MainThread:9964 [wandb_setup.py:_flush():76] Current SDK version is 0.16.3
+2024-07-05 19:13:28,051 INFO    MainThread:9964 [wandb_setup.py:_flush():76] Configure stats pid to 9964
+2024-07-05 19:13:28,051 INFO    MainThread:9964 [wandb_setup.py:_flush():76] Loading settings from /home/ronald/.config/wandb/settings
+2024-07-05 19:13:28,051 INFO    MainThread:9964 [wandb_setup.py:_flush():76] Loading settings from /media/kingston_shared/thesis/nanoGPT/wandb/settings
+2024-07-05 19:13:28,051 INFO    MainThread:9964 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-07-05 19:13:28,051 INFO    MainThread:9964 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-07-05 19:13:28,051 INFO    MainThread:9964 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'train.py', 'program_abspath': '/media/kingston_shared/thesis/nanoGPT/train.py', 'program': '/media/kingston_shared/thesis/nanoGPT/train.py'}
+2024-07-05 19:13:28,051 INFO    MainThread:9964 [wandb_init.py:_log_setup():526] Logging user logs to /media/kingston_shared/thesis/nanoGPT/wandb/run-20240705_191328-v2p7g3hy/logs/debug.log
+2024-07-05 19:13:28,052 INFO    MainThread:9964 [wandb_init.py:_log_setup():527] Logging internal logs to /media/kingston_shared/thesis/nanoGPT/wandb/run-20240705_191328-v2p7g3hy/logs/debug-internal.log
+2024-07-05 19:13:28,052 INFO    MainThread:9964 [wandb_init.py:init():566] calling init triggers
+2024-07-05 19:13:28,052 INFO    MainThread:9964 [wandb_init.py:init():573] wandb.init called with sweep_config: {}
+config: {'out_dir': 'out', 'eval_interval': 1000, 'log_interval': 10, 'eval_iters': 200, 'eval_only': False, 'always_save_checkpoint': True, 'init_from': 'scratch', 'wandb_log': True, 'wandb_project': 'owt', 'wandb_run_name': 'gpt2-124M', 'dataset': 'openwebtext', 'gradient_accumulation_steps': 40, 'batch_size': 12, 'block_size': 1024, 'n_layer': 12, 'n_head': 12, 'n_embd': 768, 'dropout': 0.0, 'bias': False, 'learning_rate': 0.0006, 'max_iters': 600000, 'weight_decay': 0.1, 'beta1': 0.9, 'beta2': 0.95, 'grad_clip': 1.0, 'decay_lr': True, 'warmup_iters': 2000, 'lr_decay_iters': 600000, 'min_lr': 6e-05, 'backend': 'nccl', 'device': 'cuda', 'dtype': 'bfloat16', 'compile': False}
+2024-07-05 19:13:28,052 INFO    MainThread:9964 [wandb_init.py:init():616] starting backend
+2024-07-05 19:13:28,052 INFO    MainThread:9964 [wandb_init.py:init():620] setting up manager
+2024-07-05 19:13:28,053 INFO    MainThread:9964 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-07-05 19:13:28,054 INFO    MainThread:9964 [wandb_init.py:init():628] backend started and connected
+2024-07-05 19:13:28,057 INFO    MainThread:9964 [wandb_init.py:init():720] updated telemetry
+2024-07-05 19:13:28,062 INFO    MainThread:9964 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-07-05 19:13:28,875 INFO    MainThread:9964 [wandb_run.py:_on_init():2262] communicating current version
+2024-07-05 19:13:29,028 INFO    MainThread:9964 [wandb_run.py:_on_init():2271] got version response upgrade_message: "wandb version 0.17.4 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-07-05 19:13:29,029 INFO    MainThread:9964 [wandb_init.py:init():804] starting run threads in backend
+2024-07-05 19:13:29,101 INFO    MainThread:9964 [wandb_run.py:_console_start():2241] atexit reg
+2024-07-05 19:13:29,101 INFO    MainThread:9964 [wandb_run.py:_redirect():2096] redirect: wrap_raw
+2024-07-05 19:13:29,101 INFO    MainThread:9964 [wandb_run.py:_redirect():2161] Wrapping output streams.
+2024-07-05 19:13:29,102 INFO    MainThread:9964 [wandb_run.py:_redirect():2186] Redirects installed.
+2024-07-05 19:13:29,102 INFO    MainThread:9964 [wandb_init.py:init():847] run started, returning control to user process
+2024-07-05 19:13:36,759 WARNING MsgRouterThr:9964 [router.py:message_loop():77] message_loop has been closed

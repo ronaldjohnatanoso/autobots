@@ -1,0 +1,19 @@
+D:\thesis\sss\model.py:64: UserWarning: 1Torch was not compiled with flash attention. (Triggered internally at C:\cb\pytorch_1000000000000\work\aten\src\ATen\native\transformers\cuda\sdp_utils.cpp:455.)
+  y = torch.nn.functional.scaled_dot_product_attention(q, k, v, attn_mask=None, dropout_p=self.dropout if self.training else 0, is_causal=True)
+step 0: train loss 10.9886, val loss 10.9898
+GPU Memory before iteration 0:
+  Total: 4.29 GB
+  Reserved: 8.56 GB
+  Allocated: 0.51 GB
+  Free: -4.27 GB
+  Estimated memory for this iteration: 100.91 GB
+Traceback (most recent call last):
+  File "D:\thesis\sss\train.py", line 340, in <module>
+    scaler.scale(loss).backward()
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\_tensor.py", line 525, in backward
+    torch.autograd.backward(
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\autograd\__init__.py", line 267, in backward
+    _engine_run_backward(
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\autograd\graph.py", line 744, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 2.30 GiB. GPU

@@ -1,0 +1,58 @@
+{
+    "os": "Windows-10-10.0.22621-SP0",
+    "python": "3.9.19",
+    "heartbeatAt": "2024-07-06T02:16:05.114833",
+    "startedAt": "2024-07-06T02:16:03.712306",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "config/train_testshakespeare.py",
+        "--compile=False",
+        "--device=cuda",
+        "--init_from=scratch"
+    ],
+    "state": "running",
+    "program": "D:\\thesis\\nanoGPT\\train.py",
+    "codePathLocal": "train.py",
+    "codePath": "train.py",
+    "git": {
+        "remote": "https://github.com/karpathy/nanoGPT.git",
+        "commit": "9755682b981a45507f6eb9b11eadef8cb83cebd5"
+    },
+    "email": "ronaldjohnatanoso@gmail.com",
+    "root": "D:/thesis/nanoGPT",
+    "host": "RJ10",
+    "username": "Ronald",
+    "executable": "C:\\Users\\Ronald\\miniconda3\\envs\\torchenv\\python.exe",
+    "cpu_count": 12,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 3100.0,
+        "min": 0.0,
+        "max": 3100.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3100.0,
+            "min": 0.0,
+            "max": 3100.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 463.25976181030273,
+            "used": 354.9380683898926
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+            "memory_total": 4294967296
+        }
+    ],
+    "memory": {
+        "total": 23.71099090576172
+    }
+}

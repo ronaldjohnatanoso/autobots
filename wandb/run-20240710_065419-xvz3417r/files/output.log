@@ -1,0 +1,50 @@
+C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\utils\checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\utils\checkpoint.py:91: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn(
+D:\thesis\sss\model.py:64: UserWarning: 1Torch was not compiled with flash attention. (Triggered internally at C:\cb\pytorch_1000000000000\work\aten\src\ATen\native\transformers\cuda\sdp_utils.cpp:455.)
+  y = torch.nn.functional.scaled_dot_product_attention(q, k, v, attn_mask=None, dropout_p=self.dropout if self.training else 0, is_causal=True)
+step 600: train loss 5.5928, val loss 5.5860
+saving checkpoint to out-gpt-test
+C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\utils\checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\utils\checkpoint.py:91: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn(
+GPU Memory before iteration 600:
+  Total: 4.29 GB
+  Reserved: 4.33 GB
+  Allocated: 2.00 GB
+  Free: -0.04 GB
+  Estimated memory for this iteration: 15.56 GB
+step 600: train loss 5.5420, val loss 5.5870
+saving checkpoint to out-gpt-test
+GPU Memory before iteration 600:
+  Total: 4.29 GB
+  Reserved: 4.33 GB
+  Allocated: 2.00 GB
+  Free: -0.04 GB
+  Estimated memory for this iteration: 15.56 GB
+step 600: train loss 5.5296, val loss 5.5825
+saving checkpoint to out-gpt-test
+GPU Memory before iteration 600:
+  Total: 4.29 GB
+  Reserved: 4.33 GB
+  Allocated: 2.00 GB
+  Free: -0.04 GB
+  Estimated memory for this iteration: 15.56 GB
+step 600: train loss 5.4949, val loss 5.6114
+saving checkpoint to out-gpt-test
+GPU Memory before iteration 600:
+  Total: 4.29 GB
+  Reserved: 4.33 GB
+  Allocated: 2.00 GB
+  Free: -0.04 GB
+  Estimated memory for this iteration: 15.56 GB
+Traceback (most recent call last):
+  File "D:\thesis\sss\train.py", line 267, in <module>
+    losses = estimate_loss()
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\utils\_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "D:\thesis\sss\train.py", line 226, in estimate_loss
+    losses[k] = loss.item()
+KeyboardInterrupt

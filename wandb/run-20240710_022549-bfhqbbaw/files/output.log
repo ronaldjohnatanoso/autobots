@@ -1,0 +1,28 @@
+Traceback (most recent call last):
+  File "/media/kingston_shared/thesis/sss/train.py", line 267, in <module>
+    losses = estimate_loss()
+  File "/home/ronald/miniconda3/envs/torchenv/lib/python3.9/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/media/kingston_shared/thesis/sss/train.py", line 225, in estimate_loss
+    logits, loss = model(X, Y)
+  File "/home/ronald/miniconda3/envs/torchenv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ronald/miniconda3/envs/torchenv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/media/kingston_shared/thesis/sss/model.py", line 181, in forward
+    x = block(x)
+  File "/home/ronald/miniconda3/envs/torchenv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ronald/miniconda3/envs/torchenv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/media/kingston_shared/thesis/sss/model.py", line 105, in forward
+    x = x + self.mlp(self.ln_2(x))
+  File "/home/ronald/miniconda3/envs/torchenv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ronald/miniconda3/envs/torchenv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/media/kingston_shared/thesis/sss/model.py", line 27, in forward
+    return F.layer_norm(input, self.weight.shape, self.weight, self.bias, 1e-5)
+  File "/home/ronald/miniconda3/envs/torchenv/lib/python3.9/site-packages/torch/nn/functional.py", line 2573, in layer_norm
+    return torch.layer_norm(input, normalized_shape, weight, bias, eps, torch.backends.cudnn.enabled)
+KeyboardInterrupt

@@ -1,0 +1,32 @@
+Traceback (most recent call last):
+  File "/media/kingston_shared/thesis/nanoGPT/train.py", line 264, in <module>
+    losses = estimate_loss()
+  File "/home/ronald/.local/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/media/kingston_shared/thesis/nanoGPT/train.py", line 224, in estimate_loss
+    logits, loss = model(X, Y)
+  File "/home/ronald/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ronald/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/media/kingston_shared/thesis/nanoGPT/model.py", line 187, in forward
+    loss = F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1), ignore_index=-1)
+  File "/home/ronald/.local/lib/python3.10/site-packages/torch/nn/functional.py", line 3053, in cross_entropy
+    return torch._C._nn.cross_entropy_loss(input, target, weight, _Reduction.get_enum(reduction), ignore_index, label_smoothing)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 2.30 GiB. GPU 0 has a total capacty of 3.81 GiB of which 458.44 MiB is free. Including non-PyTorch memory, this process has 3.30 GiB memory in use. Of the allocated memory 3.09 GiB is allocated by PyTorch, and 126.29 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Traceback (most recent call last):
+  File "/media/kingston_shared/thesis/nanoGPT/train.py", line 264, in <module>
+    losses = estimate_loss()
+  File "/home/ronald/.local/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/media/kingston_shared/thesis/nanoGPT/train.py", line 224, in estimate_loss
+    logits, loss = model(X, Y)
+  File "/home/ronald/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ronald/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/media/kingston_shared/thesis/nanoGPT/model.py", line 187, in forward
+    loss = F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1), ignore_index=-1)
+  File "/home/ronald/.local/lib/python3.10/site-packages/torch/nn/functional.py", line 3053, in cross_entropy
+    return torch._C._nn.cross_entropy_loss(input, target, weight, _Reduction.get_enum(reduction), ignore_index, label_smoothing)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 2.30 GiB. GPU 0 has a total capacty of 3.81 GiB of which 458.44 MiB is free. Including non-PyTorch memory, this process has 3.30 GiB memory in use. Of the allocated memory 3.09 GiB is allocated by PyTorch, and 126.29 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF

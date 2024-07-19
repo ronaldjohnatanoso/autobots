@@ -1,0 +1,70 @@
+D:\thesis\sss\model.py:64: UserWarning: 1Torch was not compiled with flash attention. (Triggered internally at C:\cb\pytorch_1000000000000\work\aten\src\ATen\native\transformers\cuda\sdp_utils.cpp:455.)
+  y = torch.nn.functional.scaled_dot_product_attention(q, k, v, attn_mask=None, dropout_p=self.dropout if self.training else 0, is_causal=True)
+step 600: train loss 5.5928, val loss 5.5860
+saving checkpoint to out-gpt-test
+GPU Memory before iteration 600:
+  Total: 4.29 GB
+  Reserved: 4.33 GB
+  Allocated: 2.00 GB
+  Free: -0.04 GB
+  Estimated memory for this iteration: 15.56 GB
+iter 600: loss 5.7595, time 417052.25ms, mfu -100.00%
+Time stamp: 2024-07-10 05:35:29, Time since last checkpoint: 0:06:57
+GPU Memory before iteration 610:
+  Total: 4.29 GB
+  Reserved: 6.19 GB
+  Allocated: 2.32 GB
+  Free: -1.90 GB
+  Estimated memory for this iteration: 15.56 GB
+iter 610: loss 5.7901, time 69312.62ms, mfu 0.27%
+Time stamp: 2024-07-10 05:47:06, Time since last checkpoint: 0:11:37
+GPU Memory before iteration 620:
+  Total: 4.29 GB
+  Reserved: 6.19 GB
+  Allocated: 2.32 GB
+  Free: -1.90 GB
+  Estimated memory for this iteration: 15.56 GB
+iter 620: loss 5.4854, time 56882.64ms, mfu 0.28%
+Time stamp: 2024-07-10 05:57:51, Time since last checkpoint: 0:10:44
+GPU Memory before iteration 630:
+  Total: 4.29 GB
+  Reserved: 6.19 GB
+  Allocated: 2.32 GB
+  Free: -1.90 GB
+  Estimated memory for this iteration: 15.56 GB
+iter 630: loss 5.4094, time 55005.42ms, mfu 0.28%
+Time stamp: 2024-07-10 06:07:15, Time since last checkpoint: 0:09:23
+GPU Memory before iteration 640:
+  Total: 4.29 GB
+  Reserved: 6.19 GB
+  Allocated: 2.32 GB
+  Free: -1.90 GB
+  Estimated memory for this iteration: 15.56 GB
+iter 640: loss 5.2765, time 52229.13ms, mfu 0.29%
+Time stamp: 2024-07-10 06:16:28, Time since last checkpoint: 0:09:12
+GPU Memory before iteration 650:
+  Total: 4.29 GB
+  Reserved: 6.19 GB
+  Allocated: 2.32 GB
+  Free: -1.90 GB
+  Estimated memory for this iteration: 15.56 GB
+iter 650: loss 5.1351, time 54546.29ms, mfu 0.30%
+Time stamp: 2024-07-10 06:25:38, Time since last checkpoint: 0:09:10
+GPU Memory before iteration 660:
+  Total: 4.29 GB
+  Reserved: 6.19 GB
+  Allocated: 2.32 GB
+  Free: -1.90 GB
+  Estimated memory for this iteration: 15.56 GB
+iter 660: loss 5.1111, time 75166.07ms, mfu 0.29%
+Time stamp: 2024-07-10 06:36:25, Time since last checkpoint: 0:10:46
+Traceback (most recent call last):
+  File "D:\thesis\sss\train.py", line 340, in <module>
+    scaler.scale(loss).backward()
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\_tensor.py", line 525, in backward
+    torch.autograd.backward(
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\autograd\__init__.py", line 267, in backward
+    _engine_run_backward(
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\autograd\graph.py", line 744, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

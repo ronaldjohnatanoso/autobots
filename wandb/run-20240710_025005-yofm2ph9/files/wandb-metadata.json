@@ -1,0 +1,132 @@
+{
+    "os": "Linux-5.15.0-100-generic-x86_64-with-glibc2.35",
+    "python": "3.9.19",
+    "heartbeatAt": "2024-07-09T18:50:06.109825",
+    "startedAt": "2024-07-09T18:50:05.214635",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "config/train_shakespeare_char.py",
+        "--device=cuda",
+        "--compile=False"
+    ],
+    "state": "running",
+    "program": "/media/kingston_shared/thesis/sss/train.py",
+    "codePathLocal": "train.py",
+    "codePath": "train.py",
+    "git": {
+        "remote": "https://github.com/ronaldjohnatanoso/sss.git",
+        "commit": "a3db77cd94c2a59b8a95a182f32fbd0533690a51"
+    },
+    "email": "ronaldjohnatanoso@gmail.com",
+    "root": "/media/kingston_shared/thesis/sss",
+    "host": "ronald",
+    "username": "ronald",
+    "executable": "/home/ronald/miniconda3/envs/torchenv/bin/python3",
+    "cpu_count": 12,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 3302.8995625,
+        "min": 400.0,
+        "max": 3900.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3100.0,
+            "min": 400.0,
+            "max": 4500.0
+        },
+        {
+            "current": 3100.0,
+            "min": 400.0,
+            "max": 4500.0
+        },
+        {
+            "current": 4430.567,
+            "min": 400.0,
+            "max": 4500.0
+        },
+        {
+            "current": 3100.0,
+            "min": 400.0,
+            "max": 4500.0
+        },
+        {
+            "current": 3100.0,
+            "min": 400.0,
+            "max": 4500.0
+        },
+        {
+            "current": 3100.0,
+            "min": 400.0,
+            "max": 4500.0
+        },
+        {
+            "current": 3782.882,
+            "min": 400.0,
+            "max": 4500.0
+        },
+        {
+            "current": 3100.0,
+            "min": 400.0,
+            "max": 4500.0
+        },
+        {
+            "current": 3100.0,
+            "min": 400.0,
+            "max": 3300.0
+        },
+        {
+            "current": 3100.0,
+            "min": 400.0,
+            "max": 3300.0
+        },
+        {
+            "current": 3100.0,
+            "min": 400.0,
+            "max": 3300.0
+        },
+        {
+            "current": 3100.0,
+            "min": 400.0,
+            "max": 3300.0
+        },
+        {
+            "current": 3100.0,
+            "min": 400.0,
+            "max": 3300.0
+        },
+        {
+            "current": 3100.0,
+            "min": 400.0,
+            "max": 3300.0
+        },
+        {
+            "current": 3100.0,
+            "min": 400.0,
+            "max": 3300.0
+        },
+        {
+            "current": 3100.0,
+            "min": 400.0,
+            "max": 3300.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 459.33729553222656,
+            "used": 393.2754783630371
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+            "memory_total": 4294967296
+        }
+    ],
+    "memory": {
+        "total": 23.175750732421875
+    }
+}

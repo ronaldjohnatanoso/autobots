@@ -1,0 +1,83 @@
+step 10600: train loss 3.8923, val loss 3.9358
+GPU Memory before iteration 10600:
+  Total: 4.08 GB
+  Reserved: 2.89 GB
+  Allocated: 1.99 GB
+  Free: 1.19 GB
+  Estimated memory for this iteration: 6.77 GB
+iter 10600: loss 3.9728, time 15042.69ms, mfu -100.00%
+Time stamp: 2024-07-19 17:19:08, Time since last checkpoint: 0:00:15
+GPU Memory before iteration 10610:
+  Total: 4.08 GB
+  Reserved: 3.75 GB
+  Allocated: 2.08 GB
+  Free: 0.34 GB
+  Estimated memory for this iteration: 6.77 GB
+iter 10610: loss 3.7590, time 3420.88ms, mfu 2.22%
+Time stamp: 2024-07-19 17:19:42, Time since last checkpoint: 0:00:34
+GPU Memory before iteration 10620:
+  Total: 4.08 GB
+  Reserved: 3.75 GB
+  Allocated: 2.08 GB
+  Free: 0.34 GB
+  Estimated memory for this iteration: 6.77 GB
+iter 10620: loss 4.0599, time 3481.34ms, mfu 2.21%
+Time stamp: 2024-07-19 17:20:16, Time since last checkpoint: 0:00:34
+GPU Memory before iteration 10630:
+  Total: 4.08 GB
+  Reserved: 3.75 GB
+  Allocated: 2.08 GB
+  Free: 0.34 GB
+  Estimated memory for this iteration: 6.77 GB
+iter 10630: loss 4.3480, time 3476.38ms, mfu 2.21%
+Time stamp: 2024-07-19 17:20:51, Time since last checkpoint: 0:00:34
+GPU Memory before iteration 10640:
+  Total: 4.08 GB
+  Reserved: 3.75 GB
+  Allocated: 2.08 GB
+  Free: 0.34 GB
+  Estimated memory for this iteration: 6.77 GB
+iter 10640: loss 3.6577, time 3453.12ms, mfu 2.21%
+Time stamp: 2024-07-19 17:21:26, Time since last checkpoint: 0:00:34
+GPU Memory before iteration 10650:
+  Total: 4.08 GB
+  Reserved: 3.75 GB
+  Allocated: 2.08 GB
+  Free: 0.34 GB
+  Estimated memory for this iteration: 6.77 GB
+iter 10650: loss 3.6168, time 3452.84ms, mfu 2.21%
+Time stamp: 2024-07-19 17:22:00, Time since last checkpoint: 0:00:34
+GPU Memory before iteration 10660:
+  Total: 4.08 GB
+  Reserved: 3.75 GB
+  Allocated: 2.08 GB
+  Free: 0.34 GB
+  Estimated memory for this iteration: 6.77 GB
+iter 10660: loss 3.4930, time 3452.86ms, mfu 2.21%
+Time stamp: 2024-07-19 17:22:35, Time since last checkpoint: 0:00:34
+GPU Memory before iteration 10670:
+  Total: 4.08 GB
+  Reserved: 3.75 GB
+  Allocated: 2.08 GB
+  Free: 0.34 GB
+  Estimated memory for this iteration: 6.77 GB
+iter 10670: loss 4.0142, time 3456.15ms, mfu 2.20%
+Time stamp: 2024-07-19 17:23:09, Time since last checkpoint: 0:00:34
+GPU Memory before iteration 10680:
+  Total: 4.08 GB
+  Reserved: 3.75 GB
+  Allocated: 2.08 GB
+  Free: 0.34 GB
+  Estimated memory for this iteration: 6.77 GB
+iter 10680: loss 4.0387, time 3549.14ms, mfu 2.20%
+Time stamp: 2024-07-19 17:23:44, Time since last checkpoint: 0:00:34
+Traceback (most recent call last):
+  File "/media/kingston_shared/thesis/sss/train_fixed.py", line 346, in <module>
+    scaler.scale(loss).backward()
+  File "/home/ronald/miniconda3/envs/torchenv/lib/python3.9/site-packages/torch/_tensor.py", line 525, in backward
+    torch.autograd.backward(
+  File "/home/ronald/miniconda3/envs/torchenv/lib/python3.9/site-packages/torch/autograd/__init__.py", line 267, in backward
+    _engine_run_backward(
+  File "/home/ronald/miniconda3/envs/torchenv/lib/python3.9/site-packages/torch/autograd/graph.py", line 744, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

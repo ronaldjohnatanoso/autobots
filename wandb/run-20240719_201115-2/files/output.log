@@ -1,0 +1,59 @@
+step 10600: train loss 3.8875, val loss 3.8994
+GPU Memory before iteration 10600:
+  Total: 4.08 GB
+  Reserved: 2.39 GB
+  Allocated: 1.99 GB
+  Free: 1.69 GB
+  Estimated memory for this iteration: 8.03 GB
+Traceback (most recent call last):
+  File "/media/kingston_shared/thesis/sss/train_fixed.py", line 352, in <module>
+    scaler.scale(loss).backward()
+  File "/home/ronald/miniconda3/envs/torchenv/lib/python3.9/site-packages/torch/_tensor.py", line 525, in backward
+    torch.autograd.backward(
+  File "/home/ronald/miniconda3/envs/torchenv/lib/python3.9/site-packages/torch/autograd/__init__.py", line 267, in backward
+    _engine_run_backward(
+  File "/home/ronald/miniconda3/envs/torchenv/lib/python3.9/site-packages/torch/autograd/graph.py", line 744, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+  File "/home/ronald/miniconda3/envs/torchenv/lib/python3.9/site-packages/torch/autograd/function.py", line 301, in apply
+    return user_fn(self, *args)
+  File "/home/ronald/miniconda3/envs/torchenv/lib/python3.9/site-packages/torch/_functorch/_aot_autograd/jit_compile_runtime_wrappers.py", line 882, in backward
+    out = call_compiled_backward()
+  File "/home/ronald/miniconda3/envs/torchenv/lib/python3.9/site-packages/torch/_functorch/_aot_autograd/jit_compile_runtime_wrappers.py", line 831, in call_compiled_backward
+    out = call_func_at_runtime_with_args(
+  File "/home/ronald/miniconda3/envs/torchenv/lib/python3.9/site-packages/torch/_functorch/_aot_autograd/utils.py", line 113, in call_func_at_runtime_with_args
+    out = normalize_as_list(f(args))
+  File "/home/ronald/miniconda3/envs/torchenv/lib/python3.9/site-packages/torch/_dynamo/eval_frame.py", line 451, in _fn
+    return fn(*args, **kwargs)
+  File "/home/ronald/miniconda3/envs/torchenv/lib/python3.9/site-packages/torch/_dynamo/external_utils.py", line 36, in inner
+    return fn(*args, **kwargs)
+  File "/home/ronald/miniconda3/envs/torchenv/lib/python3.9/site-packages/torch/_inductor/codecache.py", line 906, in __call__
+    return self.get_current_callable()(inputs)
+  File "/home/ronald/miniconda3/envs/torchenv/lib/python3.9/site-packages/torch/_inductor/compile_fx.py", line 784, in run
+    return model(new_inputs)
+  File "/home/ronald/miniconda3/envs/torchenv/lib/python3.9/site-packages/torch/_inductor/codecache.py", line 934, in _run_from_cache
+    return compiled_graph.compiled_artifact(inputs)
+  File "/tmp/torchinductor_ronald/3z/c3zunk37s72gy2h3vch4fbwzdeqiz2jnhudpth4uzaqoc6k7wkcw.py", line 1537, in call
+    triton_poi_fused_nll_loss_backward_nll_loss_forward_1.run(primals_78, buf18, 1536, grid=grid(1536), stream=stream0)
+  File "/home/ronald/miniconda3/envs/torchenv/lib/python3.9/site-packages/torch/_inductor/triton_heuristics.py", line 635, in run
+    self.autotune_to_one_config(*args, grid=grid, **kwargs)
+  File "/home/ronald/miniconda3/envs/torchenv/lib/python3.9/site-packages/torch/_inductor/triton_heuristics.py", line 531, in autotune_to_one_config
+    timings = self.benchmark_all_configs(*args, **kwargs)
+  File "/home/ronald/miniconda3/envs/torchenv/lib/python3.9/site-packages/torch/_dynamo/utils.py", line 262, in time_wrapper
+    r = func(*args, **kwargs)
+  File "/home/ronald/miniconda3/envs/torchenv/lib/python3.9/site-packages/torch/_inductor/triton_heuristics.py", line 507, in benchmark_all_configs
+    timings = {
+  File "/home/ronald/miniconda3/envs/torchenv/lib/python3.9/site-packages/torch/_inductor/triton_heuristics.py", line 508, in <dictcomp>
+    launcher: self.bench(launcher, *args, **kwargs)
+  File "/home/ronald/miniconda3/envs/torchenv/lib/python3.9/site-packages/torch/_inductor/triton_heuristics.py", line 479, in bench
+    return do_bench(kernel_call, rep=40, fast_flush=True)
+  File "/home/ronald/miniconda3/envs/torchenv/lib/python3.9/site-packages/torch/_inductor/utils.py", line 170, in do_bench
+    return triton_do_bench(*args, **kwargs)[0]
+  File "/home/ronald/miniconda3/envs/torchenv/lib/python3.9/site-packages/triton/testing.py", line 102, in do_bench
+    fn()
+  File "/home/ronald/miniconda3/envs/torchenv/lib/python3.9/site-packages/torch/_inductor/triton_heuristics.py", line 471, in kernel_call
+    cloned_args, cloned_kwargs = self.clone_args(*args, **kwargs)
+  File "/home/ronald/miniconda3/envs/torchenv/lib/python3.9/site-packages/torch/_inductor/triton_heuristics.py", line 491, in clone_args
+    cloned_args.append(clone_preserve_strides(arg))
+  File "/home/ronald/miniconda3/envs/torchenv/lib/python3.9/site-packages/torch/_inductor/compile_fx.py", line 743, in clone_preserve_strides
+    buffer = torch.as_strided(x, (needed_size,), (1,)).clone()
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 296.00 MiB. GPU

@@ -1,0 +1,82 @@
+2024-07-10 07:39:51,623 INFO    StreamThr :8396 [internal.py:wandb_internal():85] W&B internal server running at pid: 8396, started at: 2024-07-10 07:39:51.621132
+2024-07-10 07:39:51,626 DEBUG   HandlerThread:8396 [handler.py:handle_request():158] handle_request: status
+2024-07-10 07:39:51,639 INFO    WriterThread:8396 [datastore.py:open_for_write():87] open: D:\thesis\sss\wandb\run-20240710_073951-w3qo0unh\run-w3qo0unh.wandb
+2024-07-10 07:39:51,640 DEBUG   SenderThread:8396 [sender.py:send():379] send: header
+2024-07-10 07:39:51,696 DEBUG   SenderThread:8396 [sender.py:send():379] send: run
+2024-07-10 07:39:54,835 INFO    SenderThread:8396 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\urllib3\connection.py", line 196, in _new_conn
+    sock = connection.create_connection(
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\socket.py", line 954, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\urllib3\connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\urllib3\connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\urllib3\connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\urllib3\connection.py", line 615, in connect
+    self.sock = sock = self._new_conn()
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\urllib3\connection.py", line 203, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0x0000023E1CE611C0>: Failed to resolve 'api.wandb.ai' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\requests\adapters.py", line 589, in send
+    resp = conn.urlopen(
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000023E1CE611C0>: Failed to resolve 'api.wandb.ai' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\wandb\sdk\internal\internal_api.py", line 345, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\wandb\sdk\lib\gql_request.py", line 58, in execute
+    request = self.session.post(self.url, **post_args)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\requests\sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\requests\adapters.py", line 622, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000023E1CE611C0>: Failed to resolve 'api.wandb.ai' ([Errno 11001] getaddrinfo failed)"))
+2024-07-10 07:39:56,742 DEBUG   HandlerThread:8396 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-10 07:40:01,787 DEBUG   HandlerThread:8396 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-10 07:40:06,858 DEBUG   HandlerThread:8396 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-10 07:40:08,916 DEBUG   HandlerThread:8396 [handler.py:handle_request():158] handle_request: shutdown
+2024-07-10 07:40:08,916 INFO    HandlerThread:8396 [handler.py:finish():882] shutting down handler
+2024-07-10 07:40:09,887 INFO    WriterThread:8396 [datastore.py:close():296] close: D:\thesis\sss\wandb\run-20240710_073951-w3qo0unh\run-w3qo0unh.wandb
+2024-07-10 07:49:42,824 INFO    SenderThread:8396 [dir_watcher.py:__init__():211] watching files in: D:\thesis\sss\wandb\run-20240710_073951-w3qo0unh\files
+2024-07-10 07:49:42,824 INFO    SenderThread:8396 [sender.py:_start_run_threads():1188] run started: w3qo0unh with start time 1720568391.630149
+2024-07-10 07:49:42,824 INFO    SenderThread:8396 [sender.py:finish():1608] shutting down sender
+2024-07-10 07:49:42,824 INFO    SenderThread:8396 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-07-10 07:49:43,838 INFO    SenderThread:8396 [dir_watcher.py:finish():388] scan: D:\thesis\sss\wandb\run-20240710_073951-w3qo0unh\files
+2024-07-10 07:49:43,839 INFO    SenderThread:8396 [dir_watcher.py:finish():402] scan save: D:\thesis\sss\wandb\run-20240710_073951-w3qo0unh\files\config.yaml config.yaml
+2024-07-10 07:49:43,839 INFO    SenderThread:8396 [file_pusher.py:finish():169] shutting down file pusher
+2024-07-10 07:49:43,839 INFO    SenderThread:8396 [file_pusher.py:join():175] waiting for file pusher
+2024-07-10 07:49:45,361 INFO    wandb-upload_0:8396 [upload_job.py:push():130] Uploaded file D:\thesis\sss\wandb\run-20240710_073951-w3qo0unh\files\config.yaml
+2024-07-10 07:49:45,900 INFO    SenderThread:8396 [file_stream.py:finish():601] file stream finish called
+2024-07-10 07:49:46,620 INFO    SenderThread:8396 [file_stream.py:finish():605] file stream finish is done

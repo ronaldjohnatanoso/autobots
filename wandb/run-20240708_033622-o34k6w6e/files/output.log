@@ -1,0 +1,84 @@
+D:\thesis\sss\model.py:64: UserWarning: 1Torch was not compiled with flash attention. (Triggered internally at C:\cb\pytorch_1000000000000\work\aten\src\ATen\native\transformers\cuda\sdp_utils.cpp:455.)
+  y = torch.nn.functional.scaled_dot_product_attention(q, k, v, attn_mask=None, dropout_p=self.dropout if self.training else 0, is_causal=True)
+step 250: train loss 4.4363, val loss 5.0916
+saving checkpoint to out-test
+GPU Memory before iteration 250:
+  Total: 4.29 GB
+  Reserved: 4.33 GB
+  Allocated: 2.00 GB
+  Free: -0.04 GB
+  Estimated memory for this iteration: 25.60 GB
+iter 250: loss 4.6447, time 169198.76ms, mfu -100.00%
+Time stamp: 2024-07-08 03:39:14, Time since last checkpoint: 0:02:49
+GPU Memory before iteration 260:
+  Total: 4.29 GB
+  Reserved: 6.19 GB
+  Allocated: 2.32 GB
+  Free: -1.90 GB
+  Estimated memory for this iteration: 25.60 GB
+iter 260: loss 4.3262, time 118810.26ms, mfu 0.26%
+Time stamp: 2024-07-08 12:15:37, Time since last checkpoint: 8:36:23
+GPU Memory before iteration 270:
+  Total: 4.29 GB
+  Reserved: 6.19 GB
+  Allocated: 2.32 GB
+  Free: -1.90 GB
+  Estimated memory for this iteration: 25.60 GB
+iter 270: loss 4.4287, time 124933.58ms, mfu 0.26%
+Time stamp: 2024-07-08 12:35:44, Time since last checkpoint: 0:20:07
+GPU Memory before iteration 280:
+  Total: 4.29 GB
+  Reserved: 6.19 GB
+  Allocated: 2.32 GB
+  Free: -1.90 GB
+  Estimated memory for this iteration: 25.60 GB
+iter 280: loss 4.0226, time 117982.13ms, mfu 0.26%
+Time stamp: 2024-07-08 12:55:20, Time since last checkpoint: 0:19:35
+GPU Memory before iteration 290:
+  Total: 4.29 GB
+  Reserved: 6.19 GB
+  Allocated: 2.32 GB
+  Free: -1.90 GB
+  Estimated memory for this iteration: 25.60 GB
+iter 290: loss 4.3212, time 118808.56ms, mfu 0.26%
+Time stamp: 2024-07-08 13:15:31, Time since last checkpoint: 0:20:10
+GPU Memory before iteration 300:
+  Total: 4.29 GB
+  Reserved: 6.19 GB
+  Allocated: 2.32 GB
+  Free: -1.90 GB
+  Estimated memory for this iteration: 25.60 GB
+iter 300: loss 4.2254, time 118991.85ms, mfu 0.26%
+Time stamp: 2024-07-08 13:35:41, Time since last checkpoint: 0:20:10
+GPU Memory before iteration 310:
+  Total: 4.29 GB
+  Reserved: 6.19 GB
+  Allocated: 2.32 GB
+  Free: -1.90 GB
+  Estimated memory for this iteration: 25.60 GB
+iter 310: loss 4.1007, time 131293.80ms, mfu 0.26%
+Time stamp: 2024-07-08 15:03:29, Time since last checkpoint: 1:27:47
+Traceback (most recent call last):
+  File "D:\thesis\sss\train.py", line 335, in <module>
+    logits, loss = model(X, Y)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "D:\thesis\sss\model.py", line 181, in forward
+    x = block(x)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "D:\thesis\sss\model.py", line 104, in forward
+    x = x + self.attn(self.ln_1(x))
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "D:\thesis\sss\model.py", line 27, in forward
+    return F.layer_norm(input, self.weight.shape, self.weight, self.bias, 1e-5)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\nn\functional.py", line 2573, in layer_norm
+    return torch.layer_norm(input, normalized_shape, weight, bias, eps, torch.backends.cudnn.enabled)
+KeyboardInterrupt

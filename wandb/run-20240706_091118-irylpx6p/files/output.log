@@ -1,0 +1,1428 @@
+D:\thesis\nanoGPT\model.py:64: UserWarning: 1Torch was not compiled with flash attention. (Triggered internally at C:\cb\pytorch_1000000000000\work\aten\src\ATen\native\transformers\cuda\sdp_utils.cpp:455.)
+  y = torch.nn.functional.scaled_dot_product_attention(q, k, v, attn_mask=None, dropout_p=self.dropout if self.training else 0, is_causal=True)
+step 0: train loss 10.9817, val loss 10.9793
+GPU Memory before iteration 0:
+  Total: 4.29 GB
+  Reserved: 2.74 GB
+  Allocated: 0.51 GB
+  Free: 1.56 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 0:
+  Total: 4.29 GB
+  Reserved: 3.98 GB
+  Allocated: 1.32 GB
+  Free: 0.32 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 0:
+  Total: 4.29 GB
+  Reserved: 4.59 GB
+  Allocated: 1.32 GB
+  Free: -0.30 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 0:
+  Total: 4.29 GB
+  Reserved: 4.59 GB
+  Allocated: 1.32 GB
+  Free: -0.30 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 0:
+  Total: 4.29 GB
+  Reserved: 4.59 GB
+  Allocated: 1.32 GB
+  Free: -0.30 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 0:
+  Total: 4.29 GB
+  Reserved: 4.59 GB
+  Allocated: 1.32 GB
+  Free: -0.30 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 0:
+  Total: 4.29 GB
+  Reserved: 4.59 GB
+  Allocated: 1.32 GB
+  Free: -0.30 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 0:
+  Total: 4.29 GB
+  Reserved: 4.59 GB
+  Allocated: 1.32 GB
+  Free: -0.30 GB
+  Estimated memory for this iteration: 5.52 GB
+iter 0: loss 10.9795, time 37674.43ms, mfu -100.00%
+GPU Memory before iteration 10:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 1.82 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 10:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 10:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 10:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 10:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 10:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 10:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 10:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+iter 10: loss 10.0419, time 13986.77ms, mfu 0.45%
+GPU Memory before iteration 20:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 1.82 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 20:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 20:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 20:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 20:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 20:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 20:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 20:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+iter 20: loss 9.1789, time 13618.64ms, mfu 0.45%
+GPU Memory before iteration 30:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 1.82 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 30:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 30:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 30:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 30:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 30:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 30:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 30:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+iter 30: loss 8.7925, time 12970.58ms, mfu 0.45%
+GPU Memory before iteration 40:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 1.82 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 40:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 40:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 40:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 40:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 40:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 40:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 40:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+iter 40: loss 8.6595, time 13218.02ms, mfu 0.46%
+GPU Memory before iteration 50:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 1.82 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 50:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 50:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 50:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 50:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 50:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 50:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+iter 50: loss 8.2530, time 12788.99ms, mfu 0.46%
+GPU Memory before iteration 60:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 1.82 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 60:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 60:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 60:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 60:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 60:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 60:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 60:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+iter 60: loss 8.0211, time 12780.42ms, mfu 0.46%
+GPU Memory before iteration 70:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 1.82 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 70:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 70:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 70:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 70:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 70:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 70:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 70:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+iter 70: loss 8.1728, time 12780.15ms, mfu 0.47%
+GPU Memory before iteration 80:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 1.82 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 80:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 80:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 80:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 80:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 80:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 80:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 80:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+iter 80: loss 7.6395, time 12895.96ms, mfu 0.47%
+GPU Memory before iteration 90:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 1.82 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 90:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 90:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 90:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 90:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 90:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 90:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 90:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+iter 90: loss 7.3669, time 13181.24ms, mfu 0.47%
+GPU Memory before iteration 100:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 1.82 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 100:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 100:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 100:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 100:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 100:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 100:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 100:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+iter 100: loss 7.2292, time 13022.49ms, mfu 0.47%
+GPU Memory before iteration 110:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 1.82 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 110:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 110:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 110:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 110:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 110:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 110:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 110:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+iter 110: loss 6.7305, time 13144.63ms, mfu 0.47%
+GPU Memory before iteration 120:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 1.82 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 120:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 120:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 120:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 120:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 120:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 120:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 120:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+iter 120: loss 6.3697, time 13208.47ms, mfu 0.47%
+GPU Memory before iteration 130:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 1.82 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 130:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 130:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 130:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 130:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 130:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 130:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 130:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+iter 130: loss 6.0616, time 13950.43ms, mfu 0.47%
+GPU Memory before iteration 140:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 1.82 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 140:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 140:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 140:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 140:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 140:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 140:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 140:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+iter 140: loss 5.8573, time 13854.81ms, mfu 0.47%
+GPU Memory before iteration 150:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 1.82 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 150:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 150:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 150:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 150:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 150:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 150:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 150:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+iter 150: loss 5.7474, time 13852.45ms, mfu 0.47%
+GPU Memory before iteration 160:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 1.82 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 160:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 160:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 160:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 160:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 160:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 160:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 160:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+iter 160: loss 5.2821, time 14778.81ms, mfu 0.46%
+GPU Memory before iteration 170:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 1.82 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 170:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 170:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 170:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 170:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 170:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 170:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 170:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+iter 170: loss 5.4031, time 14145.38ms, mfu 0.46%
+GPU Memory before iteration 180:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 1.82 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 180:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 180:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 180:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 180:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 180:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 180:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 180:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+iter 180: loss 5.2367, time 13842.07ms, mfu 0.46%
+GPU Memory before iteration 190:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 1.82 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 190:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 190:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 190:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 190:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 190:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 190:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 190:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+iter 190: loss 5.2781, time 13865.22ms, mfu 0.46%
+GPU Memory before iteration 200:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 1.82 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 200:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 200:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 200:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 200:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 200:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 200:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 200:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+iter 200: loss 5.0769, time 13854.65ms, mfu 0.46%
+GPU Memory before iteration 210:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 1.82 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 210:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 210:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 210:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 210:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 210:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 210:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 210:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+iter 210: loss 4.9515, time 14063.11ms, mfu 0.46%
+GPU Memory before iteration 220:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 1.82 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 220:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 220:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 220:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 220:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 220:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 220:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 220:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+iter 220: loss 4.8790, time 14046.89ms, mfu 0.46%
+GPU Memory before iteration 230:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 1.82 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 230:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 230:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 230:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 230:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 230:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 230:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 230:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+iter 230: loss 4.6473, time 14047.94ms, mfu 0.46%
+GPU Memory before iteration 240:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 1.82 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 240:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 240:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 240:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 240:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 240:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 240:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 240:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+iter 240: loss 4.6983, time 13904.38ms, mfu 0.46%
+GPU Memory before iteration 250:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 1.82 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 250:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 250:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 250:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 250:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 250:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 250:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 250:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+iter 250: loss 4.5085, time 13930.37ms, mfu 0.45%
+GPU Memory before iteration 260:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 1.82 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 260:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 260:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 260:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 260:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 260:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 260:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 260:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+iter 260: loss 4.4134, time 14877.74ms, mfu 0.45%
+GPU Memory before iteration 270:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 1.82 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 270:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 270:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 270:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 270:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 270:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 270:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 270:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+iter 270: loss 4.5194, time 14671.74ms, mfu 0.45%
+GPU Memory before iteration 280:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 1.82 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 280:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 280:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 280:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 280:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 280:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 280:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+GPU Memory before iteration 280:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 2.31 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 5.52 GB
+iter 280: loss 4.6175, time 14635.09ms, mfu 0.45%
+Traceback (most recent call last):
+  File "D:\thesis\nanoGPT\train.py", line 335, in <module>
+    scaler.scale(loss).backward()
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\_tensor.py", line 525, in backward
+    torch.autograd.backward(
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\autograd\__init__.py", line 267, in backward
+    _engine_run_backward(
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\autograd\graph.py", line 744, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

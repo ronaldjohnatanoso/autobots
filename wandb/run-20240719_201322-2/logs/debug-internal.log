@@ -1,0 +1,547 @@
+2024-07-19 20:13:22,644 INFO    StreamThr :216111 [internal.py:wandb_internal():85] W&B internal server running at pid: 216111, started at: 2024-07-19 20:13:22.643231
+2024-07-19 20:13:22,646 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: status
+2024-07-19 20:13:22,648 INFO    WriterThread:216111 [datastore.py:open_for_write():87] open: /media/kingston_shared/thesis/sss/wandb/run-20240719_201322-2/run-2.wandb
+2024-07-19 20:13:22,649 DEBUG   SenderThread:216111 [sender.py:send():379] send: header
+2024-07-19 20:13:22,693 DEBUG   SenderThread:216111 [sender.py:send():379] send: run
+2024-07-19 20:13:22,698 INFO    SenderThread:216111 [sender.py:_setup_resume():749] checking resume status for None/test-gpt2-fixed/2
+2024-07-19 20:13:23,052 INFO    SenderThread:216111 [sender.py:_setup_resume():829] configured resuming with: ResumeState(resumed=True,step=28,history=28,events=352,output=3132,runtime=10706.639924,wandb_runtime=10173,summary={'_step': 27, '_runtime': 10691.37474322319, 'val/loss': 3.899353265762329, 'train/loss': 3.887492656707764, 'mfu': -100, 'iter': 10600, '_timestamp': 1721391108.828652, 'lr': 0.0005997244793386992, '_wandb': {'runtime': 10173}},config={'bias': {'desc': None, 'value': False}, 'beta1': {'desc': None, 'value': 0.9}, 'beta2': {'desc': None, 'value': 0.95}, 'dtype': {'desc': None, 'value': 'bfloat16'}, '_wandb': {'desc': None, 'value': {'t': {'1': [1, 55], '2': [1, 55], '3': [5, 13, 14, 16, 23, 62], '4': '3.9.19', '5': '0.17.4', '8': [5], '13': 'linux-x86_64'}, 'framework': 'torch', 'start_time': 1721391159, 'cli_version': '0.17.4', 'is_jupyter_run': False, 'python_version': '3.9.19', 'is_kaggle_kernel': False}}, 'device': {'desc': None, 'value': 'cuda'}, 'min_lr': {'desc': None, 'value': 6e-05}, 'n_embd': {'desc': None, 'value': 768}, 'n_head': {'desc': None, 'value': 12}, 'run_id': {'desc': None, 'value': '2'}, 'backend': {'desc': None, 'value': 'nccl'}, 'compile': {'desc': None, 'value': True}, 'dataset': {'desc': None, 'value': 'openwebtext'}, 'dropout': {'desc': None, 'value': 0}, 'n_layer': {'desc': None, 'value': 12}, 'out_dir': {'desc': None, 'value': 'out-gpt-fixed2'}, 'decay_lr': {'desc': None, 'value': True}, 'eval_only': {'desc': None, 'value': False}, 'grad_clip': {'desc': None, 'value': 1}, 'init_from': {'desc': None, 'value': 'resume'}, 'max_iters': {'desc': None, 'value': 600000}, 'wandb_log': {'desc': None, 'value': True}, 'batch_size': {'desc': None, 'value': 3}, 'block_size': {'desc': None, 'value': 512}, 'eval_iters': {'desc': None, 'value': 200}, 'log_interval': {'desc': None, 'value': 10}, 'warmup_iters': {'desc': None, 'value': 2000}, 'weight_decay': {'desc': None, 'value': 0.1}, 'eval_interval': {'desc': None, 'value': 200}, 'learning_rate': {'desc': None, 'value': 0.0006}, 'wandb_project': {'desc': None, 'value': 'test-gpt2-fixed'}, 'lr_decay_iters': {'desc': None, 'value': 600000}, 'n_model_params': {'desc': None, 'value': 123587328}, 'wandb_run_name': {'desc': None, 'value': 'l-2024-07-19_20-12-34'}, 'always_save_checkpoint': {'desc': None, 'value': False}, 'gradient_accumulation_steps': {'desc': None, 'value': 24}},tags=[])
+2024-07-19 20:13:23,523 INFO    SenderThread:216111 [dir_watcher.py:__init__():211] watching files in: /media/kingston_shared/thesis/sss/wandb/run-20240719_201322-2/files
+2024-07-19 20:13:23,523 INFO    SenderThread:216111 [sender.py:_start_run_threads():1188] run started: 2 with start time 1721380496.003332
+2024-07-19 20:13:23,525 DEBUG   SenderThread:216111 [sender.py:send_request():406] send_request: summary_record
+2024-07-19 20:13:23,525 INFO    SenderThread:216111 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-19 20:13:23,535 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: check_version
+2024-07-19 20:13:23,536 DEBUG   SenderThread:216111 [sender.py:send_request():406] send_request: check_version
+2024-07-19 20:13:23,658 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: run_start
+2024-07-19 20:13:23,691 DEBUG   HandlerThread:216111 [system_info.py:__init__():26] System info init
+2024-07-19 20:13:23,691 DEBUG   HandlerThread:216111 [system_info.py:__init__():41] System info init done
+2024-07-19 20:13:23,691 INFO    HandlerThread:216111 [system_monitor.py:start():194] Starting system monitor
+2024-07-19 20:13:23,692 INFO    SystemMonitor:216111 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-07-19 20:13:23,693 INFO    SystemMonitor:216111 [interfaces.py:start():188] Started cpu monitoring
+2024-07-19 20:13:23,694 INFO    SystemMonitor:216111 [interfaces.py:start():188] Started disk monitoring
+2024-07-19 20:13:23,694 INFO    SystemMonitor:216111 [interfaces.py:start():188] Started gpu monitoring
+2024-07-19 20:13:23,695 INFO    SystemMonitor:216111 [interfaces.py:start():188] Started memory monitoring
+2024-07-19 20:13:23,695 INFO    SystemMonitor:216111 [interfaces.py:start():188] Started network monitoring
+2024-07-19 20:13:23,736 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: python_packages
+2024-07-19 20:13:23,736 DEBUG   SenderThread:216111 [sender.py:send_request():406] send_request: python_packages
+2024-07-19 20:13:23,780 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-19 20:13:23,780 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:13:23,780 DEBUG   SenderThread:216111 [sender.py:send_request():406] send_request: stop_status
+2024-07-19 20:13:24,055 DEBUG   SenderThread:216111 [sender.py:send():379] send: telemetry
+2024-07-19 20:13:24,525 INFO    Thread-12 :216111 [dir_watcher.py:_on_file_created():271] file/dir created: /media/kingston_shared/thesis/sss/wandb/run-20240719_201322-2/files/requirements.txt
+2024-07-19 20:13:24,525 INFO    Thread-12 :216111 [dir_watcher.py:_on_file_created():271] file/dir created: /media/kingston_shared/thesis/sss/wandb/run-20240719_201322-2/files/wandb-summary.json
+2024-07-19 20:13:24,739 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:13:25,755 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:13:26,782 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:13:27,760 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:13:28,056 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: status_report
+2024-07-19 20:13:28,767 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:13:29,768 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:13:30,767 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:13:31,767 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:13:32,767 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:13:33,742 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: status_report
+2024-07-19 20:13:33,768 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:13:34,767 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:13:35,768 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:13:36,768 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:13:37,768 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:13:38,736 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-19 20:13:38,737 DEBUG   SenderThread:216111 [sender.py:send_request():406] send_request: stop_status
+2024-07-19 20:13:38,779 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:13:39,005 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: status_report
+2024-07-19 20:13:39,768 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:13:40,539 INFO    Thread-12 :216111 [dir_watcher.py:_on_file_created():271] file/dir created: /media/kingston_shared/thesis/sss/wandb/run-20240719_201322-2/files/output.log
+2024-07-19 20:13:40,691 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-19 20:13:40,693 DEBUG   SenderThread:216111 [sender.py:send():379] send: history
+2024-07-19 20:13:40,693 DEBUG   SenderThread:216111 [sender.py:send_request():406] send_request: summary_record
+2024-07-19 20:13:40,693 INFO    SenderThread:216111 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-19 20:13:40,873 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:13:41,540 INFO    Thread-12 :216111 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/kingston_shared/thesis/sss/wandb/run-20240719_201322-2/files/wandb-summary.json
+2024-07-19 20:13:41,874 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:13:42,541 INFO    Thread-12 :216111 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/kingston_shared/thesis/sss/wandb/run-20240719_201322-2/files/output.log
+2024-07-19 20:13:42,873 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:13:43,877 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:13:44,743 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: status_report
+2024-07-19 20:13:44,911 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:13:45,926 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:13:46,932 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:13:47,900 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:13:48,902 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:13:49,744 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: status_report
+2024-07-19 20:13:49,908 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:13:50,945 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:13:51,921 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:13:52,945 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:13:53,798 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-19 20:13:53,798 DEBUG   SenderThread:216111 [sender.py:send_request():406] send_request: stop_status
+2024-07-19 20:13:53,987 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:13:55,022 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:13:55,027 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: status_report
+2024-07-19 20:13:55,553 INFO    Thread-12 :216111 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/kingston_shared/thesis/sss/wandb/run-20240719_201322-2/files/config.yaml
+2024-07-19 20:13:56,046 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:13:56,554 INFO    Thread-12 :216111 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/kingston_shared/thesis/sss/wandb/run-20240719_201322-2/files/output.log
+2024-07-19 20:13:57,086 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:13:58,086 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:13:59,129 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:14:00,129 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:14:00,843 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: status_report
+2024-07-19 20:14:01,155 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:14:02,155 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:14:03,185 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:14:04,229 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:14:05,229 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:14:05,849 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: status_report
+2024-07-19 20:14:06,279 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:14:07,280 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:14:08,316 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:14:08,798 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-19 20:14:08,799 DEBUG   SenderThread:216111 [sender.py:send_request():406] send_request: stop_status
+2024-07-19 20:14:09,316 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:14:10,349 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:14:11,083 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: status_report
+2024-07-19 20:14:11,349 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:14:12,396 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:14:13,440 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:14:14,441 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:14:15,470 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:14:16,471 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:14:16,574 INFO    Thread-12 :216111 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/kingston_shared/thesis/sss/wandb/run-20240719_201322-2/files/output.log
+2024-07-19 20:14:16,961 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: status_report
+2024-07-19 20:14:17,516 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:14:18,517 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:14:19,560 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:14:20,576 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:14:20,578 INFO    Thread-12 :216111 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/kingston_shared/thesis/sss/wandb/run-20240719_201322-2/files/output.log
+2024-07-19 20:14:21,596 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:14:22,634 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:14:22,895 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: status_report
+2024-07-19 20:14:23,634 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:14:23,696 DEBUG   SystemMonitor:216111 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-07-19 20:14:23,697 DEBUG   SenderThread:216111 [sender.py:send():379] send: stats
+2024-07-19 20:14:23,816 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-19 20:14:23,817 DEBUG   SenderThread:216111 [sender.py:send_request():406] send_request: stop_status
+2024-07-19 20:14:24,668 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:14:25,668 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:14:26,696 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:14:27,696 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:14:28,066 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: status_report
+2024-07-19 20:14:28,729 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:14:29,770 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:14:30,770 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:14:31,803 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:14:32,803 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:14:33,835 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:14:33,920 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: status_report
+2024-07-19 20:14:34,836 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:14:35,869 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:14:36,870 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:14:37,900 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:14:38,842 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-19 20:14:38,843 DEBUG   SenderThread:216111 [sender.py:send_request():406] send_request: stop_status
+2024-07-19 20:14:38,937 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:14:39,147 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: status_report
+2024-07-19 20:14:39,937 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:14:40,597 INFO    Thread-12 :216111 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/kingston_shared/thesis/sss/wandb/run-20240719_201322-2/files/output.log
+2024-07-19 20:14:40,979 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:14:41,981 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:14:42,598 INFO    Thread-12 :216111 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/kingston_shared/thesis/sss/wandb/run-20240719_201322-2/files/output.log
+2024-07-19 20:14:43,034 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:14:44,035 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:14:44,937 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: status_report
+2024-07-19 20:14:45,067 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:14:46,078 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:14:47,103 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:14:48,149 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:14:49,149 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:14:49,957 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: status_report
+2024-07-19 20:14:50,201 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:14:51,204 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:14:52,234 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:14:53,234 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:14:53,698 DEBUG   SenderThread:216111 [sender.py:send():379] send: stats
+2024-07-19 20:14:53,891 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-19 20:14:53,892 DEBUG   SenderThread:216111 [sender.py:send_request():406] send_request: stop_status
+2024-07-19 20:14:54,272 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:14:55,268 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: status_report
+2024-07-19 20:14:55,318 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:14:56,321 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:14:57,374 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:14:58,375 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:14:59,407 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:15:00,408 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:15:01,029 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: status_report
+2024-07-19 20:15:01,449 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:15:02,449 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:15:03,503 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:15:04,556 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:15:04,621 INFO    Thread-12 :216111 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/kingston_shared/thesis/sss/wandb/run-20240719_201322-2/files/output.log
+2024-07-19 20:15:05,557 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:15:06,587 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:15:06,623 INFO    Thread-12 :216111 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/kingston_shared/thesis/sss/wandb/run-20240719_201322-2/files/output.log
+2024-07-19 20:15:06,764 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: status_report
+2024-07-19 20:15:07,588 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:15:08,632 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:15:08,917 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-19 20:15:08,918 DEBUG   SenderThread:216111 [sender.py:send_request():406] send_request: stop_status
+2024-07-19 20:15:09,634 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:15:10,690 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:15:11,713 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:15:12,320 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: status_report
+2024-07-19 20:15:12,735 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:15:13,780 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:15:14,780 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:15:15,818 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:15:16,819 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:15:17,852 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:15:18,111 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: status_report
+2024-07-19 20:15:18,852 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:15:19,898 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:15:20,942 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:15:21,943 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:15:22,981 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:15:23,137 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: status_report
+2024-07-19 20:15:23,699 DEBUG   SenderThread:216111 [sender.py:send():379] send: stats
+2024-07-19 20:15:23,976 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-19 20:15:23,977 DEBUG   SenderThread:216111 [sender.py:send_request():406] send_request: stop_status
+2024-07-19 20:15:24,019 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:15:25,020 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:15:26,020 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:15:26,645 INFO    Thread-12 :216111 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/kingston_shared/thesis/sss/wandb/run-20240719_201322-2/files/output.log
+2024-07-19 20:15:27,058 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:15:28,061 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:15:28,647 INFO    Thread-12 :216111 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/kingston_shared/thesis/sss/wandb/run-20240719_201322-2/files/output.log
+2024-07-19 20:15:29,024 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: status_report
+2024-07-19 20:15:29,102 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:15:30,146 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:15:31,147 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:15:32,186 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:15:33,187 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:15:34,197 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: status_report
+2024-07-19 20:15:34,227 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:15:35,228 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:15:36,265 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:15:37,280 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:15:38,302 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:15:38,976 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-19 20:15:38,977 DEBUG   SenderThread:216111 [sender.py:send_request():406] send_request: stop_status
+2024-07-19 20:15:39,322 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: status_report
+2024-07-19 20:15:39,343 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:15:40,344 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:15:41,395 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:15:42,395 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:15:43,441 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:15:44,443 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:15:45,271 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: status_report
+2024-07-19 20:15:45,487 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:15:46,533 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:15:47,532 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:15:48,571 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:15:49,572 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:15:50,285 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: status_report
+2024-07-19 20:15:50,614 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:15:50,672 INFO    Thread-12 :216111 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/kingston_shared/thesis/sss/wandb/run-20240719_201322-2/files/output.log
+2024-07-19 20:15:51,614 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:15:52,655 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:15:52,673 INFO    Thread-12 :216111 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/kingston_shared/thesis/sss/wandb/run-20240719_201322-2/files/output.log
+2024-07-19 20:15:53,656 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:15:53,700 DEBUG   SenderThread:216111 [sender.py:send():379] send: stats
+2024-07-19 20:15:54,029 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-19 20:15:54,030 DEBUG   SenderThread:216111 [sender.py:send_request():406] send_request: stop_status
+2024-07-19 20:15:54,695 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:15:55,374 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: status_report
+2024-07-19 20:15:55,739 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:15:56,738 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:15:57,778 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:15:58,779 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:15:59,810 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:16:00,811 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:16:01,338 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: status_report
+2024-07-19 20:16:01,849 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:16:02,866 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:16:03,891 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:16:04,935 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:16:05,937 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:16:06,368 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: status_report
+2024-07-19 20:16:06,979 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:16:07,980 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:16:09,022 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:16:09,031 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-19 20:16:09,032 DEBUG   SenderThread:216111 [sender.py:send_request():406] send_request: stop_status
+2024-07-19 20:16:10,023 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:16:11,071 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:16:11,427 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: status_report
+2024-07-19 20:16:12,117 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:16:13,117 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:16:14,165 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:16:14,693 INFO    Thread-12 :216111 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/kingston_shared/thesis/sss/wandb/run-20240719_201322-2/files/output.log
+2024-07-19 20:16:15,165 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:16:16,214 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:16:16,560 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: status_report
+2024-07-19 20:16:16,695 INFO    Thread-12 :216111 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/kingston_shared/thesis/sss/wandb/run-20240719_201322-2/files/output.log
+2024-07-19 20:16:17,213 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:16:18,257 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:16:19,259 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:16:20,305 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:16:21,359 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:16:22,361 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:16:22,451 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: status_report
+2024-07-19 20:16:23,413 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:16:23,700 DEBUG   SenderThread:216111 [sender.py:send():379] send: stats
+2024-07-19 20:16:24,032 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-19 20:16:24,033 DEBUG   SenderThread:216111 [sender.py:send_request():406] send_request: stop_status
+2024-07-19 20:16:24,413 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:16:25,462 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:16:26,462 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:16:27,508 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:16:27,510 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: status_report
+2024-07-19 20:16:28,528 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:16:29,558 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:16:30,604 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:16:31,604 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:16:32,558 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: status_report
+2024-07-19 20:16:32,644 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:16:33,644 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:16:34,688 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:16:35,688 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:16:36,713 INFO    Thread-12 :216111 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/kingston_shared/thesis/sss/wandb/run-20240719_201322-2/files/output.log
+2024-07-19 20:16:36,732 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:16:37,561 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: status_report
+2024-07-19 20:16:37,781 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:16:38,714 INFO    Thread-12 :216111 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/kingston_shared/thesis/sss/wandb/run-20240719_201322-2/files/output.log
+2024-07-19 20:16:38,781 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:16:39,066 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-19 20:16:39,066 DEBUG   SenderThread:216111 [sender.py:send_request():406] send_request: stop_status
+2024-07-19 20:16:39,829 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:16:40,830 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:16:41,868 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:16:42,639 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: status_report
+2024-07-19 20:16:42,868 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:16:43,912 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:16:44,912 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:16:45,965 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:16:47,019 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:16:47,674 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: status_report
+2024-07-19 20:16:48,024 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:16:49,077 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:16:50,078 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:16:51,133 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:16:52,146 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:16:52,698 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: status_report
+2024-07-19 20:16:53,203 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:16:53,701 DEBUG   SenderThread:216111 [sender.py:send():379] send: stats
+2024-07-19 20:16:54,080 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-19 20:16:54,080 DEBUG   SenderThread:216111 [sender.py:send_request():406] send_request: stop_status
+2024-07-19 20:16:54,245 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:16:55,284 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:16:56,351 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:16:57,368 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:16:57,707 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: status_report
+2024-07-19 20:16:58,367 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:16:59,367 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:17:00,407 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:17:00,738 INFO    Thread-12 :216111 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/kingston_shared/thesis/sss/wandb/run-20240719_201322-2/files/output.log
+2024-07-19 20:17:01,410 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:17:02,466 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:17:02,739 INFO    Thread-12 :216111 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/kingston_shared/thesis/sss/wandb/run-20240719_201322-2/files/output.log
+2024-07-19 20:17:03,376 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: status_report
+2024-07-19 20:17:03,534 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:17:04,553 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:17:05,624 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:17:06,636 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:17:07,693 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:17:08,701 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:17:08,750 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: status_report
+2024-07-19 20:17:09,082 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-19 20:17:09,083 DEBUG   SenderThread:216111 [sender.py:send_request():406] send_request: stop_status
+2024-07-19 20:17:09,764 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:17:10,796 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:17:11,837 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:17:12,904 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:17:13,766 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: status_report
+2024-07-19 20:17:13,933 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:17:14,993 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:17:15,998 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:17:17,049 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:17:18,053 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:17:18,803 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: status_report
+2024-07-19 20:17:19,105 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:17:20,105 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:17:21,177 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:17:22,178 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:17:23,178 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:17:23,702 DEBUG   SenderThread:216111 [sender.py:send():379] send: stats
+2024-07-19 20:17:24,127 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-19 20:17:24,128 DEBUG   SenderThread:216111 [sender.py:send_request():406] send_request: stop_status
+2024-07-19 20:17:24,226 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:17:24,456 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: status_report
+2024-07-19 20:17:24,763 INFO    Thread-12 :216111 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/kingston_shared/thesis/sss/wandb/run-20240719_201322-2/files/output.log
+2024-07-19 20:17:25,237 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:17:26,285 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:17:26,765 INFO    Thread-12 :216111 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/kingston_shared/thesis/sss/wandb/run-20240719_201322-2/files/output.log
+2024-07-19 20:17:27,341 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:17:28,369 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:17:29,371 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:17:29,806 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: status_report
+2024-07-19 20:17:30,373 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:17:31,442 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:17:32,467 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:17:33,529 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:17:34,542 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:17:34,807 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: status_report
+2024-07-19 20:17:35,593 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:17:36,657 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:17:37,683 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:17:38,754 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:17:39,140 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-19 20:17:39,141 DEBUG   SenderThread:216111 [sender.py:send_request():406] send_request: stop_status
+2024-07-19 20:17:39,767 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:17:39,880 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: status_report
+2024-07-19 20:17:40,774 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:17:41,787 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:17:42,861 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:17:43,935 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:17:44,881 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: status_report
+2024-07-19 20:17:44,939 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:17:46,003 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:17:47,010 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:17:48,079 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:17:48,790 INFO    Thread-12 :216111 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/kingston_shared/thesis/sss/wandb/run-20240719_201322-2/files/output.log
+2024-07-19 20:17:49,102 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:17:49,506 DEBUG   SenderThread:216111 [sender.py:send():379] send: exit
+2024-07-19 20:17:49,506 INFO    SenderThread:216111 [sender.py:send_exit():586] handling exit code: 255
+2024-07-19 20:17:49,506 INFO    SenderThread:216111 [sender.py:send_exit():588] handling runtime: 10438
+2024-07-19 20:17:49,507 INFO    SenderThread:216111 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-19 20:17:49,507 INFO    SenderThread:216111 [sender.py:send_exit():594] send defer
+2024-07-19 20:17:49,508 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: defer
+2024-07-19 20:17:49,508 INFO    HandlerThread:216111 [handler.py:handle_request_defer():184] handle defer: 0
+2024-07-19 20:17:49,508 DEBUG   SenderThread:216111 [sender.py:send_request():406] send_request: defer
+2024-07-19 20:17:49,508 INFO    SenderThread:216111 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-07-19 20:17:49,508 INFO    SenderThread:216111 [sender.py:transition_state():614] send defer: 1
+2024-07-19 20:17:49,508 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: defer
+2024-07-19 20:17:49,508 INFO    HandlerThread:216111 [handler.py:handle_request_defer():184] handle defer: 1
+2024-07-19 20:17:49,509 DEBUG   SenderThread:216111 [sender.py:send_request():406] send_request: defer
+2024-07-19 20:17:49,509 INFO    SenderThread:216111 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-07-19 20:17:49,509 INFO    SenderThread:216111 [sender.py:transition_state():614] send defer: 2
+2024-07-19 20:17:49,509 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: defer
+2024-07-19 20:17:49,509 INFO    HandlerThread:216111 [handler.py:handle_request_defer():184] handle defer: 2
+2024-07-19 20:17:49,509 INFO    HandlerThread:216111 [system_monitor.py:finish():203] Stopping system monitor
+2024-07-19 20:17:49,509 DEBUG   SystemMonitor:216111 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-07-19 20:17:49,509 INFO    HandlerThread:216111 [interfaces.py:finish():200] Joined cpu monitor
+2024-07-19 20:17:49,510 DEBUG   SystemMonitor:216111 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-07-19 20:17:49,510 INFO    HandlerThread:216111 [interfaces.py:finish():200] Joined disk monitor
+2024-07-19 20:17:49,556 INFO    HandlerThread:216111 [interfaces.py:finish():200] Joined gpu monitor
+2024-07-19 20:17:49,556 INFO    HandlerThread:216111 [interfaces.py:finish():200] Joined memory monitor
+2024-07-19 20:17:49,557 INFO    HandlerThread:216111 [interfaces.py:finish():200] Joined network monitor
+2024-07-19 20:17:49,558 DEBUG   SenderThread:216111 [sender.py:send_request():406] send_request: defer
+2024-07-19 20:17:49,558 INFO    SenderThread:216111 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-07-19 20:17:49,558 INFO    SenderThread:216111 [sender.py:transition_state():614] send defer: 3
+2024-07-19 20:17:49,558 DEBUG   SenderThread:216111 [sender.py:send():379] send: stats
+2024-07-19 20:17:49,558 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: defer
+2024-07-19 20:17:49,558 INFO    HandlerThread:216111 [handler.py:handle_request_defer():184] handle defer: 3
+2024-07-19 20:17:49,559 DEBUG   SenderThread:216111 [sender.py:send_request():406] send_request: defer
+2024-07-19 20:17:49,559 INFO    SenderThread:216111 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-07-19 20:17:49,559 INFO    SenderThread:216111 [sender.py:transition_state():614] send defer: 4
+2024-07-19 20:17:49,559 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: defer
+2024-07-19 20:17:49,559 INFO    HandlerThread:216111 [handler.py:handle_request_defer():184] handle defer: 4
+2024-07-19 20:17:49,559 DEBUG   SenderThread:216111 [sender.py:send_request():406] send_request: defer
+2024-07-19 20:17:49,559 INFO    SenderThread:216111 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-07-19 20:17:49,559 INFO    SenderThread:216111 [sender.py:transition_state():614] send defer: 5
+2024-07-19 20:17:49,559 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: defer
+2024-07-19 20:17:49,560 INFO    HandlerThread:216111 [handler.py:handle_request_defer():184] handle defer: 5
+2024-07-19 20:17:49,560 DEBUG   SenderThread:216111 [sender.py:send():379] send: summary
+2024-07-19 20:17:49,561 INFO    SenderThread:216111 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-19 20:17:49,561 DEBUG   SenderThread:216111 [sender.py:send_request():406] send_request: defer
+2024-07-19 20:17:49,561 INFO    SenderThread:216111 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-07-19 20:17:49,561 INFO    SenderThread:216111 [sender.py:transition_state():614] send defer: 6
+2024-07-19 20:17:49,561 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: defer
+2024-07-19 20:17:49,561 INFO    HandlerThread:216111 [handler.py:handle_request_defer():184] handle defer: 6
+2024-07-19 20:17:49,562 DEBUG   SenderThread:216111 [sender.py:send_request():406] send_request: defer
+2024-07-19 20:17:49,562 INFO    SenderThread:216111 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-07-19 20:17:49,562 INFO    SenderThread:216111 [sender.py:transition_state():614] send defer: 7
+2024-07-19 20:17:49,562 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: status_report
+2024-07-19 20:17:49,562 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: defer
+2024-07-19 20:17:49,562 INFO    HandlerThread:216111 [handler.py:handle_request_defer():184] handle defer: 7
+2024-07-19 20:17:49,562 DEBUG   SenderThread:216111 [sender.py:send_request():406] send_request: defer
+2024-07-19 20:17:49,562 INFO    SenderThread:216111 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-07-19 20:17:49,791 INFO    Thread-12 :216111 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/kingston_shared/thesis/sss/wandb/run-20240719_201322-2/files/wandb-summary.json
+2024-07-19 20:17:50,506 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-19 20:17:50,791 INFO    Thread-12 :216111 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/kingston_shared/thesis/sss/wandb/run-20240719_201322-2/files/output.log
+2024-07-19 20:17:51,398 INFO    SenderThread:216111 [sender.py:transition_state():614] send defer: 8
+2024-07-19 20:17:51,398 DEBUG   SenderThread:216111 [sender.py:send_request():406] send_request: poll_exit
+2024-07-19 20:17:51,398 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: defer
+2024-07-19 20:17:51,398 INFO    HandlerThread:216111 [handler.py:handle_request_defer():184] handle defer: 8
+2024-07-19 20:17:51,399 DEBUG   SenderThread:216111 [sender.py:send_request():406] send_request: defer
+2024-07-19 20:17:51,399 INFO    SenderThread:216111 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-07-19 20:17:51,399 INFO    SenderThread:216111 [job_builder.py:build():440] Attempting to build job artifact
+2024-07-19 20:17:51,399 WARNING SenderThread:216111 [job_builder.py:_log_if_verbose():274] Ensure read and write access to run files dir: /media/kingston_shared/thesis/sss/wandb/run-20240719_201322-2/files, control this via the WANDB_DIR env var. See https://docs.wandb.ai/guides/track/environment-variables
+2024-07-19 20:17:51,399 INFO    SenderThread:216111 [sender.py:transition_state():614] send defer: 9
+2024-07-19 20:17:51,399 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: defer
+2024-07-19 20:17:51,399 INFO    HandlerThread:216111 [handler.py:handle_request_defer():184] handle defer: 9
+2024-07-19 20:17:51,399 DEBUG   SenderThread:216111 [sender.py:send_request():406] send_request: defer
+2024-07-19 20:17:51,399 INFO    SenderThread:216111 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-07-19 20:17:51,399 INFO    SenderThread:216111 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-07-19 20:17:51,507 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-19 20:17:51,792 INFO    Thread-12 :216111 [dir_watcher.py:_on_file_modified():288] file/dir modified: /media/kingston_shared/thesis/sss/wandb/run-20240719_201322-2/files/output.log
+2024-07-19 20:17:51,793 INFO    SenderThread:216111 [dir_watcher.py:finish():388] scan: /media/kingston_shared/thesis/sss/wandb/run-20240719_201322-2/files
+2024-07-19 20:17:51,794 INFO    SenderThread:216111 [dir_watcher.py:finish():402] scan save: /media/kingston_shared/thesis/sss/wandb/run-20240719_201322-2/files/config.yaml config.yaml
+2024-07-19 20:17:51,794 INFO    SenderThread:216111 [dir_watcher.py:finish():402] scan save: /media/kingston_shared/thesis/sss/wandb/run-20240719_201322-2/files/output.log output.log
+2024-07-19 20:17:51,797 INFO    SenderThread:216111 [dir_watcher.py:finish():402] scan save: /media/kingston_shared/thesis/sss/wandb/run-20240719_201322-2/files/requirements.txt requirements.txt
+2024-07-19 20:17:51,800 INFO    SenderThread:216111 [dir_watcher.py:finish():402] scan save: /media/kingston_shared/thesis/sss/wandb/run-20240719_201322-2/files/wandb-summary.json wandb-summary.json
+2024-07-19 20:17:51,802 INFO    SenderThread:216111 [sender.py:transition_state():614] send defer: 10
+2024-07-19 20:17:51,803 DEBUG   SenderThread:216111 [sender.py:send_request():406] send_request: poll_exit
+2024-07-19 20:17:51,803 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: defer
+2024-07-19 20:17:51,804 INFO    HandlerThread:216111 [handler.py:handle_request_defer():184] handle defer: 10
+2024-07-19 20:17:51,805 DEBUG   SenderThread:216111 [sender.py:send_request():406] send_request: defer
+2024-07-19 20:17:51,805 INFO    SenderThread:216111 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-07-19 20:17:51,805 INFO    SenderThread:216111 [file_pusher.py:finish():169] shutting down file pusher
+2024-07-19 20:17:52,508 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-19 20:17:52,508 DEBUG   SenderThread:216111 [sender.py:send_request():406] send_request: poll_exit
+2024-07-19 20:17:52,895 INFO    wandb-upload_2:216111 [upload_job.py:push():130] Uploaded file /media/kingston_shared/thesis/sss/wandb/run-20240719_201322-2/files/requirements.txt
+2024-07-19 20:17:52,908 INFO    wandb-upload_3:216111 [upload_job.py:push():130] Uploaded file /media/kingston_shared/thesis/sss/wandb/run-20240719_201322-2/files/wandb-summary.json
+2024-07-19 20:17:52,919 INFO    wandb-upload_0:216111 [upload_job.py:push():130] Uploaded file /media/kingston_shared/thesis/sss/wandb/run-20240719_201322-2/files/config.yaml
+2024-07-19 20:17:52,931 INFO    wandb-upload_1:216111 [upload_job.py:push():130] Uploaded file /media/kingston_shared/thesis/sss/wandb/run-20240719_201322-2/files/output.log
+2024-07-19 20:17:53,132 INFO    Thread-11 :216111 [sender.py:transition_state():614] send defer: 11
+2024-07-19 20:17:53,133 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: defer
+2024-07-19 20:17:53,133 INFO    HandlerThread:216111 [handler.py:handle_request_defer():184] handle defer: 11
+2024-07-19 20:17:53,133 DEBUG   SenderThread:216111 [sender.py:send_request():406] send_request: defer
+2024-07-19 20:17:53,133 INFO    SenderThread:216111 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-07-19 20:17:53,134 INFO    SenderThread:216111 [file_pusher.py:join():175] waiting for file pusher
+2024-07-19 20:17:53,134 INFO    SenderThread:216111 [sender.py:transition_state():614] send defer: 12
+2024-07-19 20:17:53,134 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: defer
+2024-07-19 20:17:53,134 INFO    HandlerThread:216111 [handler.py:handle_request_defer():184] handle defer: 12
+2024-07-19 20:17:53,134 DEBUG   SenderThread:216111 [sender.py:send_request():406] send_request: defer
+2024-07-19 20:17:53,134 INFO    SenderThread:216111 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-07-19 20:17:53,134 INFO    SenderThread:216111 [file_stream.py:finish():601] file stream finish called
+2024-07-19 20:17:53,508 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-19 20:17:54,077 INFO    SenderThread:216111 [file_stream.py:finish():605] file stream finish is done
+2024-07-19 20:17:54,077 INFO    SenderThread:216111 [sender.py:transition_state():614] send defer: 13
+2024-07-19 20:17:54,077 DEBUG   SenderThread:216111 [sender.py:send_request():406] send_request: poll_exit
+2024-07-19 20:17:54,078 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: defer
+2024-07-19 20:17:54,078 INFO    HandlerThread:216111 [handler.py:handle_request_defer():184] handle defer: 13
+2024-07-19 20:17:54,078 DEBUG   SenderThread:216111 [sender.py:send_request():406] send_request: defer
+2024-07-19 20:17:54,078 INFO    SenderThread:216111 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-07-19 20:17:54,078 INFO    SenderThread:216111 [sender.py:transition_state():614] send defer: 14
+2024-07-19 20:17:54,079 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: defer
+2024-07-19 20:17:54,079 INFO    HandlerThread:216111 [handler.py:handle_request_defer():184] handle defer: 14
+2024-07-19 20:17:54,079 DEBUG   SenderThread:216111 [sender.py:send():379] send: final
+2024-07-19 20:17:54,079 DEBUG   SenderThread:216111 [sender.py:send():379] send: footer
+2024-07-19 20:17:54,079 DEBUG   SenderThread:216111 [sender.py:send_request():406] send_request: defer
+2024-07-19 20:17:54,079 INFO    SenderThread:216111 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-07-19 20:17:54,080 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-19 20:17:54,080 DEBUG   SenderThread:216111 [sender.py:send_request():406] send_request: poll_exit
+2024-07-19 20:17:54,080 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: server_info
+2024-07-19 20:17:54,080 DEBUG   SenderThread:216111 [sender.py:send_request():406] send_request: server_info
+2024-07-19 20:17:54,083 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-19 20:17:54,083 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: get_summary
+2024-07-19 20:17:54,083 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: sampled_history
+2024-07-19 20:17:54,084 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-19 20:17:54,384 DEBUG   SenderThread:216111 [sender.py:send_request():406] send_request: poll_exit
+2024-07-19 20:17:54,384 INFO    MainThread:216111 [wandb_run.py:_footer_history_summary_info():3991] rendering history
+2024-07-19 20:17:54,385 INFO    MainThread:216111 [wandb_run.py:_footer_history_summary_info():4023] rendering summary
+2024-07-19 20:17:54,385 INFO    MainThread:216111 [wandb_run.py:_footer_sync_info():3950] logging synced files
+2024-07-19 20:17:54,385 DEBUG   HandlerThread:216111 [handler.py:handle_request():158] handle_request: shutdown
+2024-07-19 20:17:54,386 INFO    HandlerThread:216111 [handler.py:finish():882] shutting down handler
+2024-07-19 20:17:55,083 INFO    WriterThread:216111 [datastore.py:close():296] close: /media/kingston_shared/thesis/sss/wandb/run-20240719_201322-2/run-2.wandb
+2024-07-19 20:17:55,384 INFO    SenderThread:216111 [sender.py:finish():1608] shutting down sender
+2024-07-19 20:17:55,385 INFO    SenderThread:216111 [file_pusher.py:finish():169] shutting down file pusher
+2024-07-19 20:17:55,385 INFO    SenderThread:216111 [file_pusher.py:join():175] waiting for file pusher

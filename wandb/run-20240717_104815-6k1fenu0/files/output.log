@@ -1,0 +1,127 @@
+step 0: train loss 10.9495, val loss 10.9469
+GPU Memory before iteration 0:
+  Total: 4.29 GB
+  Reserved: 2.74 GB
+  Allocated: 0.51 GB
+  Free: 1.56 GB
+  Estimated memory for this iteration: 15.56 GB
+iter 0: loss 10.9544, time 60666.11ms, mfu -100.00%
+Time stamp: 2024-07-17 10:49:18, Time since last checkpoint: 0:01:00
+GPU Memory before iteration 10:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 1.82 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 15.56 GB
+iter 10: loss 9.9529, time 72450.16ms, mfu 0.26%
+Time stamp: 2024-07-17 11:00:43, Time since last checkpoint: 0:11:25
+GPU Memory before iteration 20:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 1.82 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 15.56 GB
+iter 20: loss 9.1245, time 73831.31ms, mfu 0.26%
+Time stamp: 2024-07-17 11:12:28, Time since last checkpoint: 0:11:45
+GPU Memory before iteration 30:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 1.82 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 15.56 GB
+iter 30: loss 8.6034, time 73720.50ms, mfu 0.26%
+Time stamp: 2024-07-17 11:24:19, Time since last checkpoint: 0:11:50
+GPU Memory before iteration 40:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 1.82 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 15.56 GB
+iter 40: loss 8.4074, time 73978.59ms, mfu 0.26%
+Time stamp: 2024-07-17 11:36:09, Time since last checkpoint: 0:11:49
+GPU Memory before iteration 50:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 1.82 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 15.56 GB
+iter 50: loss 8.3235, time 66999.33ms, mfu 0.26%
+Time stamp: 2024-07-17 11:47:30, Time since last checkpoint: 0:11:20
+GPU Memory before iteration 60:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 1.82 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 15.56 GB
+iter 60: loss 8.2237, time 67378.36ms, mfu 0.26%
+Time stamp: 2024-07-17 11:58:15, Time since last checkpoint: 0:10:45
+GPU Memory before iteration 70:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 1.82 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 15.56 GB
+iter 70: loss 7.8678, time 67154.12ms, mfu 0.26%
+Time stamp: 2024-07-17 12:09:02, Time since last checkpoint: 0:10:47
+GPU Memory before iteration 80:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 1.82 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 15.56 GB
+iter 80: loss 7.6326, time 88324.30ms, mfu 0.26%
+Time stamp: 2024-07-17 12:21:34, Time since last checkpoint: 0:12:32
+GPU Memory before iteration 90:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 1.82 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 15.56 GB
+iter 90: loss 7.2173, time 85622.79ms, mfu 0.26%
+Time stamp: 2024-07-17 12:35:32, Time since last checkpoint: 0:13:57
+step 100: train loss 6.9746, val loss 7.2025
+saving checkpoint to out-gpt-test-fixed
+GPU Memory before iteration 100:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 1.82 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 15.56 GB
+iter 100: loss 7.0519, time 193407.01ms, mfu 0.24%
+Time stamp: 2024-07-17 12:51:10, Time since last checkpoint: 0:15:38
+GPU Memory before iteration 110:
+  Total: 4.29 GB
+  Reserved: 5.83 GB
+  Allocated: 1.82 GB
+  Free: -1.54 GB
+  Estimated memory for this iteration: 15.56 GB
+iter 110: loss 6.8084, time 73079.23ms, mfu 0.24%
+Time stamp: 2024-07-17 13:04:07, Time since last checkpoint: 0:12:57
+Traceback (most recent call last):
+  File "D:\thesis\sss\train_fixed.py", line 335, in <module>
+    logits, loss = model(X, Y)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "D:\thesis\sss\model_fixed.py", line 181, in forward
+    x = block(x)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "D:\thesis\sss\model_fixed.py", line 97, in forward
+    x = x + self.attn(self.ln_1(x))
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "D:\thesis\sss\model_fixed.py", line 65, in forward
+    y = self.sparse_attention(q, k, v)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "D:\thesis\sss\model_fixed.py", line 383, in forward
+    a = torch.matmul(w, v)
+KeyboardInterrupt

@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/media/kingston_shared/thesis/sss/train.py", line 267, in <module>
+    losses = estimate_loss()
+  File "/home/ronald/miniconda3/envs/torchenv/lib/python3.9/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/media/kingston_shared/thesis/sss/train.py", line 225, in estimate_loss
+    logits, loss = model(X, Y)
+  File "/home/ronald/miniconda3/envs/torchenv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ronald/miniconda3/envs/torchenv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/media/kingston_shared/thesis/sss/model.py", line 187, in forward
+    loss = F.cross_entropy(logits.view(-1, logits.size(-1)), targets.view(-1), ignore_index=-1)
+  File "/home/ronald/miniconda3/envs/torchenv/lib/python3.9/site-packages/torch/nn/functional.py", line 3086, in cross_entropy
+    return torch._C._nn.cross_entropy_loss(input, target, weight, _Reduction.get_enum(reduction), ignore_index, label_smoothing)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 590.00 MiB. GPU
