@@ -1,0 +1,29 @@
+2024-07-19 16:51:51,107 INFO    MainThread:10792 [wandb_setup.py:_flush():76] Current SDK version is 0.17.4
+2024-07-19 16:51:51,107 INFO    MainThread:10792 [wandb_setup.py:_flush():76] Configure stats pid to 10792
+2024-07-19 16:51:51,107 INFO    MainThread:10792 [wandb_setup.py:_flush():76] Loading settings from C:\Users\Ronald\.config\wandb\settings
+2024-07-19 16:51:51,107 INFO    MainThread:10792 [wandb_setup.py:_flush():76] Loading settings from D:\thesis\hey\wandb\settings
+2024-07-19 16:51:51,107 INFO    MainThread:10792 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-07-19 16:51:51,107 INFO    MainThread:10792 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-07-19 16:51:51,108 INFO    MainThread:10792 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'train_fixed.py', 'program_abspath': 'D:\\thesis\\hey\\train_fixed.py', 'program': 'D:\\thesis\\hey\\train_fixed.py'}
+2024-07-19 16:51:51,108 INFO    MainThread:10792 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-07-19 16:51:51,108 INFO    MainThread:10792 [wandb_init.py:_log_setup():529] Logging user logs to D:\thesis\hey\wandb\run-20240719_165151-2\logs\debug.log
+2024-07-19 16:51:51,108 INFO    MainThread:10792 [wandb_init.py:_log_setup():530] Logging internal logs to D:\thesis\hey\wandb\run-20240719_165151-2\logs\debug-internal.log
+2024-07-19 16:51:51,108 INFO    MainThread:10792 [wandb_init.py:init():569] calling init triggers
+2024-07-19 16:51:51,108 INFO    MainThread:10792 [wandb_init.py:init():576] wandb.init called with sweep_config: {}
+config: {'out_dir': 'out-gpt-fixed2', 'eval_interval': 200, 'log_interval': 10, 'eval_iters': 200, 'eval_only': False, 'always_save_checkpoint': False, 'init_from': 'resume', 'wandb_log': True, 'wandb_project': 'test-gpt2-fixed', 'wandb_run_name': 'l-2024-07-19_16-51-45', 'run_id': '2', 'dataset': 'openwebtext', 'gradient_accumulation_steps': 40, 'batch_size': 3, 'block_size': 256, 'n_layer': 12, 'n_head': 12, 'n_embd': 768, 'dropout': 0.0, 'bias': False, 'n_model_params': 123587328, 'learning_rate': 0.0006, 'max_iters': 600000, 'weight_decay': 0.1, 'beta1': 0.9, 'beta2': 0.95, 'grad_clip': 1.0, 'decay_lr': True, 'warmup_iters': 2000, 'lr_decay_iters': 600000, 'min_lr': 6e-05, 'backend': 'nccl', 'device': 'cuda', 'dtype': 'bfloat16', 'compile': False}
+2024-07-19 16:51:51,108 INFO    MainThread:10792 [wandb_init.py:init():619] starting backend
+2024-07-19 16:51:51,108 INFO    MainThread:10792 [wandb_init.py:init():623] setting up manager
+2024-07-19 16:51:51,110 INFO    MainThread:10792 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn, using: spawn
+2024-07-19 16:51:51,112 INFO    MainThread:10792 [wandb_init.py:init():631] backend started and connected
+2024-07-19 16:51:51,114 INFO    MainThread:10792 [wandb_init.py:init():720] updated telemetry
+2024-07-19 16:51:51,144 INFO    MainThread:10792 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-07-19 16:51:51,982 INFO    MainThread:10792 [wandb_init.py:init():796] run resumed
+2024-07-19 16:51:51,994 INFO    MainThread:10792 [wandb_run.py:_on_init():2402] communicating current version
+2024-07-19 16:51:52,123 INFO    MainThread:10792 [wandb_run.py:_on_init():2411] got version response 
+2024-07-19 16:51:52,124 INFO    MainThread:10792 [wandb_init.py:init():804] starting run threads in backend
+2024-07-19 16:51:52,317 INFO    MainThread:10792 [wandb_run.py:_console_start():2380] atexit reg
+2024-07-19 16:51:52,317 INFO    MainThread:10792 [wandb_run.py:_redirect():2235] redirect: wrap_raw
+2024-07-19 16:51:52,317 INFO    MainThread:10792 [wandb_run.py:_redirect():2300] Wrapping output streams.
+2024-07-19 16:51:52,317 INFO    MainThread:10792 [wandb_run.py:_redirect():2325] Redirects installed.
+2024-07-19 16:51:52,319 INFO    MainThread:10792 [wandb_init.py:init():847] run started, returning control to user process
+2024-07-19 16:52:47,850 WARNING MsgRouterThr:10792 [router.py:message_loop():77] message_loop has been closed

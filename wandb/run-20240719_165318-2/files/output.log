@@ -1,0 +1,15 @@
+D:\thesis\hey\model_fixed2.py:422: UserWarning: 1Torch was not compiled with flash attention. (Triggered internally at C:\cb\pytorch_1000000000000\work\aten\src\ATen\native\transformers\cuda\sdp_utils.cpp:455.)
+  y = torch.nn.functional.scaled_dot_product_attention(q, k, v, attn_mask=None, dropout_p=self.dropout if self.training else 0, is_causal=True)
+step 11800: train loss 3.8827, val loss 3.9237
+GPU Memory before iteration 11800:
+  Total: 4.29 GB
+  Reserved: 2.16 GB
+  Allocated: 1.99 GB
+  Free: 2.14 GB
+  Estimated memory for this iteration: 6.77 GB
+Traceback (most recent call last):
+  File "D:\thesis\hey\train_fixed.py", line 366, in <module>
+    torch.cuda.empty_cache()
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\cuda\memory.py", line 162, in empty_cache
+    torch._C._cuda_emptyCache()
+KeyboardInterrupt

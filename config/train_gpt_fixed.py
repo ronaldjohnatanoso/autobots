@@ -7,10 +7,10 @@
 from datetime import datetime
 
 device = 'cuda'
-compile=False
-run_id = '2'
-init_from='resume'
 compile=True
+run_id = '3'
+init_from='scratch'
+
 
 current_time = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
 
@@ -31,13 +31,19 @@ always_save_checkpoint = False
 # 12 batch size * 1024 block size * 5 gradaccum * 8 GPUs = 491,520
 batch_size = 12//(2*2)
 block_size = 1024//(2*2)
+
+
+
 #orig 5
 gradient_accumulation_steps = 5 * 8
 
+#DONT CHANGE WHEN RESUMING
 #these can also be found in gptconfig
 n_embd = 768
 n_head = 12
 n_layer = 12
+attn_mode = 'local'
+local_attn_ctx = 32 * 5
 
 dataset = 'openwebtext'
 # this makes total number of tokens be 300B

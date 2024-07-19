@@ -1,0 +1,47 @@
+step 0: train loss 10.9530, val loss 10.9548
+GPU Memory before iteration 0:
+  Total: 4.29 GB
+  Reserved: 0.56 GB
+  Allocated: 0.51 GB
+  Free: 3.74 GB
+  Estimated memory for this iteration: 6.77 GB
+iter 0: loss 10.8955, time 23729.45ms, mfu -100.00%
+Time stamp: 2024-07-19 17:19:46, Time since last checkpoint: 0:00:23
+GPU Memory before iteration 10:
+  Total: 4.29 GB
+  Reserved: 1.89 GB
+  Allocated: 1.59 GB
+  Free: 2.41 GB
+  Estimated memory for this iteration: 6.77 GB
+iter 10: loss 10.4175, time 6408.86ms, mfu 1.18%
+Time stamp: 2024-07-19 17:20:47, Time since last checkpoint: 0:01:01
+GPU Memory before iteration 20:
+  Total: 4.29 GB
+  Reserved: 1.89 GB
+  Allocated: 1.59 GB
+  Free: 2.41 GB
+  Estimated memory for this iteration: 6.77 GB
+iter 20: loss 10.0046, time 6133.99ms, mfu 1.19%
+Time stamp: 2024-07-19 17:21:51, Time since last checkpoint: 0:01:04
+GPU Memory before iteration 30:
+  Total: 4.29 GB
+  Reserved: 1.89 GB
+  Allocated: 1.59 GB
+  Free: 2.41 GB
+  Estimated memory for this iteration: 6.77 GB
+iter 30: loss 9.6143, time 7446.51ms, mfu 1.17%
+Time stamp: 2024-07-19 17:22:54, Time since last checkpoint: 0:01:03
+GPU Memory before iteration 40:
+  Total: 4.29 GB
+  Reserved: 1.89 GB
+  Allocated: 1.59 GB
+  Free: 2.41 GB
+  Estimated memory for this iteration: 6.77 GB
+iter 40: loss 9.1430, time 6393.60ms, mfu 1.17%
+Time stamp: 2024-07-19 17:23:56, Time since last checkpoint: 0:01:01
+Traceback (most recent call last):
+  File "D:\thesis\hey\train_fixed.py", line 366, in <module>
+    torch.cuda.empty_cache()
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\cuda\memory.py", line 162, in empty_cache
+    torch._C._cuda_emptyCache()
+KeyboardInterrupt

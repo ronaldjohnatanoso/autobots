@@ -1,0 +1,129 @@
+C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\_dynamo\utils.py:1764: UserWarning: 1Torch was not compiled with flash attention. (Triggered internally at C:\cb\pytorch_1000000000000\work\aten\src\ATen\native\transformers\cuda\sdp_utils.cpp:455.)
+  return node.target(*args, **kwargs)
+Traceback (most recent call last):
+  File "D:\thesis\hey\train_fixed.py", line 284, in <module>
+    losses = estimate_loss()
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\utils\_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "D:\thesis\hey\train_fixed.py", line 241, in estimate_loss
+    logits, loss = model(X, Y)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\_dynamo\eval_frame.py", line 451, in _fn
+    return fn(*args, **kwargs)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\nn\modules\module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\nn\modules\module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\_dynamo\convert_frame.py", line 921, in catch_errors
+    return callback(frame, cache_entry, hooks, frame_state, skip=1)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\_dynamo\convert_frame.py", line 786, in _convert_frame
+    result = inner_convert(
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\_dynamo\convert_frame.py", line 400, in _convert_frame_assert
+    return _compile(
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\_dynamo\convert_frame.py", line 676, in _compile
+    guarded_code = compile_inner(code, one_graph, hooks, transform)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\_dynamo\utils.py", line 262, in time_wrapper
+    r = func(*args, **kwargs)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\_dynamo\convert_frame.py", line 535, in compile_inner
+    out_code = transform_code_object(code, transform)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\_dynamo\bytecode_transformation.py", line 1036, in transform_code_object
+    transformations(instructions, code_options)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\_dynamo\convert_frame.py", line 165, in _fn
+    return fn(*args, **kwargs)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\_dynamo\convert_frame.py", line 500, in transform
+    tracer.run()
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\_dynamo\symbolic_convert.py", line 2149, in run
+    super().run()
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\_dynamo\symbolic_convert.py", line 810, in run
+    and self.step()
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\_dynamo\symbolic_convert.py", line 773, in step
+    getattr(self, inst.opname)(inst)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\_dynamo\symbolic_convert.py", line 2268, in RETURN_VALUE
+    self.output.compile_subgraph(
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\_dynamo\output_graph.py", line 1001, in compile_subgraph
+    self.compile_and_call_fx_graph(tx, pass2.graph_output_vars(), root)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\_dynamo\output_graph.py", line 1178, in compile_and_call_fx_graph
+    compiled_fn = self.call_user_compiler(gm)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\_dynamo\utils.py", line 262, in time_wrapper
+    r = func(*args, **kwargs)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\_dynamo\output_graph.py", line 1251, in call_user_compiler
+    raise BackendCompilerFailed(self.compiler_fn, e).with_traceback(
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\_dynamo\output_graph.py", line 1232, in call_user_compiler
+    compiled_fn = compiler_fn(gm, self.example_inputs())
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\_dynamo\repro\after_dynamo.py", line 117, in debug_wrapper
+    compiled_gm = compiler_fn(gm, example_inputs)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\__init__.py", line 1731, in __call__
+    return compile_fx(model_, inputs_, config_patches=self.config)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\_inductor\compile_fx.py", line 1330, in compile_fx
+    return aot_autograd(
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\_dynamo\backends\common.py", line 58, in compiler_fn
+    cg = aot_module_simplified(gm, example_inputs, **kwargs)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\_functorch\aot_autograd.py", line 903, in aot_module_simplified
+    compiled_fn = create_aot_dispatcher_function(
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\_dynamo\utils.py", line 262, in time_wrapper
+    r = func(*args, **kwargs)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\_functorch\aot_autograd.py", line 628, in create_aot_dispatcher_function
+    compiled_fn = compiler_fn(flat_fn, fake_flat_args, aot_config, fw_metadata=fw_metadata)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\_functorch\_aot_autograd\runtime_wrappers.py", line 443, in aot_wrapper_dedupe
+    return compiler_fn(flat_fn, leaf_flat_args, aot_config, fw_metadata=fw_metadata)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\_functorch\_aot_autograd\runtime_wrappers.py", line 648, in aot_wrapper_synthetic_base
+    return compiler_fn(flat_fn, flat_args, aot_config, fw_metadata=fw_metadata)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\_functorch\_aot_autograd\jit_compile_runtime_wrappers.py", line 119, in aot_dispatch_base
+    compiled_fw = compiler(fw_module, updated_flat_args)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\_dynamo\utils.py", line 262, in time_wrapper
+    r = func(*args, **kwargs)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\_inductor\compile_fx.py", line 1257, in fw_compiler_base
+    return inner_compile(
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\_dynamo\repro\after_aot.py", line 83, in debug_wrapper
+    inner_compiled_fn = compiler_fn(gm, example_inputs)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\_inductor\debug.py", line 304, in inner
+    return fn(*args, **kwargs)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\contextlib.py", line 79, in inner
+    return func(*args, **kwds)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\_dynamo\utils.py", line 262, in time_wrapper
+    r = func(*args, **kwargs)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\_inductor\compile_fx.py", line 438, in compile_fx_inner
+    compiled_graph = fx_codegen_and_compile(
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\_inductor\compile_fx.py", line 714, in fx_codegen_and_compile
+    compiled_fn = graph.compile_to_fn()
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\_inductor\graph.py", line 1307, in compile_to_fn
+    return self.compile_to_module().call
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\_dynamo\utils.py", line 262, in time_wrapper
+    r = func(*args, **kwargs)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\_inductor\graph.py", line 1250, in compile_to_module
+    self.codegen_with_cpp_wrapper() if self.cpp_wrapper else self.codegen()
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\_inductor\graph.py", line 1205, in codegen
+    self.scheduler = Scheduler(self.buffers)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\_dynamo\utils.py", line 262, in time_wrapper
+    r = func(*args, **kwargs)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\_inductor\scheduler.py", line 1267, in __init__
+    self.nodes = [self.create_scheduler_node(n) for n in nodes]
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\_inductor\scheduler.py", line 1267, in <listcomp>
+    self.nodes = [self.create_scheduler_node(n) for n in nodes]
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\_inductor\scheduler.py", line 1358, in create_scheduler_node
+    return SchedulerNode(self, node)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\_inductor\scheduler.py", line 687, in __init__
+    self._compute_attrs()
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\_inductor\scheduler.py", line 698, in _compute_attrs
+    group_fn = self.scheduler.get_backend(self.node.get_device()).group_fn
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\_inductor\scheduler.py", line 2276, in get_backend
+    self.backends[device] = self.create_backend(device)
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\_inductor\scheduler.py", line 2268, in create_backend
+    raise RuntimeError(
+torch._dynamo.exc.BackendCompilerFailed: backend='inductor' raised:
+RuntimeError: Cannot find a working triton installation. More information on installing Triton can be found at https://github.com/openai/triton
+Set TORCH_LOGS="+dynamo" and TORCHDYNAMO_VERBOSE=1 for more information
+You can suppress this exception and fall back to eager by setting:
+    import torch._dynamo
+    torch._dynamo.config.suppress_errors = True

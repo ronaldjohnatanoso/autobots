@@ -50,6 +50,11 @@ dataset = 'openwebtext'
 gradient_accumulation_steps = 5 * 8 # used to simulate larger batch sizes
 batch_size = 12 # if gradient_accumulation_steps > 1, this is the micro-batch size
 block_size = 1024
+
+#sparse parameters
+attn_mode = 'local'
+local_attn_ctx = 32 * 4
+
 # model, overriden by init_from if needed
 n_layer = 12
 n_head = 12
@@ -159,7 +164,7 @@ if os.path.exists(meta_path):
 
 # model init
 model_args = dict(n_layer=n_layer, n_head=n_head, n_embd=n_embd, block_size=block_size,
-                  bias=bias, vocab_size=None, dropout=dropout) # start with model_args from command line
+                  bias=bias, vocab_size=None, dropout=dropout,   attn_mode=attn_mode, local_attn_ctx=local_attn_ctx) # start with model_args from command line
 if init_from == 'scratch':
     # init a new model from scratch
     print("Initializing a new model from scratch")

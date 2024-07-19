@@ -1,0 +1,15 @@
+step 0: train loss 10.9528, val loss 10.9547
+GPU Memory before iteration 0:
+  Total: 4.29 GB
+  Reserved: 0.56 GB
+  Allocated: 0.51 GB
+  Free: 3.74 GB
+  Estimated memory for this iteration: 6.77 GB
+iter 0: loss 10.8964, time 23731.75ms, mfu -100.00%
+Time stamp: 2024-07-19 18:05:01, Time since last checkpoint: 0:00:23
+Traceback (most recent call last):
+  File "D:\thesis\hey\train_fixed.py", line 371, in <module>
+    torch.cuda.empty_cache()
+  File "C:\Users\Ronald\miniconda3\envs\torchenv\lib\site-packages\torch\cuda\memory.py", line 162, in empty_cache
+    torch._C._cuda_emptyCache()
+KeyboardInterrupt
