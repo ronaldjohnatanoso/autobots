@@ -2,6 +2,8 @@
 # launch as the following (e.g. in a screen session) and wait ~5 days:
 # $ torchrun --standalone --nproc_per_node=8 train.py config/train_gpt2.py
 
+#hello
+
 from datetime import datetime
 
 device = 'cuda'
